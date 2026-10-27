@@ -1,9 +1,9 @@
 "use client";
 import { useState } from "react";
-import { MCP_SERVER_URL } from "../config";
+import { CLAUDE_ICON, MCP_SERVER_URL } from "../config";
 import { copyText } from "../lib/clipboard";
 import type { AgentDefinition } from "../types";
-import { AGENT_ICONS, CheckIcon, HiggsfieldMark } from "../ui/Icons";
+import { AGENT_ICONS, CheckIcon, CopyIcon, HiggsfieldMark } from "../ui/Icons";
 import { ConnectDialog } from "./ConnectDialog";
 
 interface AgentHeroProps {
@@ -23,8 +23,18 @@ export function AgentHero({ agent }: AgentHeroProps) {
     }
   };
 
-  const primaryClass =
-    "inline-flex h-14 items-center gap-2.5 rounded-2xl bg-white px-5 text-lg font-semibold text-black shadow-[0_3px_0_0_#b9b9b9] transition hover:brightness-95 active:translate-y-px active:shadow-none";
+  const claudeStyle = agent.id === "claude";
+  const primaryClass = `inline-flex h-14 items-center gap-2.5 rounded-2xl px-5 text-lg font-semibold transition hover:brightness-95 active:translate-y-px active:shadow-none ${
+    claudeStyle
+      ? "bg-[#d97757] text-white shadow-[0_3px_0_0_#a85a40]"
+      : "bg-white text-black shadow-[0_3px_0_0_#b9b9b9]"
+  }`;
+  const primaryIcon = claudeStyle ? (
+    // eslint-disable-next-line @next/next/no-img-element
+    <img src={CLAUDE_ICON} alt="" className="size-5 brightness-0 invert" />
+  ) : (
+    <Icon className="size-6" />
+  );
 
   return (
     <section className="relative hidden min-h-[640px] flex-col items-center justify-center px-6 py-28 text-center md:flex lg:min-h-[696px]">
@@ -44,12 +54,12 @@ export function AgentHero({ agent }: AgentHeroProps) {
       <div className="mt-10 flex flex-wrap items-center justify-center gap-3">
         {copyMode ? (
           <button type="button" onClick={handleCopy} className={primaryClass}>
-            {copied ? <CheckIcon className="size-6" /> : <Icon className="size-6" />}
+            {copied ? <CheckIcon className="size-6" /> : primaryIcon}
             {copied ? "Copied" : agent.primaryCta.label}
           </button>
         ) : (
           <a href={agent.primaryCta.href} target="_blank" rel="noreferrer" className={primaryClass}>
-            <Icon className="size-6" />
+            {primaryIcon}
             {agent.primaryCta.label}
           </a>
         )}
@@ -63,7 +73,15 @@ export function AgentHero({ agent }: AgentHeroProps) {
         </button>
       </div>
 
-      <p className="mt-6 select-all text-lg font-medium text-white/35">{MCP_SERVER_URL}</p>
+      <button
+        type="button"
+        onClick={handleCopy}
+        aria-label="Copy connector URL"
+        className="mt-6 inline-flex items-center gap-2 text-lg font-medium text-white/35 transition-colors hover:text-white/70"
+      >
+        <CopyIcon className="size-4" />
+        {MCP_SERVER_URL}
+      </button>
 
       <ConnectDialog agent={agent} open={dialog} onClose={() => setDialog(false)} />
     </section>

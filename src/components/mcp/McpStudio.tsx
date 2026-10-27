@@ -34,7 +34,7 @@ export function McpStudio() {
           <AgentHero agent={agent} />
         </Reveal>
         {/* Demo + preset content is ChatGPT-specific on the live site; other agents reuse the layout. */}
-        <DemoShowcase key={`demo-${agentId}`} />
+        <DemoShowcase key={`demo-${agentId}`} agentId={agentId} />
         <PresetsSection key={`presets-${agentId}`} agentParam={agent.param} />
       </div>
       <McpFooter />

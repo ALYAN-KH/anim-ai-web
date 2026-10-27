@@ -31,6 +31,8 @@ export interface DemoDefinition {
   videoSrc?: string;
   title: string;
   prompt: string;
+  /** model tags shown under the prompt */
+  models?: string[];
 }
 
 export interface PresetCategory {

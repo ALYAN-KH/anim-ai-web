@@ -29,7 +29,10 @@ export const AGENTS: AgentDefinition[] = [
     param: "claude",
     headlineName: "Claude",
     badgeClass: "bg-[#d97757] text-white",
-    primaryCta: { label: "Connect to Claude", href: "https://claude.ai/settings/connectors" },
+    primaryCta: {
+      label: "Connect Higgsfield",
+      href: `https://claude.ai/customize/connectors?modal=add-custom-connector&connectorName=Higgsfield&connectorUrl=${encodeURIComponent(MCP_SERVER_URL)}`,
+    },
     guide: {
       title: "Connect Higgsfield to Claude",
       steps: [
