@@ -1,0 +1,166 @@
+/* Higgsfield Video Form & Token Classes */
+.bg-white-5,
+.bg-white-5\! {
+  background-color: rgba(255, 255, 255, 0.05) !important;
+}
+.hover\:bg-white-8:hover,
+.bg-white-8\!:hover,
+.hover\:not-disabled\:not-active\:bg-neutral-13:hover {
+  background-color: rgba(255, 255, 255, 0.08) !important;
+}
+.bg-madi-black,
+.bg-madi-black\! {
+  background-color: #0b0c0e !important;
+}
+.border-white-6 {
+  border-color: rgba(255, 255, 255, 0.06);
+}
+.border-separator-card {
+  border-color: rgba(255, 255, 255, 0.08);
+}
+.border-divider-primary {
+  border-color: rgba(255, 255, 255, 0.12);
+}
+.text-white-60 {
+  color: rgba(255, 255, 255, 0.60);
+}
+.text-white-32 {
+  color: rgba(255, 255, 255, 0.32);
+}
+.text-font-brand {
+  color: #EFFE17;
+}
+.text-font-primary {
+  color: #ffffff;
+}
+.text-brand-h-xxs-bold {
+  font-size: 16px;
+  line-height: 1.25;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: -0.02em;
+}
+.text-caption-m {
+  font-size: 12px;
+  line-height: 1rem;
+}
+.text-caption-l {
+  font-size: 13px;
+  line-height: 1.15rem;
+}
+.text-q-label-sm-medium,
+.text-q-label-sm-medium\! {
+  font-size: 13px;
+  font-weight: 500;
+}
+.text-q-label-sm-semi-bold {
+  font-size: 13px;
+  font-weight: 600;
+}
+.text-q-caption-sm-medium {
+  font-size: 11px;
+  font-weight: 500;
+}
+.text-q-caption-xs-medium,
+.text-q-caption-xs-medium\! {
+  font-size: 10px;
+  font-weight: 500;
+}
+.text-q-text-primary,
+.text-q-text-primary\! {
+  color: #ffffff !important;
+}
+.text-q-text-secondary,
+.text-q-text-secondary\! {
+  color: rgba(255, 255, 255, 0.60) !important;
+}
+.bg-q-transparent-light-05,
+.bg-q-transparent-light-05\! {
+  background-color: rgba(255, 255, 255, 0.05) !important;
+}
+.bg-btn-accent-bg {
+  background-color: #EFFE17;
+}
+.text-btn-accent-text {
+  color: #000000;
+}
+.h-13\.5,
+.min-h-13\.5\! {
+  height: 54px;
+  min-height: 54px;
+}
+.h-32\.5 {
+  height: 130px;
+}
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.hide-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Segmented tabs */
+.q-tabs-segmented {
+  position: relative;
+  display: flex;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+  padding: 3px;
+}
+.q-tabs-list-fill {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+  position: relative;
+}
+.q-tabs-tab {
+  position: relative;
+  z-index: 2;
+  height: 32px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
+  font-weight: 500;
+  border-radius: 9px;
+  color: rgba(255, 255, 255, 0.6);
+  transition: all 150ms ease;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+}
+.q-tabs-tab[data-active] {
+  color: #ffffff;
+  font-weight: 600;
+  background: rgba(255, 255, 255, 0.08);
+  box-shadow: 0 1px 3px rgba(0,0,0,0.25);
+}
+.q-tabs-tab-content {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+
+
+/* The studio owns its viewport; tool panels retain independent scrolling. */
+@media (min-width: 1024px) {
+  html[data-video-studio="true"], html[data-video-studio="true"] body { height: 100dvh; overflow: hidden !important; }
+}
+html[data-video-studio="true"] { scrollbar-width: none; }
+html[data-video-studio="true"]::-webkit-scrollbar { display: none; }
+
+@keyframes history-no-matches-enter {
+  from { opacity: 0; transform: translateY(16px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.history-no-matches-enter {
+  animation: history-no-matches-enter 2200ms cubic-bezier(.25, .1, .25, 1) 250ms both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .history-no-matches-enter { animation: none; }
+}

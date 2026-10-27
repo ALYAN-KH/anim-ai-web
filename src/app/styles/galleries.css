@@ -1,0 +1,110 @@
+/* Shared community gallery used by Seedance 2.5, GPT Image 2, Seedance 2.0 and Marketing Studio. */
+.community-gallery-card {
+  position: relative;
+  min-width: 0;
+  overflow: hidden;
+  border-radius: 10px;
+  background: #202223;
+  transform: translateZ(0);
+}
+.community-card-media {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition:
+    filter 0.2s ease,
+    transform 0.35s ease,
+    opacity 0.2s ease;
+}
+.community-card-shade {
+  pointer-events: none;
+  position: absolute;
+  inset: 0;
+  z-index: 5;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.62), transparent 32%);
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+.community-gallery-card:hover .community-card-shade,
+.community-gallery-card:focus-within .community-card-shade {
+  opacity: 1;
+}
+.community-gallery-card:hover .community-card-media,
+.community-gallery-card:focus-within .community-card-media {
+  filter: brightness(0.74);
+  transform: scale(1.018);
+}
+
+.community-gallery-section {
+  /* Keep the post-Canvas galleries on the same page rail as the Canvas card.
+     The old 1392px cap created increasingly large empty gutters on wide screens. */
+  width: min(calc(100% - 24px), 1896px);
+  margin-right: auto;
+  margin-left: auto;
+}
+.community-gallery-section .masonry-heading {
+  margin-bottom: 16px;
+}
+.community-gallery-viewport {
+  height: clamp(590px, 43vw, 820px);
+}
+.community-gallery-viewport::after {
+  content: "";
+  position: absolute;
+  inset: auto 0 0;
+  z-index: 15;
+  height: 110px;
+  pointer-events: none;
+  background: linear-gradient(transparent, #0d0f10 90%);
+}
+.community-gallery-viewport > .gallery-action {
+  bottom: 22px;
+  z-index: 30;
+}
+.community-gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 7px;
+}
+.community-gallery-column {
+  display: flex;
+  min-width: 0;
+  flex-direction: column;
+  gap: 7px;
+}
+.community-gallery-landscape .community-gallery-card {
+  aspect-ratio: 16 / 9 !important;
+}
+@media (hover: none) {
+  .community-gallery-card .community-card-shade {
+    opacity: 1;
+  }
+}
+@media (max-width: 900px) {
+  .community-gallery-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .community-gallery-viewport {
+    height: 690px;
+  }
+}
+@media (max-width: 600px) {
+  .community-gallery-section {
+    width: calc(100% - 16px);
+  }
+  .community-gallery-grid {
+    gap: 5px;
+  }
+  .community-gallery-column {
+    gap: 5px;
+  }
+  .community-gallery-card {
+    border-radius: 8px;
+  }
+  .community-gallery-viewport {
+    height: 560px;
+  }
+}
+

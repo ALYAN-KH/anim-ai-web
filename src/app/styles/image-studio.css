@@ -1,0 +1,203 @@
+/* Soul 2.0 image studio */
+.soul-page-shell {
+  height: calc(100dvh - var(--image-studio-top, 36px));
+  min-height: 0;
+  overflow: hidden !important;
+}
+
+.soul-hero {
+  height: 100%;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  padding-bottom: 148px;
+}
+
+.soul-showcase {
+  position: relative;
+  width: 100vw;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  overflow: hidden;
+  /* edge-bleed fades */
+}
+.soul-showcase::before,
+.soul-showcase::after {
+  content: "";
+  position: absolute;
+  inset-block: 0;
+  z-index: 4;
+  width: clamp(40px, 5vw, 90px);
+  pointer-events: none;
+}
+.soul-showcase::before { left: 0;  background: linear-gradient(90deg, #0d0f10, transparent); }
+.soul-showcase::after  { right: 0; background: linear-gradient(-90deg, #0d0f10, transparent); }
+
+.soul-wordmark {
+  position: relative;
+  z-index: 2;
+  display: block;
+  width: min(772px, 52.5vw);
+  height: auto;
+  flex: none;
+}
+
+.soul-tile {
+  width: clamp(120px, 10.42vw, 200px);
+  height: clamp(70px, 6.15vw, 118px);
+  aspect-ratio: 200 / 118;
+  object-fit: cover;
+  border-radius: 4px;
+  flex: none;
+  flex-shrink: 0;
+}
+
+/* outermost tiles bleed off the viewport edge */
+.soul-tile-first {
+  margin-left: clamp(-118px, -6.15vw, -20px);
+  opacity: 0.38;
+}
+.soul-tile-last {
+  margin-right: clamp(-118px, -6.15vw, -20px);
+  opacity: 0.38;
+}
+
+@media (min-width: 1024px) {
+  .soul-tile {
+    width: 200px;
+    height: 118px;
+  }
+}
+
+.soul-composer {
+  position: fixed;
+  z-index: 60;
+  left: 50%;
+  bottom: 22px;
+  width: min(880px, calc(100vw - 32px));
+  height: 124px;
+  transform: translateX(-50%);
+  border: 1px solid #2a2c2f;
+  border-radius: 20px;
+  background: #1b1c1e;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.55);
+  /* needed so absolute children (thumbnail, generate) are positioned correctly */
+  overflow: visible;
+}
+
+.soul-character-modal {
+  position: fixed;
+  z-index: 70;
+  left: 50%;
+  bottom: 149px;
+  width: min(880px, calc(100vw - 32px));
+  height: 540px;
+  transform: translateX(-50%);
+  overflow: hidden;
+  border: 1px solid #2a2c2e;
+  border-radius: 24px;
+  background: #161718;
+  box-shadow: 0 24px 80px rgba(0, 0, 0, 0.65);
+}
+
+.soul-model-menu {
+  position: absolute;
+  left: 0;
+  bottom: calc(100% + 8px);
+  z-index: 80;
+  width: min(500px, calc(100vw - 32px));
+  max-height: min(620px, calc(100dvh - 52px - 160px));
+  border: 1px solid #2a2c2f;
+  border-radius: 16px;
+  background: #1b1c1e;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.6);
+  overflow-y: auto;
+}
+
+@media (max-width: 767px) {
+  .soul-wordmark {
+    width: 88vw;
+    height: auto;
+  }
+  .soul-hero {
+    justify-content: center;
+    padding-bottom: 200px;
+  }
+  .soul-tile {
+    width: clamp(80px, 25vw, 150px);
+    height: auto;
+  }
+  /* show only 1 tile each side on mobile */
+  .soul-tile:nth-child(n+2):not(.soul-tile-last) {
+    display: none;
+  }
+  .soul-composer {
+    bottom: 12px;
+    height: auto;
+    min-height: 174px;
+  }
+  .soul-character-modal {
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    max-height: 85dvh;
+    transform: none;
+    border-radius: 24px 24px 0 0;
+    border-bottom: none;
+    overflow-y: auto;
+  }
+}
+
+.soul-page-shell button:focus-visible,
+.soul-page-shell input:focus-visible,
+.soul-page-shell textarea:focus-visible {
+  outline: 2px solid #d1fe17 !important;
+  outline-offset: 2px !important;
+}
+
+/* Match the captured Edit Video tool-list separator behavior. */
+.edit-video-tools li:has(> button:hover)::after,
+.edit-video-tools li:has(+ li > button:hover)::after {
+  display: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .soul-page-shell *,
+  .soul-page-shell *::before,
+  .soul-page-shell *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+.text-brand-h-md-caps-bold {
+  font-size: 41px;
+  line-height: 1;
+  letter-spacing: -0.055em;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+@media (max-width: 1024px) {
+  .text-brand-h-md-caps-bold {
+    font-size: 30px;
+  }
+}
+.text-brand-h-xxs-caps-bold {
+  font-size: 18px;
+  line-height: 1.25;
+  letter-spacing: -0.04em;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.text-font-secondary {
+  color: rgba(255, 255, 255, 0.55);
+}
+
