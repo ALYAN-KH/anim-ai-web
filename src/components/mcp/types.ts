@@ -47,6 +47,8 @@ export interface PresetDefinition {
   isNew?: boolean;
   description: string;
   command: string;
+  tags?: string[];
+  agents?: AgentId[];
   /** category ids, besides "popular" */
   categories: string[];
   popular: boolean;
