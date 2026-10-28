@@ -3,18 +3,18 @@ export default {
     "title": "Higgsfield Genjutsu",
     "sub": "Reality Manipulation â€” transfer motion into new scenes, or swap details while everything else stays as filmed.",
     "body": "Take the motion and recast it with your characters, locations, and products, or swap specific elements while keeping the rest untouched.",
-    "href": "/higgsfield-genjutsu-presets",
+    "href": "/ai/video?model=genjutsu",
     "ctaPrimary": {
       "label": "Start generating",
       "href": "/ai/video?model=genjutsu"
     },
     "ctaSecondary": {
       "label": "Learn more",
-      "href": "/higgsfield-genjutsu-presets"
+      "href": "/ai/video?model=genjutsu"
     },
     "viewAll": {
       "label": "View all presets",
-      "href": "/higgsfield-genjutsu-presets"
+      "href": "/ai/video?model=genjutsu"
     },
     "items": [
       {

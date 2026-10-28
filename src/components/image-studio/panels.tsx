@@ -46,14 +46,14 @@ export function CharacterPanel({
         <X size={18} className="text-zinc-300" />
       </button>
 
-      <div className="relative h-[216px] px-8 pt-8">
+      <div className="soul-panel-head relative h-[216px] px-8 pt-8">
         <h2 id="character-panel-title" className="font-grotesk text-[28px] font-extrabold uppercase leading-[34px] tracking-[-0.04em]">
           MAKE YOUR OWN CHARACTER
         </h2>
         <p className="mt-2.5 max-w-[440px] text-sm leading-5 text-[#8b8e92]">
-          Upload photos from multiple angles to train your character. Then
+          Upload photos from multiple angles to train your character. Then{" "}
           <br />
-          use the same consistent character across new images and
+          use the same consistent character across new images and{" "}
           <br />
           videos.
         </p>
@@ -71,8 +71,8 @@ export function CharacterPanel({
         </div>
       </div>
 
-      <div className="relative h-[324px] overflow-hidden rounded-t-[18px] bg-[#232526] border-t border-[#303234]">
-        <div className="flex items-center gap-2 border-b border-[#303234] px-4 py-3">
+      <div className="soul-char-body relative h-[324px] overflow-hidden rounded-t-[18px] bg-[#232526] border-t border-[#303234]">
+        <div className="soul-tabs flex items-center gap-2 border-b border-[#303234] px-4 py-3">
           <button
             type="button"
             onClick={() => setActiveTab("All")}
@@ -101,7 +101,7 @@ export function CharacterPanel({
           >
             Soul Cinema
           </button>
-          <label className="ml-auto flex h-10 w-[205px] items-center gap-2 rounded-xl bg-[#303234] px-3">
+          <label className="soul-search ml-auto flex h-10 w-[205px] items-center gap-2 rounded-xl bg-[#303234] px-3">
             <Search size={14} className="text-zinc-500" />
             <input
               placeholder="Search..."
@@ -184,15 +184,15 @@ export function MoodboardPanel({
         onScroll={handleScroll}
         className="h-full overflow-y-auto [scrollbar-width:none]"
       >
-        <div className="relative h-[213px] px-8 pt-[30px]">
+        <div className="soul-panel-head relative h-[213px] px-8 pt-[30px]">
           <PanelCloseButton onClick={onClose} label="Close moodboard panel" />
           <h2 className="font-grotesk text-[27px] font-bold uppercase leading-[34px] tracking-[-0.018em]">
             Create your moodboard
           </h2>
           <p className="mt-2.5 text-sm leading-5 text-zinc-400">
-            Turn your references into a focused moodboard that
+            Turn your references into a focused moodboard that{" "}
             <br />
-            defines style, tone, consistent details, and creative
+            defines style, tone, consistent details, and creative{" "}
             <br />
             direction.
           </p>
@@ -204,7 +204,7 @@ export function MoodboardPanel({
             Build your moodboard　✦
           </button>
 
-          <div className="pointer-events-none absolute inset-y-0 right-0 w-[400px]">
+          <div className="soul-collage pointer-events-none absolute inset-y-0 right-0 w-[400px]">
             <MoodboardCollage />
           </div>
         </div>
@@ -212,7 +212,7 @@ export function MoodboardPanel({
         {/* tabs + grid */}
         <div className="min-h-[261px] rounded-t-[18px] bg-[#242628]">
           <div
-            className="sticky z-10 flex items-center gap-1 bg-[#242628] px-2.5 pb-4"
+            className="soul-tabs sticky z-10 flex items-center gap-1 bg-[#242628] px-2.5 pb-4"
             style={{
               top: showBar ? 58 : 0,
               paddingTop: stuck && !showBar ? 2 : 8,
@@ -228,7 +228,7 @@ export function MoodboardPanel({
             <button className="h-8 px-3 text-xs font-semibold text-zinc-500">
               My Moodboards
             </button>
-            <label className="ml-auto flex h-8 w-[192px] items-center gap-2 rounded-xl bg-white/5 px-3 text-zinc-400">
+            <label className="soul-search ml-auto flex h-8 w-[192px] items-center gap-2 rounded-xl bg-white/5 px-3 text-zinc-400">
               <Search size={14} />
               <input
                 value={presetQuery}
@@ -240,7 +240,7 @@ export function MoodboardPanel({
           </div>
 
           <div className="px-2.5 pb-3">
-            <div className="grid grid-cols-5 gap-x-2 gap-y-2">
+            <div className="soul-preset-grid grid grid-cols-5 gap-x-2 gap-y-2">
               {visiblePresets.map((item, i) => (
                 <RevealCard
                   key={item.name}
@@ -254,7 +254,7 @@ export function MoodboardPanel({
                     alt={item.name}
                     className="aspect-square w-full rounded-xl object-cover ring-white group-hover:ring-2"
                   />
-                  <span className="mt-2 block truncate text-xs font-bold text-white">
+                  <span className="soul-preset-name mt-2 block truncate text-xs font-bold text-white">
                     {item.name}
                   </span>
                 </RevealCard>

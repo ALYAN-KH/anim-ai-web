@@ -186,21 +186,21 @@ export function Footer() {
     <footer className="text-black">
       {/* Lime area */}
       <div className="bg-lime px-6 pt-[45px]">
-        <div className="grid w-full gap-10 lg:grid-cols-[minmax(0,1.95fr)_repeat(5,minmax(0,1fr))] lg:gap-0">
-          <h2 className="font-grotesk text-[36px] font-medium uppercase leading-[1.15] tracking-[-0.03em] lg:-mt-[3px] lg:text-[46px] lg:leading-[58px]">
+        <div className="grid w-full grid-cols-2 gap-x-6 gap-y-10 lg:grid-cols-[minmax(0,1.95fr)_repeat(5,minmax(0,1fr))] lg:gap-0">
+          <h2 className="col-span-2 font-grotesk text-[36px] font-medium uppercase leading-[1.15] tracking-[-0.03em] lg:col-span-1 lg:-mt-[3px] lg:text-[46px] lg:leading-[58px]">
             AI-native
             <br />
             creative suite
           </h2>
 
           {footerColumns.map((groups, i) => (
-            <div key={i} className="max-lg:col-span-1">
+            <div key={i} className="min-w-0 max-lg:col-span-1">
               {groups.map((g, gi) => (
                 <div key={g.h} className={gi > 0 ? "mt-[45px]" : ""}>
-                  <h3 className="mb-[21px] text-[18px] leading-6 text-black/50">
+                  <h3 className="mb-[21px] text-[18px] leading-6 text-black/50 max-sm:text-sm">
                     {g.h}
                   </h3>
-                  <ul className="flex flex-col gap-[21px] text-[18px] font-medium leading-6">
+                  <ul className="flex flex-col gap-[21px] text-[18px] font-medium leading-6 max-sm:text-sm">
                     {g.l.map((x) => (
                       <li key={x}>
                         <Link href="/" className="hover:underline">
@@ -231,7 +231,7 @@ export function Footer() {
       {/* Dark bottom bar */}
       <div className="flex flex-wrap items-center justify-between gap-4 bg-[#0b0b0b] px-9 py-[30px] text-white max-md:px-5">
         <span className="text-[16px] text-white/70">
-          Â© 2026 Higgsfield, Inc. All rights reserved.
+          © 2026 Higgsfield, Inc. All rights reserved.
         </span>
         <div className="flex flex-wrap items-center gap-x-[30px] gap-y-2 text-[16px] font-medium">
           <button

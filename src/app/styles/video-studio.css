@@ -164,3 +164,14 @@ html[data-video-studio="true"]::-webkit-scrollbar { display: none; }
 @media (prefers-reduced-motion: reduce) {
   .history-no-matches-enter { animation: none; }
 }
+
+/* Smooth scrolling for the studio page and its content pane. */
+html[data-video-studio="true"] { scroll-behavior: smooth; }
+.video-studio-scroll {
+  scroll-behavior: smooth;
+  overscroll-behavior-y: contain;
+  -webkit-overflow-scrolling: touch;
+}
+@media (prefers-reduced-motion: reduce) {
+  html[data-video-studio="true"], .video-studio-scroll { scroll-behavior: auto; }
+}

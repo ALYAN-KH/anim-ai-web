@@ -24,7 +24,7 @@ export function AgentHero({ agent }: AgentHeroProps) {
   };
 
   const claudeStyle = agent.id === "claude";
-  const primaryClass = `inline-flex h-14 items-center gap-2.5 rounded-2xl px-5 text-lg font-semibold transition hover:brightness-95 active:translate-y-px active:shadow-none ${
+  const primaryClass = `inline-flex h-12 items-center gap-2 rounded-xl px-4 text-base font-semibold transition hover:brightness-95 active:translate-y-px active:shadow-none ${
     claudeStyle
       ? "bg-[#d97757] text-white shadow-[0_3px_0_0_#a85a40]"
       : "bg-white text-black shadow-[0_3px_0_0_#b9b9b9]"
@@ -37,8 +37,8 @@ export function AgentHero({ agent }: AgentHeroProps) {
   );
 
   return (
-    <section className="relative hidden min-h-[640px] flex-col items-center justify-center px-6 py-28 text-center md:flex lg:min-h-[696px]">
-      <h1 className="font-grotesk text-[44px] font-bold uppercase leading-[1.02] tracking-[-0.03em] text-white lg:text-[72px]">
+    <section className="relative hidden bg-[radial-gradient(rgba(255,255,255,0.09)_1px,transparent_1.2px)] bg-[length:14px_14px] h-[565px] flex-col items-center justify-center px-6 pt-8 text-center md:flex">
+      <h1 className="font-grotesk text-[44px] font-bold uppercase leading-[1.02] tracking-[-0.03em] text-white lg:text-[48px] lg:leading-[56px]">
         Generate <span className="text-[#d1fe17]">Images &amp; Videos</span>
         <br />
         in{" "}
@@ -51,7 +51,7 @@ export function AgentHero({ agent }: AgentHeroProps) {
         Higgsfield
       </h1>
 
-      <div className="mt-10 flex flex-wrap items-center justify-center gap-3">
+      <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
         {copyMode ? (
           <button type="button" onClick={handleCopy} className={primaryClass}>
             {copied ? <CheckIcon className="size-6" /> : primaryIcon}
@@ -67,7 +67,7 @@ export function AgentHero({ agent }: AgentHeroProps) {
           type="button"
           aria-haspopup="dialog"
           onClick={() => setDialog(true)}
-          className="inline-flex h-14 items-center rounded-2xl bg-[#17181a] px-5 text-lg font-semibold text-white transition-colors hover:bg-[#222427]"
+          className="inline-flex h-12 items-center rounded-xl bg-white/10 px-4 text-base font-semibold text-white transition-colors hover:bg-[#222427]"
         >
           How to connect?
         </button>
@@ -77,7 +77,7 @@ export function AgentHero({ agent }: AgentHeroProps) {
         type="button"
         onClick={handleCopy}
         aria-label="Copy connector URL"
-        className="mt-6 inline-flex items-center gap-2 text-lg font-medium text-white/35 transition-colors hover:text-white/70"
+        className="mt-3 inline-flex h-10 items-center gap-2 px-3 text-sm font-medium text-white/35 transition-colors hover:text-white/70"
       >
         <CopyIcon className="size-4" />
         {MCP_SERVER_URL}

@@ -104,24 +104,24 @@ export function EditVideoContent({
   }
 
   return (
-    <section className="mx-4 mt-1 flex min-h-[calc(100%-0.25rem)] flex-col items-center rounded-t-[28px] border border-white/[.08] bg-[#111315] px-4 pb-4 pt-4">
+    <section className="mx-4 mt-1 flex min-h-[calc(100%-0.25rem)] flex-col items-center rounded-t-[28px] border border-white/[.08] bg-[#111315] px-4 pb-4 pt-4 max-md:pb-16">
       <div className="flex w-full flex-col items-center gap-6">
         {/* The official layout uses a large active video, with the controls below it. */}
         <div className="relative aspect-video w-full max-w-[700px] shrink-0 overflow-hidden rounded-2xl bg-black">
           <TutorialVideo src={active.video} poster={active.image} />
         </div>
 
-        <div className="flex shrink-0 flex-col items-center gap-4">
+        <div className="flex shrink-0 flex-col items-center gap-4 max-md:w-full">
           <div className="flex flex-col items-center gap-2.5 text-center">
             <h1 className="font-grotesk text-[28px] font-bold uppercase leading-tight text-white max-lg:text-[22px]">
               {active.title}
             </h1>
-            <p className="max-w-[590px] text-[15px] leading-6 text-white/75">
+            <p className="max-w-[590px] text-[15px] leading-6 text-white/75 max-md:text-sm max-md:leading-[22px]">
               {active.description}
             </p>
           </div>
 
-          <div className="flex items-center justify-center gap-3 px-4">
+          <div className="flex items-center justify-center gap-3 px-4 max-md:w-full max-md:gap-2 max-md:px-0">
             <button
               type="button"
               aria-label="Previous tutorial"
@@ -130,12 +130,12 @@ export function EditVideoContent({
                   (i) => (i - 1 + tutorials.length) % tutorials.length,
                 )
               }
-              className="grid size-12 shrink-0 place-items-center rounded-full border border-white/[.08] bg-black/10 text-white/60 transition hover:bg-white/[.05] hover:text-white"
+              className="grid size-12 shrink-0 place-items-center rounded-full max-md:size-11 border border-white/[.08] bg-black/10 text-white/60 transition hover:bg-white/[.05] hover:text-white"
             >
               <ChevronLeft className="size-5" />
             </button>
 
-            <div className="flex h-15 items-center gap-2 rounded-full border border-white/[.08] bg-black/10 px-3 py-0 [scrollbar-width:none]">
+            <div className="flex h-15 items-center gap-2 rounded-full border border-white/[.08] bg-black/10 px-3 py-0 [scrollbar-width:none] max-md:min-w-0 max-md:flex-1 max-md:overflow-x-auto max-md:scroll-smooth max-md:px-2">
               {tutorials.map((item, index) => (
                 <button
                   key={item.title}
@@ -162,7 +162,7 @@ export function EditVideoContent({
               type="button"
               aria-label="Next tutorial"
               onClick={() => setActiveIndex((i) => (i + 1) % tutorials.length)}
-              className="grid size-12 shrink-0 place-items-center rounded-full border border-white/[.08] bg-black/10 text-white/60 transition hover:bg-white/[.05] hover:text-white"
+              className="grid size-12 shrink-0 place-items-center rounded-full max-md:size-11 border border-white/[.08] bg-black/10 text-white/60 transition hover:bg-white/[.05] hover:text-white"
             >
               <ChevronRight className="size-5" />
             </button>

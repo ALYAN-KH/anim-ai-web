@@ -1,0 +1,905 @@
+[
+  {
+    "id": "industrial-style-lookbook",
+    "title": "Industrial Style Lookbook",
+    "width": 1080,
+    "height": 1920,
+    "image": "https://static-public-media.higgsfield.ai/katana-presets/d8fa1c4b-4b68-4f4f-956d-ff1ad55c795c.webp",
+    "video": "https://static-public-media.higgsfield.ai/katana-presets/68303bce-5293-4880-8a80-cacf13aa6ce4.mp4",
+    "likes": 0,
+    "category": "Personalized edits"
+  },
+  {
+    "id": "gentleman-driver-style",
+    "title": "Gentleman Driver Style",
+    "width": 1920,
+    "height": 1080,
+    "image": "https://static-public-media.higgsfield.ai/katana-presets/25f32735-08df-4832-847b-abfe69241c90.webp",
+    "video": "https://static-public-media.higgsfield.ai/katana-presets/dc15f08a-4aec-42b0-89fd-82e880a7c720.mp4",
+    "likes": 0,
+    "category": "Personalized edits"
+  },
+  {
+    "id": "candy-pop",
+    "title": "candy-pop",
+    "width": 3840,
+    "height": 2160,
+    "image": "https://static-public-media.higgsfield.ai/katana-presets/published/beddd287607f7a48193f117f2c6d98a9cd696e275b361b2550f5d244c40f7c8e",
+    "video": "https://static-public-media.higgsfield.ai/katana-presets/published/813c3254add3bcef4fda9e1c43cb5f0c6aa167979f73cae83338173edbad457e",
+    "likes": 0,
+    "category": "Personalized edits"
+  },
+  {
+    "id": "daytona-drift",
+    "title": "Daytona Drift",
+    "width": 1920,
+    "height": 1080,
+    "image": "https://static-public-media.higgsfield.ai/katana-presets/8cf3d15b-bdea-4285-b44a-00eff92b680e.webp",
+    "video": "https://static-public-media.higgsfield.ai/katana-presets/5c73e282-c534-47aa-afcb-35364aa21e0d.mp4",
+    "likes": 0,
+    "category": "Personalized edits"
+  },
+  {
+    "id": "pop-cutout-fashion-edit",
+    "title": "Pop Cutout Fashion Edit",
+    "width": 1376,
+    "height": 768,
+    "image": "https://static-public-media.higgsfield.ai/katana-presets/442ed328-6c4e-4ab7-892c-5c56adcfb3d2.webp",
+    "video": "https://static-public-media.higgsfield.ai/katana-presets/6acc5bfa-0b05-4394-a84d-dd947e56e68b.mp4",
+    "likes": 0,
+    "category": "Personalized edits"
+  },
+  {
+    "id": "monolith",
+    "title": "monolith",
+    "width": 1440,
+    "height": 1080,
+    "image": "https://static-public-media.higgsfield.ai/katana-presets/published/3531f1c6e7b0e3026c3d50d1c18c14be7e548a1e411c83d54afe741f8b4d7a9e",
+    "video": "https://static-public-media.higgsfield.ai/katana-presets/published/e51ada30db40adcd3fa1e2befb438ec9f68cece1f8416b3b466522e3f563d823",
+    "category": "Style transfer"
+  },
+  {
+    "id": "track-day-showcase",
+    "title": "Track Day Showcase",
+    "width": 1440,
+    "height": 1080,
+    "image": "https://static-public-media.higgsfield.ai/katana-presets/0d368f85-a314-4924-887c-59c6fc5f5b21.webp",
+    "video": "https://static-public-media.higgsfield.ai/katana-presets/3da70e81-b1cb-4647-a110-6aed91fff45b.mp4",
+    "likes": 0,
+    "category": "Personalized edits"
+  },
+  {
+    "id": "surreal-collage-vibe",
+    "title": "Surreal Collage Vibe",
+    "width": 1080,
+    "height": 1350,
+    "image": "https://static-public-media.higgsfield.ai/katana-presets/a0867faf-4f17-4b64-91e3-40648410ce60.webp",
+    "video": "https://static-public-media.higgsfield.ai/katana-presets/3a2ab0a5-4a44-49c2-932d-78f4908d3632.mp4",
+    "likes": 0,
+    "category": "Personalized edits"
+  },
+  {
+    "id": "kinetic-graphic-photo-edit",
+    "title": "Kinetic Graphic Photo Edit",
+    "width": 1024,
+    "height": 576,
+    "image": "https://static-public-media.higgsfield.ai/katana-presets/1cccd347-5c5a-44e5-acf7-7371701fab40.webp",
+    "video": "https://static-public-media.higgsfield.ai/katana-presets/7c972057-b9bd-466b-877d-14cb57824f76.mp4",
+    "likes": 0,
+    "category": "Personalized edits"
+  },
+  {
+    "id": "fw26-style-lookbook",
+    "title": "FW26 Style Lookbook",
+    "width": 1080,
+    "height": 1920,
+    "image": "https://static-public-media.higgsfield.ai/katana-presets/8860b1ea-135b-4921-af82-680a19d2bbbd.webp",
+    "video": "https://static-public-media.higgsfield.ai/katana-presets/2c37c9c5-9fb7-4b5f-865f-a7346df01af4.mp4",
+    "likes": 0,
+    "category": "Personalized edits"
+  },
+  {
+    "id": "chrome-noir-style-edit",
+    "title": "Chrome Noir Style Edit",
+    "width": 1920,
+    "height": 1080,
+    "image": "https://static-public-media.higgsfield.ai/katana-presets/3d09bbab-a816-4119-a96e-ab86d14e28e1.webp",
+    "video": "https://static-public-media.higgsfield.ai/katana-presets/9e653229-cce5-4354-9c9d-c062cfa8b337.mp4",
+    "likes": 0,
+    "category": "Personalized edits"
+  },
+  {
+    "id": "pop-art-comic-edit",
+    "title": "Pop Art Comic Edit",
+    "width": 1920,
+    "height": 1080,
+    "image": "https://static-public-media.higgsfield.ai/katana-presets/f4d6112f-9331-45ce-b4a1-5ffeb13ccc7e.webp",
+    "video": "https://static-public-media.higgsfield.ai/katana-presets/e6588841-98fb-4486-a7d2-6d523fd52a07.mp4",
+    "likes": 0,
+    "category": "Personalized edits"
+  },
+  {
+    "id": "swole-cinema-aesthetic",
+    "title": "Swole Cinema Aesthetic",
+    "width": 1024,
+    "height": 576,
+    "image": "https://static-public-media.higgsfield.ai/katana-presets/55a7d793-8fef-42d6-924d-082c32089736.webp",
+    "video": "https://static-public-media.higgsfield.ai/katana-presets/cf0302c6-91b6-47b1-ba9d-ebaa9c6bc182.mp4",
+    "likes": 0,
+    "category": "Personalized edits"
+  },
+  {
+    "id": "noir-crowned-fashion-montage",
+    "title": "Noir Crowned Fashion Montage",
+    "width": 720,
+    "height": 540,
+    "image": "https://static-public-media.higgsfield.ai/katana-presets/6703265b-219e-4ece-90f8-170fb3877eab.webp",
+    "video": "https://static-public-media.higgsfield.ai/katana-presets/fe297980-d454-48a6-afa7-91df1a0fea0b.mp4",
+    "likes": 0,
+    "category": "Personalized edits"
+  },
+  {
+    "id": "high-octane-turbo-sprint",
+    "title": "High Octane Turbo Sprint",
+    "width": 1920,
+    "height": 824,
+    "image": "https://static-public-media.higgsfield.ai/katana-presets/3e934f34-492c-49ad-8061-35d2ccb5a8ce.webp",
+    "video": "https://static-public-media.higgsfield.ai/katana-presets/719167f1-5027-4e66-b36d-9c511564d228.mp4",
+    "likes": 0,
+    "category": "Personalized edits"
+  },
+  {
+    "id": "monochrome-glitch-montage",
+    "title": "Monochrome Glitch Montage",
+    "width": 1080,
+    "height": 1920,
+    "image": "https://static-public-media.higgsfield.ai/katana-presets/33b8910f-6443-494b-80f7-aa754c089615.webp",
+    "video": "https://static-public-media.higgsfield.ai/katana-presets/66c09734-44da-4f57-94b0-84e38f59c272.mp4",
+    "category": "Personalized edits"
+  },
+  {
+    "id": "comic",
+    "title": "comic",
+    "width": 720,
+    "height": 576,
+    "image": "https://static-public-media.higgsfield.ai/katana-presets/published/b9c72ebb1dd52c5d06783419554888e3206a63f19d86c4e27a329c0e5684aad1",
+    "video": "https://static-public-media.higgsfield.ai/katana-presets/published/7d67700d733d815f5c6d3ed32510ff1af893f191aa6ce6b74d5c4069db2ac8a0",
+    "category": "Style transfer"
+  },
+  {
+    "id": "camera-shots",
+    "title": "Camera Shots",
+    "width": 600,
+    "height": 450,
+    "image": "https://static-public-media.higgsfield.ai/katana-presets/published/0a18cd936593cadf218923473364067a9fb70a6d60b83e59b83f80df6255836e",
+    "video": "https://static-public-media.higgsfield.ai/katana-presets/published/faa5cbc7dc7187017439b6b2dbf6ebf7a69e69fc99535193aee125bd248d6e06",
+    "category": "Motion transfer"
+  },
+  {
+    "id": "kinetic-tech-edit",
+    "title": "Kinetic Tech Edit",
+    "width": 1280,
+    "height": 800,
+    "image": "https://static-public-media.higgsfield.ai/katana-presets/9a921dab-edbc-48f1-8545-4b9aee1dc8e8.webp",
+    "video": "https://static-public-media.higgsfield.ai/katana-presets/3e885cc0-f75b-42fd-aa17-57fb5cacb1fa.mp4",
+    "category": "Personalized edits"
+  },
+  {
+    "id": "silhouette-eyes-and-lips-beat-edit",
+    "title": "Silhouette Eyes & Lips Beat Edit",
+    "width": 1280,
+    "height": 720,
+    "image": "https://static-public-media.higgsfield.ai/katana-presets/fde2d38c-36e3-4d28-8b8a-b38d9a38616c.webp",
+    "video": "https://static-public-media.higgsfield.ai/katana-presets/e5f2f911-d907-4059-b46d-7433bb13d81f.mp4",
+    "category": "Personalized edits"
+  },
+  {
+    "id": "black-and-white-boxing-montage",
+    "title": "Black and White Boxing Montage",
+    "width": 1440,
+    "height": 1080,
+    "image": "https://static-public-media.higgsfield.ai/katana-presets/8a79b150-b04a-4391-b8b4-483058c57365.webp",
+    "video": "https://static-public-media.higgsfield.ai/katana-presets/2e8a3caa-9cfd-444a-ab96-3ae296d1328a.mp4",
+    "category": "Personalized edits"
+  },
+  {
+    "id": "cinematic-noir-glitch-edit",
+    "title": "Cinematic Noir Glitch Edit",
+    "width": 1518,
+    "height": 1080,
+    "image": "https://static-public-media.higgsfield.ai/katana-presets/3d753124-7a8a-4e63-b0ec-2dc2d8f763fe.webp",
+    "video": "https://static-public-media.higgsfield.ai/katana-presets/e2996545-5c8b-46e8-adcc-db8619468d7a.mp4",
+    "category": "Personalized edits"
+  },
+  {
+    "id": "vintage-cinematic-rap-video",
+    "title": "Vintage Cinematic Rap Video",
+    "width": 1440,
+    "height": 1080,
+    "image": "https://static-public-media.higgsfield.ai/katana-presets/f6a45744-38a7-413f-8826-075f3066e78c.webp",
+    "video": "https://static-public-media.higgsfield.ai/katana-presets/e33ada7e-860f-44c1-9764-1a986b1abd6c.mp4",
+    "category": "Personalized edits"
+  },
+  {
+    "id": "neon-monolith",
+    "title": "Neon Monolith",
+    "width": 1920,
+    "height": 1080,
+    "image": "https://static-public-media.higgsfield.ai/katana-presets/fd1a4a57-9b14-4b94-9627-8245cabf252b.webp",
+    "video": "https://static-public-media.higgsfield.ai/katana-presets/6ad3a2d5-1e99-4936-a87c-b45e9a10d85a.mp4",
+    "category": "Style transfer"
+  },
+  {
+    "id": "scrapbook-fashion-montage",
+    "title": "Scrapbook Fashion Montage",
+    "width": 1080,
+    "height": 1920,
+    "image": "https://static-public-media.higgsfield.ai/katana-presets/1daee8aa-4d18-4565-b1a7-b22cd518048f.webp",
+    "video": "https://static-public-media.higgsfield.ai/katana-presets/e413efa9-557e-4f7a-80b5-2f46ef28cb1c.mp4",
+    "category": "Personalized edits"
+  },
+  {
+    "id": "mentality",
+    "title": "Mentality",
+    "width": 1920,
+    "height": 1080,
+    "image": "https://static-public-media.higgsfield.ai/katana-presets/published/8baa20faf6a47c6d813af738fcb3d99e7385f7fb5d871816a6696ec4128e27fb",
+    "video": "https://static-public-media.higgsfield.ai/katana-presets/published/2c121c0ae6bc85229c511f0a3537cf0bed6823ff0de058305b1f48ac1497733f",
+    "category": "Personalized edits"
+  },
+  {
+    "id": "y2k-sticker-scrapbook-edit",
+    "title": "Y2K Sticker Scrapbook Edit",
+    "width": 1024,
+    "height": 576,
+    "image": "https://static-public-media.higgsfield.ai/katana-presets/911fcec6-cc46-4025-b2fe-a890a8ca561e.webp",
+    "video": "https://static-public-media.higgsfield.ai/katana-presets/4db354f3-c9e8-4666-a486-4b270ae58170.mp4",
+    "category": "Personalized edits"
+  },
+  {
+    "id": "newspaper-cover-fashion-edit",
+    "title": "Newspaper Cover Fashion Edit",
+    "width": 1080,
+    "height": 1920,
+    "image": "https://static-public-media.higgsfield.ai/katana-presets/0e81f10e-c2cf-4b10-96bf-0c2673a462d3.webp",
+    "video": "https://static-public-media.higgsfield.ai/katana-presets/fdfab979-bfab-4b6b-8154-961ec4290b2c.mp4",
+    "category": "Personalized edits"
+  },
+  {
+    "id": "gritty-noir-cinematic-montage",
+    "title": "Gritty Noir Cinematic Montage",
+    "width": 1440,
+    "height": 1080,
+    "image": "https://static-public-media.higgsfield.ai/katana-presets/127eddbc-d32b-4f86-957b-5c0d4d600bed.webp",
+    "video": "https://static-public-media.higgsfield.ai/katana-presets/426c2e5f-4623-43fe-afae-1177b41b9e73.mp4",
+    "category": "Personalized edits"
+  },
+  {
+    "id": "frutiger-aero",
+    "title": "Frutiger Aero",
+    "width": 768,
+    "height": 576,
+    "image": "https://static-public-media.higgsfield.ai/katana-presets/published/da12f5cfc4bff94bfb2e66ef1afd3303ecc559f481a19a003f91129a5ba7f613",
+    "video": "https://static-public-media.higgsfield.ai/katana-presets/published/7101a5e08c91f01bfb49733a0a326ab4a1b0b4f448af4ee6ba3dced1ee6843d6",
+    "category": "Personalized edits"
+  },
+  {
+    "id": "surreal-multi-hand-edit",
+    "title": "Surreal Multi-Hand Edit",
+    "width": 720,
+    "height": 1280,
+    "image": "https://static-public-media.higgsfield.ai/katana-presets/d6528233-4e01-4ae4-8c5a-5aca229ea8cb.webp",
+    "video": "https://static-public-media.higgsfield.ai/katana-presets/d3177975-d78f-4121-ba05-e880ce8eb835.mp4",
+    "likes": 0,
+    "category": "Personalized edits"
+  },
+  {
+    "id": "color-palette-outfit-showcase",
+    "title": "Color Palette Outfit Showcase",
+    "width": 720,
+    "height": 1280,
+    "image": "https://static-public-media.higgsfield.ai/katana-presets/d4f4473d-c89a-4711-84e2-d470e65549a2.webp",
+    "video": "https://static-public-media.higgsfield.ai/katana-presets/326c512a-ee04-417d-bb2a-faa3f2d1c6d1.mp4",
+    "likes": 0,
+    "category": "Personalized edits"
+  },
+  {
+    "id": "creative-stylized-montage",
+    "title": "Creative Stylized Montage",
+    "width": 1920,
+    "height": 1080,
+    "image": "https://static-public-media.higgsfield.ai/katana-presets/baf98906-bb3f-462c-b6f6-551f7d7f0846.webp",
+    "video": "https://static-public-media.higgsfield.ai/katana-presets/95b1329a-118d-47bb-946b-14984c33e74d.mp4",
+    "likes": 0,
+    "category": "Personalized edits"
+  },
+  {
+    "id": "creative-collage-runway",
+    "title": "Creative Collage Runway",
+    "width": 1280,
+    "height": 720,
+    "image": "https://static-public-media.higgsfield.ai/katana-presets/30e3d613-0939-407c-89bc-012a7d44d661.webp",
+    "video": "https://static-public-media.higgsfield.ai/katana-presets/28a2db5f-e425-4078-be17-4b21a51d7bdf.mp4",
+    "likes": 0,
+    "category": "Personalized edits"
+  },
+  {
+    "id": "futuristic-3d-motion-scan",
+    "title": "Futuristic 3D Motion Scan",
+    "width": 1920,
+    "height": 1080,
+    "image": "https://static-public-media.higgsfield.ai/katana-presets/87c72761-809b-48ba-8584-7548f9e6c5e5.webp",
+    "video": "https://static-public-media.higgsfield.ai/katana-presets/0724d962-236f-43bb-8fe0-59c630908bfb.mp4",
+    "likes": 0,
+    "category": "Personalized edits"
+  },
+  {
+    "id": "vhs-don-t-forget",
+    "title": "VHS Don't Forget",
+    "width": 600,
+    "height": 450,
+    "image": "https://static-public-media.higgsfield.ai/katana-presets/published/619e2177728d04e657a72027ec38850fe6fcd974361e2dd7a79ee00e755f845a",
+    "video": "https://static-public-media.higgsfield.ai/katana-presets/published/6be06618539225b9aef5ec3e3aa9e337fe5954801b1324c53660cc64597c42bb",
+    "likes": 0,
+    "category": "Personalized edits"
+  },
+  {
+    "id": "outfit-check",
+    "title": "Outfit Check",
+    "width": 600,
+    "height": 1066,
+    "image": "https://static-public-media.higgsfield.ai/katana-presets/32b2dfad-a809-4ff9-b9c4-e85a60075010.jpg",
+    "video": "https://static-public-media.higgsfield.ai/katana-presets/a7c2bc28-b911-42a8-a9ac-0c6151a21324.mp4",
+    "likes": 0,
+    "category": "Personalized edits"
+  },
+  {
+    "id": "kpop-style-dance-montage",
+    "title": "Kpop Style Dance Montage",
+    "width": 1280,
+    "height": 720,
+    "image": "https://static-public-media.higgsfield.ai/katana-presets/4e5a3075-49e6-4fde-b766-08b0a4ac78c6.webp",
+    "video": "https://static-public-media.higgsfield.ai/katana-presets/1a1de048-5bd1-45bb-8f80-31a7f3d2e5ce.mp4",
+    "likes": 0,
+    "category": "Personalized edits"
+  },
+  {
+    "id": "monochrome",
+    "title": "monochrome",
+    "width": 848,
+    "height": 464,
+    "image": "https://static-public-media.higgsfield.ai/katana-presets/published/29396df9cb62b3cdbb44b049e8b98cdfff072224015aa21c78e4e977ba9204e6",
+    "video": "https://static-public-media.higgsfield.ai/katana-presets/published/398c563787d5b3579a995d512628db372271b68eb23c366415ddee79841d2b49",
+    "likes": 0,
+    "category": "Style transfer"
+  },
+  {
+    "id": "tiger-eyes",
+    "title": "Tiger Eyes",
+    "width": 600,
+    "height": 450,
+    "image": "https://static-public-media.higgsfield.ai/katana-presets/4be720bd-65ff-4ba5-a82d-f5cbf48671b1.webp",
+    "video": "https://static-public-media.higgsfield.ai/katana-presets/11431a22-d477-4899-ad77-fdb3b3516983.mp4",
+    "likes": 0,
+    "category": "Personalized edits"
+  },
+  {
+    "id": "aesthetic-menu-outfit-swap",
+    "title": "Aesthetic Menu Outfit Swap",
+    "width": 720,
+    "height": 1280,
+    "image": "https://static-public-media.higgsfield.ai/katana-presets/a500729f-d575-4c50-a851-ad9f6a0d031c.webp",
+    "video": "https://static-public-media.higgsfield.ai/katana-presets/51e0cab1-555b-43ee-9464-66ff391b0799.mp4",
+    "likes": 0,
+    "category": "Personalized edits"
+  },
+  {
+    "id": "nocturne-cinematic-fashion-vibe",
+    "title": "Nocturne Cinematic Fashion Vibe",
+    "width": 1080,
+    "height": 1920,
+    "image": "https://static-public-media.higgsfield.ai/katana-presets/fd64b6fc-c248-4e59-95f6-d56a3a3aed89.webp",
+    "video": "https://static-public-media.higgsfield.ai/katana-presets/fc502cca-0a24-44cf-a49c-fa0ee789f4e9.mp4",
+    "likes": 0,
+    "category": "Personalized edits"
+  },
+  {
+    "id": "urban-elf-aesthetic-edit",
+    "title": "Urban Elf Aesthetic Edit",
+    "width": 720,
+    "height": 1280,
+    "image": "https://static-public-media.higgsfield.ai/katana-presets/5c95f344-aaff-40f4-add7-fba299063603.webp",
+    "video": "https://static-public-media.higgsfield.ai/katana-presets/dfca1617-29a0-43e2-a8b4-628790c63d0b.mp4",
+    "likes": 0,
+    "category": "Personalized edits"
+  },
+  {
+    "id": "face-edit-1",
+    "title": "face-edit-1",
+    "width": 1920,
+    "height": 1080,
+    "image": "https://static-public-media.higgsfield.ai/katana-presets/published/eda556f65a994fb253df0f1827be473ce9786682978f2646fff4fb4ecfa77240",
+    "video": "https://static-public-media.higgsfield.ai/katana-presets/published/ae8059c55b7801cf9093256f977f2d5f1c0ccd1ef73c390a9c50e900de1bb682",
+    "likes": 0,
+    "category": "Personalized edits"
+  },
+  {
+    "id": "clone-squad",
+    "title": "Clone Squad",
+    "width": 600,
+    "height": 338,
+    "image": "https://static-public-media.higgsfield.ai/katana-presets/published/68f751a26bc2cc8ccf57c5691ceca7883b477fbf099ccfb833cd5345c2c6a555",
+    "video": "https://static-public-media.higgsfield.ai/katana-presets/published/0fa48c7c5aa7022b3311f6aef84623722688288fb1dac85f9c278a948facea12",
+    "likes": 0,
+    "category": "Motion transfer"
+  },
+  {
+    "id": "cinematic-glitch-action",
+    "title": "Cinematic Glitch Action",
+    "width": 1920,
+    "height": 1080,
+    "image": "https://static-public-media.higgsfield.ai/katana-presets/38e3dab8-5f51-458e-9421-e73c1c9f1879.webp",
+    "video": "https://static-public-media.higgsfield.ai/katana-presets/bc07bacd-c66b-4bf9-a33e-692ea6e8e1a2.mp4",
+    "likes": 0,
+    "category": "Personalized edits"
+  },
+  {
+    "id": "dreamy-streetwear",
+    "title": "Dreamy Streetwear",
+    "width": 600,
+    "height": 450,
+    "image": "https://static-public-media.higgsfield.ai/katana-presets/published/46f5dff56786eec1cd4650e95cc9060ee2d8281dcf89282ecb5f953d4f56357c",
+    "video": "https://static-public-media.higgsfield.ai/katana-presets/641fc2de-b72a-4e3d-8dde-aa1ae8e94578.mp4",
+    "category": "Personalized edits"
+  },
+  {
+    "id": "paper-cutout-fit-check",
+    "title": "Paper Cutout Fit Check",
+    "width": 720,
+    "height": 1280,
+    "image": "https://static-public-media.higgsfield.ai/katana-presets/f9589f27-71e4-45ee-bd81-3334d053cc3b.webp",
+    "video": "https://static-public-media.higgsfield.ai/katana-presets/ff2f7c79-d17e-4dc3-973c-a61faa5eac7b.mp4",
+    "category": "Personalized edits"
+  },
+  {
+    "id": "blue-eyes",
+    "title": "Blue Eyes",
+    "width": 600,
+    "height": 450,
+    "image": "https://static-public-media.higgsfield.ai/katana-presets/aa8c4f38-e232-4c7b-97f7-2552381c181a.webp",
+    "video": "https://static-public-media.higgsfield.ai/katana-presets/53cf8640-34b7-437c-8075-2ec9e914783a.mp4",
+    "category": "Style transfer"
+  },
+  {
+    "id": "dramatic-melodrama-vibe",
+    "title": "Dramatic Melodrama Vibe",
+    "width": 1080,
+    "height": 1920,
+    "image": "https://static-public-media.higgsfield.ai/katana-presets/ee8165f3-968c-4f24-be46-6f45cf07a417.webp",
+    "video": "https://static-public-media.higgsfield.ai/katana-presets/6b78ace1-1c22-4195-ba8d-f67eb6dc9b4c.mp4",
+    "category": "Personalized edits"
+  },
+  {
+    "id": "anime-concert-star",
+    "title": "Anime Concert Star",
+    "width": 1080,
+    "height": 1080,
+    "image": "https://static-public-media.higgsfield.ai/katana-presets/86b3ea9a-d724-49e5-8af8-848ac3625ba8.webp",
+    "video": "https://static-public-media.higgsfield.ai/katana-presets/25d7debe-c294-45d7-ae00-c223cd17dbbb.mp4",
+    "category": "Style transfer"
+  },
+  {
+    "id": "superhero-beat-montage",
+    "title": "Superhero Beat Montage",
+    "width": 1066,
+    "height": 576,
+    "image": "https://static-public-media.higgsfield.ai/katana-presets/4eb62227-4d1b-463e-95cb-aeb5d9b6e3f1.webp",
+    "video": "https://static-public-media.higgsfield.ai/katana-presets/2c220b3b-60b2-4f45-beb4-24c02a1a4e4a.mp4",
+    "category": "Personalized edits"
+  },
+  {
+    "id": "mountain-edge-noir",
+    "title": "Mountain Edge Noir",
+    "width": 1920,
+    "height": 1080,
+    "image": "https://static-public-media.higgsfield.ai/katana-presets/ca5b7b18-27be-487c-9cd2-f31a745e7973.webp",
+    "video": "https://static-public-media.higgsfield.ai/katana-presets/c9dd2917-0e56-4c10-a805-5ff4137182bc.mp4",
+    "category": "Personalized edits"
+  },
+  {
+    "id": "epic-rocker-vibes",
+    "title": "Epic Rocker Vibes",
+    "width": 960,
+    "height": 540,
+    "image": "https://static-public-media.higgsfield.ai/katana-presets/beea5187-c57f-4307-abac-f239001fef15.webp",
+    "video": "https://static-public-media.higgsfield.ai/katana-presets/6dcead8a-bd1e-4de3-813c-a4a67417a547.mp4",
+    "category": "Personalized edits"
+  },
+  {
+    "id": "luxury-car-beat-montage",
+    "title": "Luxury Car Beat Montage",
+    "width": 1280,
+    "height": 720,
+    "image": "https://static-public-media.higgsfield.ai/katana-presets/375d1e28-df70-4bd0-b099-2c0f58c68846.webp",
+    "video": "https://static-public-media.higgsfield.ai/katana-presets/66f736a3-d965-4989-8b8b-69fc2ccc00b5.mp4",
+    "category": "Personalized edits"
+  },
+  {
+    "id": "monochrome-1-bit-anime",
+    "title": "Monochrome 1-Bit Anime",
+    "width": 768,
+    "height": 576,
+    "image": "https://static-public-media.higgsfield.ai/katana-presets/b0ef290b-a182-4e9b-b38b-d2c281eaf4a3.webp",
+    "video": "https://static-public-media.higgsfield.ai/katana-presets/a5bfdcb5-25d8-4a11-ba45-8cd8ee803d17.mp4",
+    "category": "Style transfer"
+  },
+  {
+    "id": "moody-vintage-film-edit",
+    "title": "Moody Vintage Film Edit",
+    "width": 1080,
+    "height": 1080,
+    "image": "https://static-public-media.higgsfield.ai/katana-presets/36a681ac-bfac-45f9-9b2b-48aa525b239e.webp",
+    "video": "https://static-public-media.higgsfield.ai/katana-presets/e8c601f3-e792-4c03-a85b-b6f695415220.mp4",
+    "category": "Personalized edits"
+  },
+  {
+    "id": "dark-and-moody",
+    "title": "Dark and Moody",
+    "width": 600,
+    "height": 450,
+    "image": "https://static-public-media.higgsfield.ai/katana-presets/084180f8-5637-43e3-94bd-6e0ec1d35b00.jpg",
+    "video": "https://static-public-media.higgsfield.ai/katana-presets/3d808c8a-799b-4de7-a936-9ce6ebc499d3.mp4",
+    "category": "Style transfer"
+  },
+  {
+    "id": "dark-aura",
+    "title": "Dark Aura",
+    "width": 600,
+    "height": 338,
+    "image": "https://static-public-media.higgsfield.ai/katana-presets/b7e3de19-c972-4679-b040-6078583c7bb1.webp",
+    "video": "https://static-public-media.higgsfield.ai/katana-presets/ca11c5a5-0a59-4d64-a363-a3c228a905d8.mp4",
+    "category": "Style transfer"
+  },
+  {
+    "id": "cinematic-perfume-commercial",
+    "title": "Cinematic Perfume Commercial",
+    "width": 1280,
+    "height": 720,
+    "image": "https://static-public-media.higgsfield.ai/katana-presets/9026b9db-100a-4bc6-a7a8-da9269da17d5.webp",
+    "video": "https://static-public-media.higgsfield.ai/katana-presets/a218df8a-148a-4008-aa96-0d5edffe6424.mp4",
+    "category": "Personalized edits"
+  },
+  {
+    "id": "urban-edge-skater-style",
+    "title": "Urban Edge Skater Style",
+    "width": 1440,
+    "height": 1080,
+    "image": "https://static-public-media.higgsfield.ai/katana-presets/51cf220a-abb7-42a0-ab9b-c556ef1fb2f2.webp",
+    "video": "https://static-public-media.higgsfield.ai/katana-presets/22e9c55a-4ca1-4e71-bba6-f8634dfc999e.mp4",
+    "category": "Personalized edits"
+  },
+  {
+    "id": "tokyo-bloom",
+    "title": "Tokyo Bloom",
+    "width": 600,
+    "height": 450,
+    "image": "https://static-public-media.higgsfield.ai/katana-presets/published/c9c06d46265f16ca3314dfdfd40ccf51d04b353b2af9e6a20d469be8eb02ec64",
+    "video": "https://static-public-media.higgsfield.ai/katana-presets/published/1eb68ea299fd6f45f660066f0e6b51840bc8da17368f9075920229b850f2c9ab",
+    "category": "Personalized edits"
+  },
+  {
+    "id": "ufo-specimen-collection",
+    "title": "UFO Specimen Collection",
+    "width": 720,
+    "height": 1280,
+    "image": "https://static-public-media.higgsfield.ai/katana-presets/4fd97bb3-7911-4042-9ee8-2830a12afe8f.webp",
+    "video": "https://static-public-media.higgsfield.ai/katana-presets/9e682907-323e-4547-b7ec-00012c8186eb.mp4",
+    "category": "Personalized edits"
+  },
+  {
+    "id": "car-edit",
+    "title": "Car Edit",
+    "width": 600,
+    "height": 338,
+    "image": "https://static-public-media.higgsfield.ai/katana-presets/82f42eaf-0aad-4d23-8ed9-f0563cec2df0.jpg",
+    "video": "https://static-public-media.higgsfield.ai/katana-presets/ab4d2a58-1e39-4b7c-807d-e7edf036adc1.mp4",
+    "category": "Personalized edits"
+  },
+  {
+    "id": "edgy-streetstyle-montage",
+    "title": "Edgy Streetstyle Montage",
+    "width": 720,
+    "height": 720,
+    "image": "https://static-public-media.higgsfield.ai/katana-presets/de438563-7a97-471b-b9aa-acb1a6eef889.webp",
+    "video": "https://static-public-media.higgsfield.ai/katana-presets/7d876b68-a77b-4da5-b510-0285181c6a39.mp4",
+    "category": "Personalized edits"
+  },
+  {
+    "id": "parisian-night-vibe",
+    "title": "Parisian Night Vibe",
+    "width": 1440,
+    "height": 1080,
+    "image": "https://static-public-media.higgsfield.ai/katana-presets/32edeb2d-ab70-44f4-bb2b-17ec1891c472.webp",
+    "video": "https://static-public-media.higgsfield.ai/katana-presets/5475ceef-1978-44b9-bda8-51ed512f0e71.mp4",
+    "category": "Personalized edits"
+  },
+  {
+    "id": "k-pop-scrapbook",
+    "title": "K-pop Scrapbook",
+    "width": 768,
+    "height": 576,
+    "image": "https://static-public-media.higgsfield.ai/katana-presets/published/5af0f31cd181319737dfa57837ed8522790f623bfc5ce3c86d487b2bad4ae239",
+    "video": "https://static-public-media.higgsfield.ai/katana-presets/published/2ba407dd132a3c13e43da270eb0d6040fbfdc61efe51c5408bee19e449722b1e",
+    "category": "Personalized edits"
+  },
+  {
+    "id": "suit-up-basketball-montage",
+    "title": "Suit Up Basketball Montage",
+    "width": 1920,
+    "height": 1080,
+    "image": "https://static-public-media.higgsfield.ai/katana-presets/ca639480-2755-4cbb-a2f6-54a24e3c6c68.webp",
+    "video": "https://static-public-media.higgsfield.ai/katana-presets/f1d78226-c8e4-4553-9a07-49b53b42ba3c.mp4",
+    "category": "Personalized edits"
+  },
+  {
+    "id": "purple-grunge-music-video",
+    "title": "Purple Grunge Music Video",
+    "width": 720,
+    "height": 540,
+    "image": "https://static-public-media.higgsfield.ai/katana-presets/4ddac2e6-eee7-4ae1-ac0e-f3cb7858aee8.webp",
+    "video": "https://static-public-media.higgsfield.ai/katana-presets/85c34cd1-1bef-480a-aae8-9c19c9c9ff20.mp4",
+    "category": "Personalized edits"
+  },
+  {
+    "id": "dreamy-idol-aesthetic-montage",
+    "title": "Dreamy Idol Aesthetic Montage",
+    "width": 1440,
+    "height": 1080,
+    "image": "https://static-public-media.higgsfield.ai/katana-presets/05594e4f-5004-4fcb-bfc4-3e53a045c677.webp",
+    "video": "https://static-public-media.higgsfield.ai/katana-presets/cef8c532-b733-43f2-8bc0-3ad0930865d0.mp4",
+    "category": "Personalized edits"
+  },
+  {
+    "id": "nocturne",
+    "title": "Nocturne",
+    "width": 600,
+    "height": 338,
+    "image": "https://static-public-media.higgsfield.ai/katana-presets/3b7090ee-e3d2-4549-90e0-1aa8fe223240.webp",
+    "video": "https://static-public-media.higgsfield.ai/katana-presets/d5efd859-2c60-4e06-9197-8bb66e6e9af1.mp4",
+    "category": "Style transfer"
+  },
+  {
+    "id": "frame-dance",
+    "title": "Frame Dance",
+    "width": 576,
+    "height": 768,
+    "image": "https://static-public-media.higgsfield.ai/katana-presets/published/cd186b9ac61b6a7936acc0baaf3657ec173702831762dc8ebfcb87bcb050fc89",
+    "video": "https://static-public-media.higgsfield.ai/katana-presets/published/2d62b7adae19369b1bb267b2a1e1a1b15857eaa3e6090c67b8aeea2bab5b0dda",
+    "category": "Motion transfer"
+  },
+  {
+    "id": "gritty-action-anti-hero-edit",
+    "title": "Gritty Action Anti-Hero Edit",
+    "width": 1280,
+    "height": 720,
+    "image": "https://static-public-media.higgsfield.ai/katana-presets/9acde20c-152c-411f-971c-d31e70c74460.webp",
+    "video": "https://static-public-media.higgsfield.ai/katana-presets/739ce084-152c-4f9c-b823-4ef33547d3c4.mp4",
+    "category": "Personalized edits"
+  },
+  {
+    "id": "glow-and-groove-pop-edit",
+    "title": "Glow & Groove Pop Edit",
+    "width": 1920,
+    "height": 1080,
+    "image": "https://static-public-media.higgsfield.ai/katana-presets/5fd4cb27-b3ce-4403-b94d-f2a9150f64c8.webp",
+    "video": "https://static-public-media.higgsfield.ai/katana-presets/28c51a30-0608-4287-bacc-7b6e0a0783e2.mp4",
+    "category": "Personalized edits"
+  },
+  {
+    "id": "pink-protocol-car-edit",
+    "title": "Pink Protocol Car Edit",
+    "width": 720,
+    "height": 1280,
+    "image": "https://static-public-media.higgsfield.ai/katana-presets/afd97ccd-5ac3-412e-bce4-4a72c9c9395f.webp",
+    "video": "https://static-public-media.higgsfield.ai/katana-presets/e564e105-5b32-42ba-a98c-2e01739c6c89.mp4",
+    "category": "Personalized edits"
+  },
+  {
+    "id": "desert-sunrise-lookbook",
+    "title": "Desert Sunrise Lookbook",
+    "width": 1080,
+    "height": 1200,
+    "image": "https://static-public-media.higgsfield.ai/katana-presets/5f4c16a8-743d-4d7c-8969-39d1d77ff7a6.webp",
+    "video": "https://static-public-media.higgsfield.ai/katana-presets/8e8379d5-c2a5-4926-b00b-aa4fa061807a.mp4",
+    "category": "Personalized edits"
+  },
+  {
+    "id": "parisian-luxury-vibe",
+    "title": "Parisian Luxury Vibe",
+    "width": 1920,
+    "height": 1080,
+    "image": "https://static-public-media.higgsfield.ai/katana-presets/671d23d1-edeb-456f-bc67-b86cac3c4d44.webp",
+    "video": "https://static-public-media.higgsfield.ai/katana-presets/f50591ad-c966-40a4-8a8f-ee43830526be.mp4",
+    "category": "Personalized edits"
+  },
+  {
+    "id": "face-edit-2",
+    "title": "face-edit-2",
+    "width": 1920,
+    "height": 1080,
+    "image": "https://static-public-media.higgsfield.ai/katana-presets/published/9cccdab3379bd8e49b80584fb3055e63a42c62f2bc5ba4d07d0c2fb6979ab0b9",
+    "video": "https://static-public-media.higgsfield.ai/katana-presets/published/2ac31c233ffedac58af1ac5923269802b79d86a76c68aa4b2388e22be9573d0c",
+    "category": "Personalized edits"
+  },
+  {
+    "id": "cinematic-film-look",
+    "title": "Cinematic Film Look",
+    "width": 1920,
+    "height": 1080,
+    "image": "https://static-public-media.higgsfield.ai/katana-presets/da692f3e-824b-417c-aae5-d13d460b0bdf.webp",
+    "video": "https://static-public-media.higgsfield.ai/katana-presets/6c3ad48f-9a0d-4498-85b8-1aa5e13517a5.mp4",
+    "category": "Style transfer"
+  },
+  {
+    "id": "drowned-sun-motion-edit",
+    "title": "Drowned Sun Motion Edit",
+    "width": 1920,
+    "height": 1080,
+    "image": "https://static-public-media.higgsfield.ai/katana-presets/f3ce87c6-835a-40a9-a7b8-f1bb050f4eeb.webp",
+    "video": "https://static-public-media.higgsfield.ai/katana-presets/855ca2df-e455-42af-8f0c-ea9523c821bd.mp4",
+    "category": "Personalized edits"
+  },
+  {
+    "id": "star",
+    "title": "Star",
+    "width": 600,
+    "height": 338,
+    "image": "https://static-public-media.higgsfield.ai/katana-presets/697b3d9d-ee4c-4da2-95d9-23df54ee9cf3.jpg",
+    "video": "https://static-public-media.higgsfield.ai/katana-presets/d6596e20-cb5b-4a0b-9305-03553168b20e.mp4",
+    "category": "Personalized edits"
+  },
+  {
+    "id": "greek-island-aesthetic",
+    "title": "Greek Island Aesthetic",
+    "width": 1920,
+    "height": 1080,
+    "image": "https://static-public-media.higgsfield.ai/katana-presets/bec0ae59-048b-48e4-a37d-96d43fa2eb8a.webp",
+    "video": "https://static-public-media.higgsfield.ai/katana-presets/7243e2db-c004-48a1-b19f-600ae5b25aef.mp4",
+    "category": "Personalized edits"
+  },
+  {
+    "id": "y2k-edit",
+    "title": "Y2K Edit",
+    "width": 946,
+    "height": 576,
+    "image": "https://static-public-media.higgsfield.ai/katana-presets/published/8ac1aea49af9cd1330d4b21e99aafc0bc4936cd896bdc6d0c15eba268361227f",
+    "video": "https://static-public-media.higgsfield.ai/katana-presets/published/d7f7d85efa96e2f6436ae34223c8730208f366f8cbeaa1057067f9f4d263eebe",
+    "category": "Personalized edits"
+  },
+  {
+    "id": "editing-my-gf",
+    "title": "Editing My GF",
+    "width": 600,
+    "height": 1066,
+    "image": "https://static-public-media.higgsfield.ai/katana-presets/published/13745ac32e537169a944792f1fed405c9e62b18246df16afb2e3c715ab151ba9",
+    "video": "https://static-public-media.higgsfield.ai/katana-presets/published/94283593d386b25e8ea28a0ad055573ce5bd0389b9b02d87b9178d92bbb0fe4f",
+    "category": "Personalized edits"
+  },
+  {
+    "id": "painting-flow",
+    "title": "Painting Flow",
+    "width": 600,
+    "height": 338,
+    "image": "https://static-public-media.higgsfield.ai/katana-presets/bf2ba388-5298-4253-bb7f-1a7b3b834228.webp",
+    "video": "https://static-public-media.higgsfield.ai/katana-presets/c27b67f5-092a-40d3-990c-23ece2cde617.mp4",
+    "category": "Style transfer"
+  },
+  {
+    "id": "noir-mystery-thriller",
+    "title": "Noir Mystery Thriller",
+    "width": 1920,
+    "height": 1080,
+    "image": "https://static-public-media.higgsfield.ai/katana-presets/8a14f997-939a-4a4d-95ef-39805d3827eb.webp",
+    "video": "https://static-public-media.higgsfield.ai/katana-presets/f127b79e-0634-412d-ab9f-a52e7a54cb90.mp4",
+    "category": "Personalized edits"
+  },
+  {
+    "id": "katana-preset",
+    "title": "Katana preset",
+    "width": 1620,
+    "height": 1080,
+    "image": "https://static-public-media.higgsfield.ai/katana-presets/f3c12e7a-f065-40b0-8022-5b6e1deef614.webp",
+    "video": "https://static-public-media.higgsfield.ai/katana-presets/f78fc764-0175-448b-99e2-8f932c5f353a.mp4",
+    "category": "Personalized edits"
+  },
+  {
+    "id": "cinematic-mystery-noir",
+    "title": "Cinematic Mystery Noir",
+    "width": 1280,
+    "height": 720,
+    "image": "https://static-public-media.higgsfield.ai/katana-presets/fd762597-e93e-4c93-afb3-61e5cc285419.webp",
+    "video": "https://static-public-media.higgsfield.ai/katana-presets/5847c4dc-7250-4127-90f3-c82c4e7f250c.mp4",
+    "category": "Personalized edits"
+  },
+  {
+    "id": "summer-tapes-scrapbook",
+    "title": "Summer Tapes Scrapbook",
+    "width": 1080,
+    "height": 1080,
+    "image": "https://static-public-media.higgsfield.ai/katana-presets/86d4704a-1295-41cb-940f-c3a3391190e6.webp",
+    "video": "https://static-public-media.higgsfield.ai/katana-presets/b02b9e1b-9962-4efe-b3ff-8432871ad480.mp4",
+    "category": "Personalized edits"
+  },
+  {
+    "id": "dark-geometric-animation",
+    "title": "Dark Geometric Animation",
+    "width": 1280,
+    "height": 720,
+    "image": "https://static-public-media.higgsfield.ai/katana-presets/3935c4e0-4b06-4716-8ddd-634ca6040bf1.webp",
+    "video": "https://static-public-media.higgsfield.ai/katana-presets/9bebf76a-84f3-4592-9a7c-47847230a9ca.mp4",
+    "category": "Style transfer"
+  },
+  {
+    "id": "main-character-energy-edit",
+    "title": "Main Character Energy Edit",
+    "width": 1080,
+    "height": 1920,
+    "image": "https://static-public-media.higgsfield.ai/katana-presets/4da960c0-acc3-40ae-b111-031572a55a46.webp",
+    "video": "https://static-public-media.higgsfield.ai/katana-presets/57a7b80e-eb0e-44e7-ab95-d7be47999128.mp4",
+    "category": "Personalized edits"
+  },
+  {
+    "id": "cyberpunk-scan-analysis",
+    "title": "Cyberpunk Scan Analysis",
+    "width": 1920,
+    "height": 1080,
+    "image": "https://static-public-media.higgsfield.ai/katana-presets/0e9e90f1-a3f3-46db-a594-b3d173a86b61.webp",
+    "video": "https://static-public-media.higgsfield.ai/katana-presets/bb64552c-6da0-4edc-b7b8-3e02612a2779.mp4",
+    "category": "Style transfer"
+  },
+  {
+    "id": "xerox-1",
+    "title": "Xerox 1",
+    "width": 600,
+    "height": 450,
+    "image": "https://static-public-media.higgsfield.ai/katana-presets/b84ec8da-98db-4a69-85de-90b2f5cf9e2d.webp",
+    "video": "https://static-public-media.higgsfield.ai/katana-presets/44e90512-f20f-4b66-8702-604556c19fb6.mp4",
+    "category": "Style transfer"
+  },
+  {
+    "id": "xerox-3",
+    "title": "Xerox 3",
+    "width": 600,
+    "height": 450,
+    "image": "https://static-public-media.higgsfield.ai/katana-presets/af926640-db60-4a47-b7d4-fb76028bebc2.webp",
+    "video": "https://static-public-media.higgsfield.ai/katana-presets/f9c9b4b6-c70e-41f5-877b-4ca08e380190.mp4",
+    "category": "Style transfer"
+  },
+  {
+    "id": "cartoon-edit",
+    "title": "Cartoon Edit",
+    "width": 600,
+    "height": 338,
+    "image": "https://static-public-media.higgsfield.ai/katana-presets/published/d3144daa93cdb2b132cd79df3b18b26a1f847945a317842c822aa39749add00e",
+    "video": "https://static-public-media.higgsfield.ai/katana-presets/published/a2b6ef27587844b66d09b526764850e8f79ad080b7907d7cb46b2a769c9dd612",
+    "category": "Style transfer"
+  },
+  {
+    "id": "retro-aesthetic-lookbook",
+    "title": "Retro Aesthetic Lookbook",
+    "width": 1440,
+    "height": 1080,
+    "image": "https://static-public-media.higgsfield.ai/katana-presets/334ecfb2-e696-4bb7-ba09-caadc55cd897.webp",
+    "video": "https://static-public-media.higgsfield.ai/katana-presets/9866e21e-24a4-403b-b3bc-4b6a42b2c86d.mp4",
+    "category": "Personalized edits"
+  },
+  {
+    "id": "xerox-2",
+    "title": "Xerox 2",
+    "width": 600,
+    "height": 450,
+    "image": "https://static-public-media.higgsfield.ai/katana-presets/48e06061-7f05-442a-a3e1-382e8bf7f5e1.webp",
+    "video": "https://static-public-media.higgsfield.ai/katana-presets/553c4b6f-1535-40f3-9678-ad93be50ff12.mp4",
+    "category": "Style transfer"
+  }
+]

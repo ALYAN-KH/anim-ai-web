@@ -1,0 +1,53 @@
+.player { position:fixed; inset:0; z-index:1000; display:flex; gap:16px; padding:16px; background:#111314; color:#fff; font-size:14px; }
+.player button, .player a { outline:none; }
+.player button:focus-visible, .player a:focus-visible { box-shadow:0 0 0 2px #d8ff79; }
+.player button:disabled { cursor:not-allowed; opacity:.45; }
+.stage { position:relative; isolation:isolate; flex:1; min-width:0; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:14px; overflow:hidden; background:#111314; }
+.floor { position:absolute; z-index:-1; bottom:10%; left:0; width:100%; height:35%; perspective:360px; overflow:hidden; mask-image:radial-gradient(ellipse at center,#000 5%,transparent 70%); }
+.floor::before { content:""; position:absolute; inset:-40% -20%; transform:rotateX(58deg); background-image:linear-gradient(#ffffff29 1px,transparent 1px),linear-gradient(90deg,#ffffff29 1px,transparent 1px); background-size:72px 30px; }
+.viewport { position:relative; flex:none; margin-top:40px; height:min(62svh,640px); max-width:calc(100% - 32px); aspect-ratio:9/16; overflow:hidden; border-radius:28px; background:#08090a; box-shadow:0 1px 0 #ffffff12; }
+.viewport.landscape { aspect-ratio:16/9; height:auto; width:min(90%,850px); max-height:65svh; }
+.viewport video, .viewport iframe, .viewport img { width:100%; height:100%; border:0; object-fit:contain; display:block; }
+.overlay { position:absolute; inset:0; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:12px; text-align:center; background:#0009; padding:20px; }
+.overlay button { background:#fff; color:#111; border-radius:20px; padding:8px 16px; }
+.previewLabel { z-index:1; color:#989a9b; font-size:11px; text-align:center; margin:0; min-height:14px; }
+.toolbar { display:flex; flex:none; align-items:center; gap:3px; border:1px solid #ffffff0d; background:#1e2022; border-radius:999px; padding:6px 10px; box-shadow:0 20px 30px #0003; }
+.toolbar button { display:grid; place-items:center; width:40px; height:40px; border-radius:50%; color:#898b8c; }
+.toolbar button:hover { color:#fff; background:#ffffff08; }
+.toolbar button[aria-pressed="true"] { background:#333638; color:#fff; }
+.separator { width:1px; height:30px; margin:0 3px; background:#ffffff12; }
+.panel { width:416px; flex:none; display:flex; flex-direction:column; border:1px solid #ffffff0d; border-radius:26px; background:linear-gradient(135deg,#202224,#1c1e20); padding:10px; min-height:0; }
+.header { display:flex; justify-content:space-between; align-items:center; gap:12px; padding:5px 5px 15px 0; }
+.header h2 { font-size:23px; font-weight:600; letter-spacing:-.8px; }
+.close { background:#ffffff06; display:grid; place-items:center; width:40px; height:40px; border-radius:50%; flex:none; }
+.panelScroll { flex:1; overflow-y:auto; min-height:0; }
+.metadata { background:#282a2c; border-radius:16px; padding:10px; }
+.sectionHeading { display:flex; justify-content:space-between; align-items:center; gap:8px; width:100%; min-height:44px; color:#898b8d; font-size:14px; padding:0 6px; }
+.sectionHeading span, .sectionHeading button { display:flex; gap:8px; align-items:center; }
+.sectionHeading button { color:#fff; border:1px solid #ffffff12; border-radius:7px; padding:4px 8px; font-weight:600; }
+.prompt { background:#343639; border-radius:12px; padding:15px; font-size:18px; line-height:1.45; }
+.prompt p { white-space:pre-wrap; }
+.clamped { max-height:180px; overflow:hidden; mask-image:linear-gradient(#000 52%,transparent); }
+.prompt button { display:flex; align-items:center; gap:5px; color:#96989a; margin-top:10px; }
+.prompt small { display:block; margin-top:10px; font-size:12px; color:#aaa; }
+.details { background:#343639; border-radius:12px; padding:14px 15px; font-size:17px; line-height:1.7; }
+.details div { display:flex; justify-content:space-between; gap:12px; }
+.details dt { color:#898b8d; }
+.details dd { text-align:right; }
+.actions { display:flex; flex-direction:column; gap:16px; padding:16px 10px 10px; }
+.actions button, .actions a { display:flex; align-items:center; justify-content:center; gap:10px; min-height:54px; border-radius:14px; font-size:17px; font-weight:600; }
+.claude { background:#fff; color:#111; box-shadow:0 3px 0 #bcbcbc; }
+.copyPrompt { background:#27292b; box-shadow:inset 0 2px 3px #ffffff0d; }
+.notice { font-size:12px; min-height:16px; color:#b9bbbc; }
+@media (max-width:1000px) { .panel { width:340px; } .prompt { font-size:16px; } .details { font-size:14px; } }
+@media (max-width:700px) {
+  .player { display:block; overflow-y:auto; padding:10px; }
+  .stage { min-height:70svh; overflow:visible; padding:0 0 18px; }
+  .viewport { height:49svh; margin-top:20px; border-radius:20px; }
+  .viewport.landscape { max-height:49svh; }
+  .panel { width:100%; min-height:420px; }
+  .header { padding-right:44px; }
+  .close { position:fixed; top:14px; right:14px; z-index:2; background:#303234; }
+  .panelScroll { overflow:visible; }
+  .actions { gap:12px; }
+}

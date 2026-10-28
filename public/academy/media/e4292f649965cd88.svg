@@ -1,0 +1,20 @@
+<svg width="194.099" height="153.099" viewBox="0 0 194.099 153.099" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="194.099" height="153.099" fill="url(#glow)"/>
+<defs>
+<radialGradient id="glow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(97.0495 76.5495) scale(107.7581 97.2985)">
+<stop offset="0.0000" stop-color="white" stop-opacity="0.05607"/>
+<stop offset="0.0833" stop-color="white" stop-opacity="0.05435"/>
+<stop offset="0.1667" stop-color="white" stop-opacity="0.04949"/>
+<stop offset="0.2500" stop-color="white" stop-opacity="0.04233"/>
+<stop offset="0.3333" stop-color="white" stop-opacity="0.03401"/>
+<stop offset="0.4167" stop-color="white" stop-opacity="0.02567"/>
+<stop offset="0.5000" stop-color="white" stop-opacity="0.01820"/>
+<stop offset="0.5833" stop-color="white" stop-opacity="0.01213"/>
+<stop offset="0.6667" stop-color="white" stop-opacity="0.00759"/>
+<stop offset="0.7500" stop-color="white" stop-opacity="0.00446"/>
+<stop offset="0.8333" stop-color="white" stop-opacity="0.00246"/>
+<stop offset="0.9167" stop-color="white" stop-opacity="0.00128"/>
+<stop offset="1.0000" stop-color="white" stop-opacity="0.00062"/>
+</radialGradient>
+</defs>
+</svg>

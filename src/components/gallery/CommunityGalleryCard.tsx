@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 import { useNearViewport } from "@/hooks/useNearViewport";
+import { previewPoster, previewVideo } from "@/lib/videoPreview";
 
 export type CommunityGalleryItem = {
   image: string;
@@ -19,6 +20,8 @@ export function CommunityGalleryCard({ item, href, className = "", playOnHoverOn
   const { ref: cardRef, isNearViewport } = useNearViewport<HTMLElement>();
   const [playing, setPlaying] = useState(false);
   const isGptImageCard = className.includes("group/gpt-image");
+  const video = previewVideo(item.video);
+  const image = item.image || previewPoster(item.video);
   const reveal = "-translate-y-1 opacity-0 transition-all duration-200 group-hover/community:translate-y-0 group-hover/community:opacity-100 group-focus-within/community:translate-y-0 group-focus-within/community:opacity-100";
 
   const play = () => {
@@ -56,16 +59,16 @@ export function CommunityGalleryCard({ item, href, className = "", playOnHoverOn
       onFocus={play}
       onBlur={pause}
     >
-      {item.image && <img className={`community-card-media ${isGptImageCard ? "group-hover/gpt-image:!brightness-[0.7] group-hover/gpt-image:!scale-[1.012] group-focus-within/gpt-image:!brightness-[0.7] group-focus-within/gpt-image:!scale-[1.012]" : ""}`} src={item.image} alt="" loading="lazy" />}
-      {item.video && (
+      {image && <img className={`community-card-media ${isGptImageCard ? "group-hover/gpt-image:!brightness-[0.7] group-hover/gpt-image:!scale-[1.012] group-focus-within/gpt-image:!brightness-[0.7] group-focus-within/gpt-image:!scale-[1.012]" : ""}`} src={image} alt="" loading="lazy" decoding="async" />}
+      {video && (
         <video
           ref={videoRef}
           className={`community-card-media transition-opacity duration-200 ${playing ? "opacity-100" : "opacity-0"}`}
-          src={isNearViewport ? item.video : undefined}
+          src={isNearViewport ? video : undefined}
           muted
           loop
           playsInline
-          preload={isNearViewport ? "metadata" : "none"}
+          preload={!isNearViewport ? "none" : playOnHoverOnly ? "metadata" : "auto"}
           onPlaying={() => setPlaying(true)}
           onPause={() => setPlaying(false)}
           aria-hidden="true"

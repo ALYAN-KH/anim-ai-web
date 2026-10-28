@@ -18,8 +18,7 @@ const C = "https://d2ol7oe51mr4n9.cloudfront.net/content_user_id";
 /**
  * The 7 "Popular" cards scraped from https://higgsfield.ai/mcp?tab=chatgpt.
  * Titles, descriptions, commands, prompts, links are verified.
- * `media` is best-effort (taken from the prompt's reference media) — replace with
- * the real card media from data/extracted/chatgpt.json.
+ * `media` is each card's cover video + poster (URLs verified to serve video/mp4).
  */
 export const PRESETS: PresetDefinition[] = [
   {
@@ -39,8 +38,9 @@ export const PRESETS: PresetDefinition[] = [
       `${STATIC}/landing/gpt-skills/katana/20261017-inputs/style-reference.webp`,
     ],
     media: {
-      kind: "image",
-      src: `${STATIC}/landing/gpt-skills/katana/20261017-inputs/subject-reference.webp`,
+      kind: "video",
+      src: `${STATIC}/landing/gpt-skills/katana/20261016/test_v2.mp4`,
+      poster: `${STATIC}/landing/gpt-skills/katana/20261016/test_v2-poster.webp`,
     },
   },
   {
@@ -57,7 +57,11 @@ export const PRESETS: PresetDefinition[] = [
       `${C}/804cd979-090a-47d0-aa18-1a052f130a73.webp`,
       `${C}/1df6d4ab-c9e0-440a-a039-e7faeff060c3.webp`,
     ],
-    media: { kind: "image", src: `${C}/1df6d4ab-c9e0-440a-a039-e7faeff060c3.webp` },
+    media: {
+      kind: "video",
+      src: `${STATIC}/mcp/v2/ugc-content.mp4`,
+      poster: `${STATIC}/sc-videos-thumbnails/ugc-content-thumbnail.webp`,
+    },
   },
   {
     id: "ad-adaptation",
@@ -71,7 +75,11 @@ export const PRESETS: PresetDefinition[] = [
     prompt:
       "/marketing-adapt-video Create an original ad for my product using this reference video’s persuasion structure.",
     references: [`${STATIC}/gpt-astra/gulpo-by-astra-input.mp4`],
-    media: { kind: "video", src: `${STATIC}/gpt-astra/gulpo-by-astra-input.mp4` },
+    media: {
+      kind: "video",
+      src: `${STATIC}/gpt-astra/ad-adaptation-cover.mp4`,
+      poster: `${STATIC}/gpt-astra/ad-adaptation-cover-poster.webp`,
+    },
   },
   {
     id: "link-to-ads",
@@ -85,7 +93,11 @@ export const PRESETS: PresetDefinition[] = [
     prompt:
       "/marketing-research-to-ads Research this product and its competitors, then create 5 static Meta ads with distinct angles.",
     references: [`${STATIC}/gpt-astra/sorbet-soda-link-to-ads.webp`],
-    media: { kind: "image", src: `${STATIC}/gpt-astra/sorbet-soda-link-to-ads.webp` },
+    media: {
+      kind: "video",
+      src: `${STATIC}/gpt-skills/media/link-to-ads/cover.mp4`,
+      poster: `${STATIC}/gpt-skills/media/link-to-ads/cover-poster.webp`,
+    },
   },
   {
     id: "ad-hooks",
@@ -99,7 +111,11 @@ export const PRESETS: PresetDefinition[] = [
     prompt:
       "/marketing-hook-variants Create 3 complete versions of this video with new opening hooks. Keep the rest unchanged.",
     references: [`${STATIC}/gpt-astra/dog-ad-hook-original.mp4`],
-    media: { kind: "video", src: `${STATIC}/gpt-astra/dog-ad-hook-original.mp4` },
+    media: {
+      kind: "video",
+      src: `${STATIC}/gpt-skills/media/ad-hooks/cover.mp4`,
+      poster: `${STATIC}/gpt-skills/media/ad-hooks/cover-poster.webp`,
+    },
   },
   {
     id: "vox-mixed-media",
@@ -112,7 +128,11 @@ export const PRESETS: PresetDefinition[] = [
     prompt:
       "Create an editorial motion graphics faceless video about how the Mona Lisa became the world’s most famous painting.",
     references: [],
-    media: { kind: "image", src: "" },
+    media: {
+      kind: "video",
+      src: `${STATIC}/mcp-landing/editorial-motion-graphics.mp4`,
+      poster: `${STATIC}/mcp-landing/editorial-motion-graphics-thumbnail.webp`,
+    },
   },
   {
     id: "stickman-explainer",
@@ -124,6 +144,10 @@ export const PRESETS: PresetDefinition[] = [
     slug: "stickman-explainer",
     prompt: "Create a stickman cartoon faceless video showing Odysseus's journey to Troy and back home",
     references: [],
-    media: { kind: "image", src: "" },
+    media: {
+      kind: "video",
+      src: `${STATIC}/skills-stickerman/sub_1-mini.mp4`,
+      poster: `${STATIC}/skills-stickerman/sub_1-mini-thumbnail.webp`,
+    },
   },
 ];

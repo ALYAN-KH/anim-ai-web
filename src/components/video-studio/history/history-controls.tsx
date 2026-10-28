@@ -13,8 +13,8 @@ export function HistoryControls({ state }: { state: HistoryState }) {
   const filterRef = useRef<HTMLButtonElement>(null);
   const viewRef = useRef<HTMLButtonElement>(null);
   const close = useCallback(() => setMenu(null), []);
-  const buttonClass = "inline-flex h-9 items-center gap-1.5 rounded-[10px] px-3 text-[13px] font-medium transition hover:bg-white/[.07] hover:text-white";
-  return <div className="flex items-center gap-2">
+  const buttonClass = "inline-flex h-9 max-md:h-11 items-center gap-1.5 whitespace-nowrap rounded-[10px] px-3 text-[13px] font-medium transition hover:bg-white/[.07] hover:text-white";
+  return <div className="flex shrink-0 items-center gap-2">
     <button ref={filterRef} type="button" aria-label="Filter" aria-haspopup="menu" aria-expanded={menu?.kind === "filter"} onClick={event => setMenu(menu?.kind === "filter" ? null : { kind: "filter", anchor: event.currentTarget.getBoundingClientRect() })} className={`${buttonClass} ${state.active || menu?.kind === "filter" ? "bg-white/[.08] text-white" : "bg-white/[.02] text-white/60"}`}><FilterIcon className="size-4" />Filter</button>
     <button ref={viewRef} type="button" aria-label="View" aria-haspopup="menu" aria-expanded={menu?.kind === "view"} onClick={event => setMenu(menu?.kind === "view" ? null : { kind: "view", anchor: event.currentTarget.getBoundingClientRect() })} className={`${buttonClass} ${menu?.kind === "view" ? "bg-white/[.08] text-white" : "bg-white/[.02] text-white/60"}`}><GridIcon className="size-4" />View</button>
     {menu?.kind === "filter" && <HistoryFilterMenu anchor={menu.anchor} trigger={filterRef} state={state} onClose={close} />}

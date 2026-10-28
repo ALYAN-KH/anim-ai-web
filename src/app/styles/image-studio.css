@@ -201,3 +201,120 @@
   color: rgba(255, 255, 255, 0.55);
 }
 
+
+/* ---- Mobile responsiveness (<=767px only; desktop untouched) ---- */
+@media (max-width: 767px) {
+  /* "View" button: global `main > div { width:100% !important }` stretched it past the left edge */
+  main > div.soul-view-wrap {
+    width: auto !important;
+    max-width: none !important;
+    margin: 0 !important;
+    right: 16px;
+    left: auto;
+    top: 8px;
+  }
+  .soul-view-wrap > button { min-height: 44px; }
+
+  .soul-hero { padding-bottom: 268px; }
+
+  /* composer: stack prompt / controls / three cards inside the viewport */
+  .soul-form {
+    display: grid !important;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1.25fr) minmax(0, 1.25fr);
+    gap: 10px 8px;
+    align-content: start;
+    width: calc(100vw - 32px) !important;
+    height: auto !important;
+    bottom: calc(12px + env(safe-area-inset-bottom, 0px)) !important;
+    padding: 10px !important;
+  }
+  .soul-f-text {
+    grid-column: 1 / -1;
+    width: 100% !important;
+    margin-top: 0 !important;
+    min-height: 40px;
+  }
+  .soul-f-controls {
+    position: relative !important;
+    inset: auto !important;
+    grid-column: 1 / -1;
+    width: 100%;
+    min-width: 0;
+    height: 44px !important;
+  }
+  .soul-f-controls > div.relative,
+  .soul-f-controls .sb { height: 44px !important; }
+  .soul-f-controls button { min-height: 44px; }
+  .soul-f-controls button[aria-label="Add"] { min-width: 44px; }
+  .soul-f-char,
+  .soul-f-mood,
+  .soul-f-gen {
+    position: relative !important;
+    inset: auto !important;
+    width: 100% !important;
+    height: 72px !important;
+    min-width: 0;
+  }
+  .soul-f-char { grid-row: 3; grid-column: 1; }
+  .soul-f-mood { grid-row: 3; grid-column: 2; }
+  .soul-f-gen { grid-row: 3; grid-column: 3; }
+  .soul-f-char > span:last-child { font-size: 10px; letter-spacing: -0.01em; }
+
+  .soul-model-menu { max-height: min(520px, calc(100dvh - 160px)); }
+
+  /* character + moodboard panels sit above the taller composer */
+  .soul-panel {
+    width: calc(100vw - 16px) !important;
+    bottom: calc(232px + env(safe-area-inset-bottom, 0px)) !important;
+    height: min(474px, calc(100dvh - var(--image-studio-top, 36px) - 232px - 8px)) !important;
+    border-radius: 20px;
+  }
+  .soul-panel [aria-label^="Close"] { width: 44px; height: 44px; right: 4px; top: 4px; }
+  .soul-panel-head {
+    height: auto !important;
+    padding: 20px 16px 16px !important;
+  }
+  .soul-panel-head h2 {
+    padding-right: 40px;
+    font-size: 22px;
+    line-height: 28px;
+  }
+  .soul-panel-head p { max-width: none; }
+  .soul-panel-head p br { display: none; }
+  .soul-panel-head > button { min-height: 44px; }
+  /* collage: stacked under the copy instead of overlapping it */
+  .soul-collage {
+    position: relative !important;
+    inset: auto !important;
+    width: 400px !important;
+    height: 190px;
+    margin: -36px auto 0;
+    zoom: 0.8;
+  }
+  .soul-tabs {
+    flex-wrap: wrap;
+    row-gap: 8px;
+    padding-inline: 12px !important;
+  }
+  .soul-tabs > button { min-height: 44px; white-space: nowrap; }
+  .soul-tabs .soul-search,
+  .soul-tabs.soul-search { margin-left: 0; }
+  .soul-search {
+    order: 3;
+    width: 100% !important;
+    height: 44px !important;
+    margin-left: 0 !important;
+  }
+  .soul-char-body { height: auto !important; min-height: 160px; }
+  .soul-char-body > div:last-child { min-height: 160px; }
+
+  .soul-preset-grid { grid-template-columns: repeat(3, minmax(0, 1fr)) !important; row-gap: 12px; }
+  .soul-preset-name {
+    white-space: normal !important;
+    overflow: visible !important;
+    text-overflow: clip !important;
+    overflow-wrap: anywhere;
+    line-height: 1.25;
+  }
+}
+@media (max-width: 343px) { .soul-collage { zoom: 0.68; } }

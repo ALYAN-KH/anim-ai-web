@@ -18,6 +18,7 @@ export const DEMOS: DemoDefinition[] = [
     label: "Generate video",
     poster: `${STATIC}/landing/gpt-skills/demos/20261016-audio/video-generation-poster.webp`,
     videoSrc: `${STATIC}/landing/gpt-skills/demos/20261016-audio/video-generation.mp4`,
+    models: ["Seedance 2.5", "Google Omni Flash", "Kling 3.0"],
     title: "Generate a video",
     prompt:
       "Make a 14-second video of a young woman with dark hair in a pixie cut, wearing a green crop top and a grey midi skirt. She walks in slow motion through a busy vintage office. The camera tracks alongside her as papers fly through the air. Dim, green-tinted lighting creates a moody, cinematic atmosphere. She stops at a desk and answers a ringing black rotary phone with a serious expression.",

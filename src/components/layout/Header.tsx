@@ -1,11 +1,13 @@
 "use client";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
+import { usePathname, useSearchParams } from "next/navigation";
 
 import {
   Aperture,
   AudioLines,
   Camera,
+  ChevronDown,
+  ChevronUp,
   Diamond,
   Globe,
   Image as ImageIcon,
@@ -22,7 +24,7 @@ import {
   Volume2,
   X,
 } from "lucide-react";
-import { useCallback, useEffect, useRef, useState } from "react";
+import { Suspense, useCallback, useEffect, useRef, useState } from "react";
 import data from "@/data/content";
 import { imageMenuIcons } from "@/data/content/image-navigation";
 import { videoMenuIcons } from "@/data/content/video-navigation";
@@ -126,6 +128,13 @@ function Logo({ compact }: { compact: boolean }) {
   );
 }
 
+/** Mirrors the URL query into Header state; isolated so only this node suspends. */
+function SearchSync({ onChange }: { onChange: (query: string) => void }) {
+  const query = useSearchParams().toString();
+  useEffect(() => onChange(query), [query, onChange]);
+  return null;
+}
+
 export function Header({ forceCompact = false, studioHeight = false }: { forceCompact?: boolean; studioHeight?: boolean }) {
   const d = useAppDispatch();
   const { openMenu, drawer } = useAppSelector((s) => s.ui);
@@ -133,8 +142,11 @@ export function Header({ forceCompact = false, studioHeight = false }: { forceCo
   const [authMode, setAuthMode] = useState<AuthMode | null>(null);
   const closeAuth = useCallback(() => setAuthMode(null), []);
   const headerRef = useRef<HTMLElement>(null);
+  const drawerRef = useRef<HTMLElement>(null);
+  const navRef = useRef<HTMLElement>(null);
   const nav = data.nav as NavItem[];
   const pathname = usePathname();
+  const [query, setQuery] = useState("");
 
   // Compute active nav item dynamically from the current pathname
   const navigation = nav.map((item) => ({
@@ -143,13 +155,21 @@ export function Header({ forceCompact = false, studioHeight = false }: { forceCo
     // '/' only matches the root; other hrefs match if pathname starts with them
     isActive:
       item.href.includes("?")
-        ? false
+        ? item.label === "Genjutsu" && pathname.startsWith(item.href.split("?")[0]) &&
+          Array.from(new URLSearchParams(item.href.split("?")[1]).entries()).every(([k, v]) => new URLSearchParams(query).get(k) === v)
         : item.label === "Explore"
         ? pathname === "/"
         : item.label === "Image"
           ? pathname.startsWith("/ai/image")
           : pathname.startsWith(item.href.split("?")[0]),
   }));
+  useEffect(() => {
+    const nav = navRef.current;
+    const active = nav?.querySelector<HTMLElement>("[data-nav-active=true]");
+    if (!nav || !active) return;
+    const right = active.offsetLeft + active.offsetWidth - nav.clientWidth;
+    if (right > nav.scrollLeft) nav.scrollLeft = right + 24;
+  }, [pathname]);
   useEffect(() => {
     const f = () => {
       const headerTop = headerRef.current?.getBoundingClientRect().top ?? 0;
@@ -159,12 +179,32 @@ export function Header({ forceCompact = false, studioHeight = false }: { forceCo
     addEventListener("scroll", f, { passive: true });
     return () => removeEventListener("scroll", f);
   }, []);
+  useEffect(() => {
+    const menu = drawerRef.current;
+    if (!drawer || !menu) return;
+    const previousOverflow = document.body.style.overflow;
+    const fit = () => {
+      const mobile = window.innerWidth < 1024;
+      document.body.style.overflow = mobile ? "hidden" : previousOverflow;
+      const viewportHeight = window.visualViewport?.height ?? window.innerHeight;
+      menu.style.maxHeight = `${Math.max(0, viewportHeight - menu.getBoundingClientRect().top)}px`;
+    };
+    fit();
+    window.addEventListener("resize", fit);
+    window.visualViewport?.addEventListener("resize", fit);
+    return () => {
+      document.body.style.overflow = previousOverflow;
+      window.removeEventListener("resize", fit);
+      window.visualViewport?.removeEventListener("resize", fit);
+    };
+  }, [drawer]);
   return (
     <header
       ref={headerRef}
-      className={`sticky top-0 z-[70] w-full bg-[#0d0f10]/95 backdrop-blur-xl transition-all duration-300 ${studioHeight ? "" : "border-b border-[#242628]"}`}
+      className={`sticky top-0 z-[70] w-full bg-[#0d0f10]/95 backdrop-blur-xl transition-all duration-300 max-[767px]:bg-black/[0.65] max-[767px]:backdrop-blur-2xl ${studioHeight ? "" : "border-b border-[#242628]"}`}
       onMouseLeave={() => d(setMenu(null))}
     >
+      <Suspense fallback={null}><SearchSync onChange={setQuery} /></Suspense>
       <div className="mx-auto w-full max-w-[1920px]">
         <div
           className={`flex items-center gap-2 px-3 transition-all duration-300 md:px-5 ${studioHeight ? "h-11" : scrolled || forceCompact ? "h-9" : "h-[52px]"}`}
@@ -179,7 +219,13 @@ export function Header({ forceCompact = false, studioHeight = false }: { forceCo
               Higgsfield
             </span>
           </Link>
-          <nav className="[&::-webkit-scrollbar]:hidden [scrollbar-width:none] hidden min-w-0 flex-1 items-center overflow-x-auto whitespace-nowrap lg:flex">
+          <nav
+            ref={navRef}
+            onWheel={(e) => {
+              if (e.deltaY && !e.deltaX) e.currentTarget.scrollLeft += e.deltaY;
+            }}
+            className="[&::-webkit-scrollbar]:hidden [scrollbar-width:none] hidden min-w-0 flex-1 items-center overflow-x-auto whitespace-nowrap lg:flex"
+          >
             {navigation.map(({ item: n, groups, isActive }) => (
               <div
                 key={n.label}
@@ -187,6 +233,7 @@ export function Header({ forceCompact = false, studioHeight = false }: { forceCo
               >
                 <Link
                   href={n.href}
+                  data-nav-active={isActive}
                   onFocus={() => groups.length && d(setMenu(n.label))}
                   className={`relative inline-flex items-center gap-1 rounded-lg font-semibold leading-none transition duration-200 hover:bg-[#202224] hover:text-[#dfe1e3] ${studioHeight ? "px-[0.38rem] py-[0.4rem] text-[12px]" : "px-[0.62rem] py-[0.45rem] text-sm"} ${
                     isActive ? "text-lime" : "text-[#777b80]"
@@ -268,7 +315,7 @@ export function Header({ forceCompact = false, studioHeight = false }: { forceCo
             <button
               type="button"
               onClick={() => setAuthMode("login")}
-              className="hidden h-8 items-center rounded-xl bg-[#202512] px-3 text-[13px] font-semibold text-lime hover:bg-[#303a10] sm:flex"
+              className="hidden h-8 items-center rounded-xl bg-[#202512] px-3 text-[13px] font-semibold text-lime hover:bg-[#303a10] md:flex"
             >
               Login
             </button>
@@ -286,6 +333,8 @@ export function Header({ forceCompact = false, studioHeight = false }: { forceCo
             <button
               className="rounded-lg p-1.5 lg:hidden"
               aria-label="Menu"
+              aria-expanded={drawer}
+              aria-controls="mobile-navigation"
               onClick={() => d(toggleDrawer())}
             >
               {drawer ? <X /> : <Menu />}
@@ -344,23 +393,21 @@ export function Header({ forceCompact = false, studioHeight = false }: { forceCo
           </div>
         ))}
       {drawer && (
-        <nav className="hide-scrollbar max-h-[75vh] overflow-auto border-t border-[#292b2d] bg-[#141617] p-4 lg:hidden">
-          <div className="grid gap-1">
+        <nav ref={drawerRef} id="mobile-navigation" aria-label="Mobile navigation" className="hide-scrollbar w-full min-w-0 max-w-full overflow-x-hidden overflow-y-auto overscroll-y-contain border-t border-[#292b2d] bg-[#141617] p-4 lg:hidden max-[767px]:bg-black/60 max-[767px]:backdrop-blur-2xl">
+          <div className="grid min-w-0 grid-cols-[minmax(0,1fr)] gap-1">
             {navigation.map(({ item: n, groups }) => {
               const expanded = openMenu === n.label;
               return (
-                <div key={n.label} className="rounded-xl">
+                <div key={n.label} className="min-w-0 rounded-xl">
                   {groups.length ? (
                     <button
                       type="button"
                       aria-expanded={expanded}
                       onClick={() => d(setMenu(expanded ? null : n.label))}
-                      className="flex w-full items-center justify-between rounded-lg px-3 py-2.5 text-left text-sm font-medium text-zinc-200 hover:bg-white/10"
+                      className="flex w-full min-w-0 items-center justify-between gap-3 rounded-lg px-3 py-2.5 text-left text-sm font-medium text-zinc-200 hover:bg-white/10"
                     >
                       {n.label}
-                      <span aria-hidden="true" className="text-zinc-500">
-                        {expanded ? "âˆ’" : "+"}
-                      </span>
+                      {expanded ? <ChevronUp aria-hidden="true" className="size-5 shrink-0 text-zinc-500" /> : <ChevronDown aria-hidden="true" className="size-5 shrink-0 text-zinc-500" />}
                     </button>
                   ) : (
                     <Link
@@ -372,9 +419,9 @@ export function Header({ forceCompact = false, studioHeight = false }: { forceCo
                     </Link>
                   )}
                   {groups.length > 0 && expanded && (
-                    <div className="grid gap-3 px-2 pb-3">
+                    <div className="grid min-w-0 grid-cols-[minmax(0,1fr)] gap-3 px-2 pb-3">
                       {groups.map((group) => (
-                        <section key={group.title}>
+                        <section key={group.title} className="min-w-0">
                           <h3 className="px-2 py-1 text-xs font-semibold uppercase tracking-wide text-zinc-500">
                             {group.title}
                           </h3>
@@ -383,16 +430,16 @@ export function Header({ forceCompact = false, studioHeight = false }: { forceCo
                               key={item.label}
                               href={item.href}
                               onClick={() => d(closeAll())}
-                              className="flex items-center gap-3 rounded-lg px-2 py-2 hover:bg-white/10"
+                              className="flex w-full min-w-0 items-center gap-3 rounded-lg px-2 py-2 hover:bg-white/10"
                             >
                               <span className="grid h-9 w-9 shrink-0 place-items-center rounded-lg bg-[#24272a] text-zinc-100">
                                 <MenuGlyph name={item.icon} />
                               </span>
-                              <span className="min-w-0">
+                              <span className="min-w-0 flex-1 whitespace-normal break-words">
                                 <span className="block text-sm text-zinc-200">
                                   {item.label}
                                 </span>
-                                <span className="block truncate text-xs text-zinc-500">
+                                <span className="block text-xs text-zinc-500">
                                   {item.description}
                                 </span>
                               </span>
@@ -406,16 +453,6 @@ export function Header({ forceCompact = false, studioHeight = false }: { forceCo
               );
             })}
 
-            <button
-              type="button"
-              onClick={() => {
-                d(closeAll());
-                setAuthMode("login");
-              }}
-              className="mt-2 w-full rounded-lg border border-[#2c2f31] px-3 py-2.5 text-sm font-semibold text-zinc-200 hover:bg-white/10"
-            >
-              Login
-            </button>
           </div>
         </nav>
       )}

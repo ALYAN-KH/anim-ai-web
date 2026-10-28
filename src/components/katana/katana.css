@@ -1,0 +1,24 @@
+/* Katana owns its viewport; the header's natural height leaves the remaining space to the studio. */
+.katana-page > header { flex-shrink: 0; }
+.katana-root { overflow: hidden; }
+.katana-layout > aside { max-height: 100%; }
+.katana-layout [role="tabpanel"] { overscroll-behavior: contain; scrollbar-color: #777 transparent; scrollbar-width: thin; }
+.katana-gallery-heading { position: sticky; top: 0; z-index: 30; background: #0d0f10; padding-block: 16px; }
+.katana-categories { scrollbar-width: thin; scrollbar-color: #6b7075 #202325; touch-action: pan-x pan-y; }
+.katana-categories::-webkit-scrollbar { height: 4px; }
+.katana-categories::-webkit-scrollbar-track { background: #202325; border-radius: 999px; }
+.katana-categories::-webkit-scrollbar-thumb { background: #6b7075; border-radius: 999px; }
+.katana-instructions [hidden] { display: none !important; }
+.katana-instructions-switch { position: relative; display: block; flex: none; width: 28px; height: 16px; padding: 0; border: 0; border-radius: 999px; background: #5c6268; cursor: pointer; }
+.katana-instructions-switch > span { position: absolute; top: 2px; left: 2px; width: 12px; height: 12px; border-radius: 50%; background: white; transition: transform 150ms ease; pointer-events: none; }
+.katana-instructions-switch[data-checked="true"] { background: #d7ff00; }
+.katana-instructions-switch[data-checked="true"] > span { transform: translateX(12px); }
+.katana-instructions-switch:focus-visible { outline: 2px solid white; outline-offset: 3px; }
+@media (prefers-reduced-motion: reduce) { .katana-instructions-switch > span { transition: none; } }
+@media (max-width: 767px) {
+  .katana-root { overflow-y: auto; overscroll-behavior: contain; }
+  .katana-layout > aside { max-height: none; }
+  .katana-layout > section { overflow: visible; }
+  .katana-layout > section > [role="tabpanel"] { overflow: visible; }
+  .katana-gallery-heading { position: static; }
+}

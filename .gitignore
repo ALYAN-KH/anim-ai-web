@@ -47,3 +47,11 @@ desktop.ini
 .idea/
 .vscode/
 *.swp
+
+# Local scratch / reference captures / extra build dirs
+.next-*/
+_ref/
+_ref2/
+reference/
+artifacts/
+scripts/scratch/

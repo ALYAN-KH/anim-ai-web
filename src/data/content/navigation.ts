@@ -90,13 +90,28 @@ export default {
       "badge": "Top"
     },
     {
-      "label": "Katana",
-      "href": "/katana",
+      "label": "Content Factory",
+      "href": "/content-factory",
+      "badge": "New"
+    },
+    {
+      "label": "Playable",
+      "href": "/playable",
       "badge": "New"
     },
     {
       "label": "AI Influencer",
       "href": "/ai-influencer-studio",
+      "badge": "New"
+    },
+    {
+      "label": "Academy",
+      "href": "/academy",
+      "badge": "New"
+    },
+    {
+      "label": "Katana",
+      "href": "/katana",
       "badge": "New"
     },
     {
@@ -136,10 +151,6 @@ export default {
     {
       "label": "Edit",
       "href": "/layers"
-    },
-    {
-      "label": "Academy",
-      "href": "/academy"
     },
     {
       "label": "Community",

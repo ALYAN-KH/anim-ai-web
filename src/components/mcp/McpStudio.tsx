@@ -2,7 +2,8 @@
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
 import { useCallback } from "react";
 import { agentFromParam, getAgent } from "./config";
-import { AgentHero, AgentTabs, DemoShowcase, McpFooter, MobileHero, PresetsSection } from "./sections";
+import { Footer } from "@/components/layout";
+import { AgentHero, AgentTabs, DemoShowcase, MobileHero, PresetsSection } from "./sections";
 import { agentPanelId, agentTabId } from "./sections/AgentTabs";
 import type { AgentId } from "./types";
 import { Reveal } from "./ui/Reveal";
@@ -35,9 +36,9 @@ export function McpStudio() {
         </Reveal>
         {/* Demo + preset content is ChatGPT-specific on the live site; other agents reuse the layout. */}
         <DemoShowcase key={`demo-${agentId}`} agentId={agentId} />
-        <PresetsSection key={`presets-${agentId}`} agentParam={agent.param} />
+        <PresetsSection key={`presets-${agentId}`} agentParam={agent.param} agentId={agentId} />
       </div>
-      <McpFooter />
+      <Footer />
     </div>
   );
 }

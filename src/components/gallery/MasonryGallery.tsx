@@ -99,7 +99,7 @@ export function Masonry({
             {tryBtn && (
               <Link
                 href={tryHref || href}
-                className={`btn !font-semibold ${isGenjutsuGallery ? "!min-h-[41px] !rounded-[9px] !px-[15px] !py-0 !text-sm max-[767px]:flex-1 max-[767px]:!min-h-[36px] max-[767px]:!px-[10px] max-[767px]:!text-[13px]" : "max-md:px-3 max-md:py-1.5 max-md:text-[13px]"}`}
+                className={`btn !font-semibold ${isGenjutsuGallery ? "!min-h-[41px] !rounded-[9px] !px-[15px] !py-0 !text-sm max-[767px]:flex-none max-[767px]:!min-h-[30px] max-[767px]:!px-2 max-[767px]:!text-[11px]" : "max-md:px-3 max-md:py-1.5 max-md:text-[13px]"}`}
               >
                 {tryBtn}
               </Link>
@@ -107,7 +107,7 @@ export function Masonry({
             {secondaryBtn && (
               <Link
                 href={secondaryHref || href}
-                className={`btn !font-semibold ${isGenjutsuGallery ? "!min-h-[41px] !rounded-[9px] !border !border-[#d4d4d4] !bg-white !px-[15px] !py-0 !text-sm !text-[#111] !shadow-[0_3px_0_#aaa] hover:!bg-[#f3f3f3] max-[767px]:flex-1 max-[767px]:!px-[10px] max-[767px]:!min-h-[36px] max-[767px]:!text-[13px]" : "masonry-secondary-btn max-md:px-3 max-md:py-1.5 max-md:text-[13px]"}`}
+                className={`btn !font-semibold ${isGenjutsuGallery ? "!min-h-[41px] !rounded-[9px] !border !border-[#d4d4d4] !bg-white !px-[15px] !py-0 !text-sm !text-[#111] !shadow-[0_3px_0_#aaa] hover:!bg-[#f3f3f3] max-[767px]:flex-none max-[767px]:!px-2 max-[767px]:!min-h-[30px] max-[767px]:!text-[11px]" : "masonry-secondary-btn max-md:px-3 max-md:py-1.5 max-md:text-[13px]"}`}
               >
                 {secondaryBtn}
               </Link>
@@ -126,7 +126,7 @@ export function Masonry({
                 : isGptImageGallery
                   ? "h-[clamp(690px,49vw,920px)] after:absolute after:inset-x-0 after:bottom-0 after:z-[15] after:h-[26%] after:pointer-events-none after:content-[''] after:bg-[linear-gradient(to_bottom,transparent,#0d0f10_92%)] max-[767px]:h-[720px]"
                   : isSoulCinemaGallery
-                    ? "!overflow-visible pb-[76px] max-[600px]:pb-[66px] after:absolute after:inset-x-0 after:bottom-0 after:z-[15] after:h-[132px] after:rounded-b-xl after:pointer-events-none after:content-[''] after:bg-[linear-gradient(transparent,#0d0f10_92%)]"
+                    ? "!overflow-visible pb-[76px] max-[600px]:pb-[66px] max-md:!pb-0 after:absolute after:inset-x-0 after:bottom-0 after:z-[15] after:h-[132px] after:rounded-b-xl after:pointer-events-none after:content-[''] after:bg-[linear-gradient(transparent,#0d0f10_92%)]"
                     : isCommunityGallery
                       ? `community-gallery-viewport ${isSeedance20Gallery || isSoul20Gallery ? "!h-[896px]" : ""} ${isSoul20Gallery ? "after:!h-[208px] after:!bg-[linear-gradient(transparent,#0d0f10_100%)]" : ""}`
                       : "max-h-[590px] md:max-h-[680px]"
@@ -405,13 +405,21 @@ export function Masonry({
         )}
 
         {/* CTA: same centered button for every gallery section */}
-        <div className="pointer-events-none absolute inset-x-0 bottom-9 z-30 flex justify-center max-md:bottom-6">
+        <div className="pointer-events-none absolute inset-x-0 bottom-9 z-30 flex justify-center max-md:hidden">
           <GalleryAction
             href={href}
             label={cta}
             className="pointer-events-auto !min-h-[58px] !rounded-[14px] !px-5 !text-[20px] !font-semibold [&_svg]:!h-6 [&_svg]:!w-6 max-md:!min-h-[38px] max-md:!rounded-[10px] max-md:!px-3 max-md:!text-[13px] max-md:[&_svg]:!h-3.5 max-md:[&_svg]:!w-3.5"
           />
         </div>
+      </div>
+      {/* Mobile: CTA gets its own row below the grid instead of overlapping cards */}
+      <div className="hidden justify-center pt-4 max-md:flex">
+        <GalleryAction
+          href={href}
+          label={cta}
+          className="!min-h-[44px] !rounded-[10px] !px-4 !text-[14px] !font-semibold [&_svg]:!h-3.5 [&_svg]:!w-3.5"
+        />
       </div>
     </section>
   );

@@ -4,6 +4,7 @@ import Link from "next/link";
 import { HiggsSnake } from "@/components/ui/HiggsSnake";
 import { Aperture, Bot, Sparkles } from "lucide-react";
 import data from "@/data/content";
+import { previewVideo } from "@/lib/videoPreview";
 
 type PromoItem = {
   t: string;
@@ -73,7 +74,7 @@ export function Promo() {
         <video
           ref={videoRef}
           className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
-          src={discount.video || discount.src}
+          src={previewVideo(discount.video || discount.src)}
           poster={discount.poster}
           muted
           loop
@@ -96,12 +97,12 @@ export function Promo() {
               </li>
             ))}
           </ul>
-          <Link
+          <a
             href="/signup"
             className="btn mt-6 self-start px-7 py-3 text-base max-md:mt-5 max-md:px-4 max-md:py-2 max-md:text-[13px]"
           >
             {discount.cta}
-          </Link>
+          </a>
         </div>
       </div>
       <div className="grid grid-cols-2 gap-4 md:grid-cols-3">

@@ -2,6 +2,7 @@
 
 import { useRef, useEffect } from "react";
 import { useNearViewport } from "@/hooks/useNearViewport";
+import { previewPoster, previewVideo } from "@/lib/videoPreview";
 
 export type Item = {
   t?: string;
@@ -52,9 +53,13 @@ export function Tile({
   const videoRef = useRef<HTMLVideoElement>(null);
   const { ref: containerRef, isNearViewport } = useNearViewport<HTMLDivElement>();
 
-  const videoUrl = it.video || (it.src?.endsWith(".mp4") ? it.src : undefined);
+  const remoteVideo =
+    it.video || (it.src?.endsWith(".mp4") ? it.src : undefined);
+  const videoUrl = previewVideo(remoteVideo);
   const posterUrl =
-    it.poster || (!it.src?.endsWith(".mp4") ? it.src : undefined);
+    it.poster ||
+    (!it.src?.endsWith(".mp4") ? it.src : undefined) ||
+    previewPoster(remoteVideo);
   const hasMedia = Boolean(videoUrl || posterUrl);
 
   // Play video on scroll when in viewport
@@ -148,7 +153,9 @@ export function Tile({
           muted
           loop
           playsInline
-          preload={isNearViewport ? "metadata" : "none"}
+          preload={
+            !isNearViewport ? "none" : playOnHoverOnly ? "metadata" : "auto"
+          }
         />
       ) : posterUrl ? (
         <img

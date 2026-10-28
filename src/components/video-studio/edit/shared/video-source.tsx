@@ -47,6 +47,8 @@ export function VideoSourceArea({
   onRemove,
   compact = false,
   emphasizeLabel = false,
+  wrapLabel = false,
+  accent = false,
 }: {
   video: VideoSource;
   label: string;
@@ -55,6 +57,8 @@ export function VideoSourceArea({
   onRemove: () => void;
   compact?: boolean;
   emphasizeLabel?: boolean;
+  wrapLabel?: boolean;
+  accent?: boolean;
 }) {
   const [preview, setPreview] = useState(false);
   const [stage, setStage] = useState({ width: 300, height: 160 });
@@ -71,7 +75,7 @@ export function VideoSourceArea({
     return () => observer.disconnect();
   }, []);
   return (
-    <div ref={stageRef} className={`group relative flex shrink-0 flex-col items-center justify-center rounded-xl bg-white/[.05] p-4 ${compact ? "aspect-[3/4] w-full" : "h-40"}`}>
+    <div ref={stageRef} className={`group relative flex shrink-0 flex-col items-center justify-center rounded-xl bg-white/[.05] p-4 ${accent && !video ? "border border-lime" : ""} ${compact ? "aspect-[3/4] w-full" : "h-40"}`}>
       {video && (
         <div className="relative -rotate-[4deg] rounded-xl border border-white/70 shadow-lg" style={{ width: stage.width * .85, height: stage.height * .85 }}>
           <div className="absolute inset-0 overflow-hidden rounded-[inherit]">
@@ -112,7 +116,7 @@ export function VideoSourceArea({
         </svg>
       </UploadCircle>
         <div className="relative mt-3 text-center text-sm font-medium text-white">
-          <p className={`max-w-[245px] truncate ${emphasizeLabel ? "font-semibold" : ""}`}>{label}</p>
+          <p className={`max-w-[245px] ${wrapLabel ? "" : "truncate"} ${emphasizeLabel ? "font-semibold" : ""}`}>{label}</p>
           <p className="mt-0.5 text-xs text-white/45">{duration}</p>
         </div></>}
       {preview && video && <VideoPreviewDialog preset={video} onClose={() => setPreview(false)} />}

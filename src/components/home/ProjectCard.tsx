@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 import { HiggsSnake } from "@/components/ui/HiggsSnake";
 import { bg } from "@/components/gallery/Tile";
+import { previewVideo } from "@/lib/videoPreview";
 
 type Props = {
   title: string;
@@ -99,7 +100,7 @@ export function ProjectCard({ title, by, href, poster, avatar, video, hue }: Pro
         {video && (
           <video
             ref={videoRef}
-            src={previewActive ? video : undefined}
+            src={previewActive ? previewVideo(video) : undefined}
             muted
             loop
             playsInline

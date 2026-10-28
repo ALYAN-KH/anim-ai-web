@@ -1,0 +1,2019 @@
+{
+ "sections": [
+  {
+   "id": "tier",
+   "label": "Character type",
+   "kind": "media",
+   "max": 1,
+   "style": "tier",
+   "icon": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><path fill=\"currentColor\" fill-rule=\"evenodd\" d=\"M11 2a8 8 0 0 1 7.976 7.403c.013.184.07.363.172.516l1.684 2.526A1 1 0 0 1 20.6 13.8l-1.2.9a1 1 0 0 0-.4.799V17a2 2 0 0 1-2 2h-3v2a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1v-4.278c0-.303-.14-.588-.365-.791A7.98 7.98 0 0 1 3 10a8 8 0 0 1 8-8m0 4.5c-.21 0-.4.13-.476.327l-.59 1.533a1 1 0 0 1-.574.575l-1.533.59a.51.51 0 0 0 0 .95l1.533.59a1 1 0 0 1 .575.575l.59 1.533a.51.51 0 0 0 .95 0l.59-1.533a1 1 0 0 1 .575-.575l1.533-.59a.51.51 0 0 0 0-.95l-1.533-.59a1 1 0 0 1-.575-.575l-.59-1.533A.51.51 0 0 0 11 6.5\" clip-rule=\"evenodd\"></path></svg>",
+   "options": [
+    {
+     "id": "normal",
+     "label": "Average",
+     "image": "https://static.higgsfield.ai/ai-influencer/design-update/2026-10-02/sidebar/average.webp",
+     "visibleIn": [
+      "normal",
+      "freak",
+      "total"
+     ]
+    },
+    {
+     "id": "freak",
+     "label": "Bold",
+     "image": "https://static.higgsfield.ai/ai-influencer/design-update/2026-10-02/sidebar/bold-v2.webp",
+     "visibleIn": [
+      "normal",
+      "freak",
+      "total"
+     ]
+    },
+    {
+     "id": "total",
+     "label": "Extreme",
+     "image": "https://static.higgsfield.ai/ai-influencer/design-update/2026-10-02/sidebar/extreme.webp",
+     "visibleIn": [
+      "normal",
+      "freak",
+      "total"
+     ]
+    },
+    {
+     "id": "insects",
+     "label": "Insect",
+     "image": "https://static.higgsfield.ai/ai-influencer/character-types/2026-10-05-heads/insect.webp",
+     "visibleIn": []
+    },
+    {
+     "id": "frogs",
+     "label": "Frog",
+     "image": "https://static.higgsfield.ai/ai-influencer/character-types/2026-10-05-heads/frog.webp",
+     "visibleIn": []
+    },
+    {
+     "id": "cats",
+     "label": "Cat",
+     "image": "https://static.higgsfield.ai/ai-influencer/character-types/2026-10-05-heads/cat.webp",
+     "visibleIn": []
+    },
+    {
+     "id": "dogs",
+     "label": "Dog",
+     "image": "https://static.higgsfield.ai/ai-influencer/character-types/2026-10-05-heads/dog.webp",
+     "visibleIn": []
+    },
+    {
+     "id": "capybaras",
+     "label": "Rodent",
+     "image": "https://static.higgsfield.ai/ai-influencer/character-types/2026-10-05-heads/rodent.webp",
+     "visibleIn": []
+    },
+    {
+     "id": "birds",
+     "label": "Bird",
+     "image": "https://static.higgsfield.ai/ai-influencer/character-types/2026-10-05-heads/bird.webp",
+     "visibleIn": []
+    }
+   ]
+  },
+  {
+   "id": "gender",
+   "label": "Gender",
+   "kind": "media",
+   "max": 1,
+   "style": "corner",
+   "icon": "<img alt=\"\" width=\"16\" height=\"16\" src=\"data:image/svg+xml,%3csvg%20preserveAspectRatio='none'%20overflow='visible'%20style='display:%20block;'%20width='16'%20height='16'%20viewBox='0%200%2016%2016'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20id='Frame'%3e%3cpath%20id='Vector'%20d='M13.4503%200.544922H10.7019C10.5561%200.544922%2010.4163%200.599551%2010.3132%200.696792C10.2102%200.794033%2010.1522%200.925921%2010.1522%201.06344C10.1522%201.20096%2010.2102%201.33285%2010.3132%201.43009C10.4163%201.52733%2010.5561%201.58196%2010.7019%201.58196H12.1235L10.3955%203.21205C9.88807%202.76599%209.276%202.43947%208.60927%202.25917C7.94254%202.07887%207.24004%202.0499%206.55917%202.17462C5.8783%202.29934%205.23836%202.57422%204.69162%202.9768C4.14488%203.37938%203.70684%203.89825%203.41328%204.49103C3.11973%205.08382%202.97898%205.73369%203.00254%206.38758C3.02609%207.04148%203.21329%207.68084%203.54883%208.25346C3.88436%208.82607%204.35873%209.31569%204.93319%209.68233C5.50764%2010.049%206.16589%2010.2822%206.85416%2010.3631V11.4338H5.20513C5.05934%2011.4338%204.91953%2011.4884%204.81644%2011.5857C4.71336%2011.6829%204.65545%2011.8148%204.65545%2011.9523C4.65545%2012.0898%204.71336%2012.2217%204.81644%2012.319C4.91953%2012.4162%205.05934%2012.4708%205.20513%2012.4708H6.85416V14.0264C6.85416%2014.1639%206.91208%2014.2958%207.01516%2014.3931C7.11825%2014.4903%207.25806%2014.5449%207.40384%2014.5449C7.54963%2014.5449%207.68944%2014.4903%207.79253%2014.3931C7.89561%2014.2958%207.95352%2014.1639%207.95352%2014.0264V12.4708H9.60256C9.74835%2012.4708%209.88816%2012.4162%209.99124%2012.319C10.0943%2012.2217%2010.1522%2012.0898%2010.1522%2011.9523C10.1522%2011.8148%2010.0943%2011.6829%209.99124%2011.5857C9.88816%2011.4884%209.74835%2011.4338%209.60256%2011.4338H7.95352V10.3631C8.69032%2010.2762%209.39175%2010.0146%209.99226%209.60267C10.5928%209.19071%2011.0728%208.64186%2011.3874%208.00741C11.702%207.37296%2011.8409%206.67363%2011.7912%205.97477C11.7415%205.27591%2011.5048%204.60035%2011.1032%204.01122L12.9006%202.31501V3.65603C12.9006%203.79355%2012.9586%203.92544%2013.0616%204.02268C13.1647%204.11992%2013.3045%204.17455%2013.4503%204.17455C13.5961%204.17455%2013.7359%204.11992%2013.839%204.02268C13.9421%203.92544%2014%203.79355%2014%203.65603V1.06344C14%200.925921%2013.9421%200.794033%2013.839%200.696792C13.7359%200.599551%2013.5961%200.544922%2013.4503%200.544922ZM7.40384%209.35974C6.75155%209.35974%206.1139%209.17727%205.57153%208.83542C5.02916%208.49357%204.60644%208.00768%204.35682%207.4392C4.10719%206.87071%204.04188%206.24517%204.16914%205.64168C4.2964%205.03818%204.61051%204.48383%205.07175%204.04874C5.533%203.61364%206.12066%203.31734%206.76042%203.19729C7.40019%203.07725%208.06332%203.13886%208.66596%203.37433C9.26861%203.60981%209.7837%204.00857%2010.1461%204.52018C10.5085%205.0318%2010.7019%205.63331%2010.7019%206.24863C10.701%207.07348%2010.3532%207.86431%209.73493%208.44757C9.11662%209.03083%208.27827%209.35888%207.40384%209.35974Z'%20fill='%2377F3ED'/%3e%3c/g%3e%3c/svg%3e\">",
+   "options": [
+    {
+     "id": "female",
+     "label": "Female",
+     "image": "https://cdn.higgsfield.ai/ai_influencer_option/f9fa514b-620d-433e-bd4e-eadd880de118.webp",
+     "visibleIn": [
+      "normal",
+      "freak",
+      "total"
+     ]
+    },
+    {
+     "id": "male",
+     "label": "Male",
+     "image": "https://cdn.higgsfield.ai/ai_influencer_option/fb91b108-27fc-4e7c-a8fd-876dc8c30ecf.webp",
+     "visibleIn": [
+      "normal",
+      "freak",
+      "total"
+     ]
+    },
+    {
+     "id": "trans_man",
+     "label": "Trans man",
+     "image": "https://cdn.higgsfield.ai/ai_influencer_option/95002c8f-c0d6-4dec-8cac-fc7b50501600.webp",
+     "visibleIn": [
+      "normal",
+      "freak",
+      "total"
+     ]
+    },
+    {
+     "id": "trans_woman",
+     "label": "Trans woman",
+     "image": "https://cdn.higgsfield.ai/ai_influencer_option/21fc9f46-6f1f-4aed-8f74-0ca3080c8eec.webp",
+     "visibleIn": [
+      "normal",
+      "freak",
+      "total"
+     ]
+    },
+    {
+     "id": "non_binary",
+     "label": "Non-binary",
+     "image": "https://cdn.higgsfield.ai/ai_influencer_option/58a652a4-bf5e-43ca-95a8-8f9e9cef5b6b.webp",
+     "visibleIn": [
+      "normal",
+      "freak",
+      "total"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "body_type",
+   "label": "Build",
+   "kind": "media",
+   "max": 1,
+   "style": "cover",
+   "icon": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><path fill=\"currentColor\" d=\"M13.169 2c-3.669 0-3.17 6 .83 5 2.5 4 .633 5 2.001 8-1.33-1.14-2.801-1.98-4.327-1.969C8.999 8.001 1.997 9.678 2 14.951c0 8.76 14.59 8.207 19.668 4.52C23.322 10.07 18.53 2 13.168 2\"></path></svg>",
+   "options": [
+    {
+     "id": "body_slim",
+     "label": "Slim",
+     "image": "https://static.higgsfield.ai/ai-influencer/option-previews/2026-10-03-icons-full/body_slim.webp",
+     "visibleIn": [
+      "normal",
+      "freak",
+      "total"
+     ]
+    },
+    {
+     "id": "body_athletic",
+     "label": "Athletic",
+     "image": "https://static.higgsfield.ai/ai-influencer/option-previews/2026-10-03-icons-full/body_athletic.webp",
+     "visibleIn": [
+      "normal",
+      "freak",
+      "total"
+     ]
+    },
+    {
+     "id": "body_muscular",
+     "label": "Muscular",
+     "image": "https://static.higgsfield.ai/ai-influencer/option-previews/2026-10-03-icons-full/body_muscular.webp",
+     "visibleIn": [
+      "normal",
+      "freak",
+      "total"
+     ]
+    },
+    {
+     "id": "body_curvy",
+     "label": "Curvy",
+     "image": "https://static.higgsfield.ai/ai-influencer/option-previews/2026-10-03-icons-full/body_curvy.webp",
+     "visibleIn": [
+      "normal",
+      "freak",
+      "total"
+     ]
+    },
+    {
+     "id": "body_heavy",
+     "label": "Heavy",
+     "image": "https://static.higgsfield.ai/ai-influencer/option-previews/2026-10-03-icons-full/body_heavy.webp",
+     "visibleIn": [
+      "normal",
+      "freak",
+      "total"
+     ]
+    },
+    {
+     "id": "body_ultra",
+     "label": "Ultra Muscular",
+     "image": "https://static.higgsfield.ai/ai-influencer/option-previews/2026-10-03-icons-full/body_ultra.webp",
+     "visibleIn": [
+      "normal",
+      "freak",
+      "total"
+     ]
+    },
+    {
+     "id": "pr_centaur",
+     "label": "Centaur",
+     "image": "https://static.higgsfield.ai/ai-influencer/option-previews/2026-10-06-centaur/centaur.webp",
+     "visibleIn": [
+      "total"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "hair",
+   "label": "Hairstyle",
+   "kind": "media",
+   "max": 1,
+   "style": "cover",
+   "icon": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><path fill=\"currentColor\" fill-rule=\"evenodd\" d=\"M12 2c1.197 0 2.342.223 3.398.627a1.89 1.89 0 0 0-1.648 1.875l.009.178a1.89 1.89 0 0 0 1.667 1.697l.173.025c.638.114.962.479 1.02 1.127l.025.18c.164.885.94 1.542 1.858 1.541l.182-.009a1.89 1.89 0 0 0 1.698-1.717l.02-.16q.016-.11.046-.208A9.46 9.46 0 0 1 21.5 11.5v7.898c0 .884-.718 1.602-1.602 1.602H4.103A1.603 1.603 0 0 1 2.5 19.398V11.5A9.5 9.5 0 0 1 12 2m-3.295 8C7.763 10 7 10.763 7 11.705V14.5a5 5 0 0 0 10 0v-2.795c0-.942-.763-1.705-1.705-1.705z\" clip-rule=\"evenodd\"></path><path fill=\"currentColor\" d=\"M18.985 1.433a.488.488 0 0 0-.97-.001c-.177 1.538-1.045 2.406-2.583 2.583a.488.488 0 0 0 0 .97c1.517.171 2.445 1.031 2.582 2.57a.488.488 0 0 0 .972 0c.131-1.518 1.05-2.438 2.568-2.569a.488.488 0 0 0 .001-.972c-1.539-.137-2.399-1.065-2.57-2.581\"></path></svg>",
+   "options": [
+    {
+     "id": "hs_lampshade",
+     "label": "Bob",
+     "image": "https://static.higgsfield.ai/ai-influencer/option-previews/2026-10-03-icons-full/hs_lampshade.webp",
+     "visibleIn": [
+      "freak",
+      "total"
+     ]
+    },
+    {
+     "id": "hair_bald",
+     "label": "Bald",
+     "image": "https://static.higgsfield.ai/ai-influencer/option-previews/2026-10-03-icons-full/hair_bald.webp",
+     "visibleIn": [
+      "normal",
+      "freak",
+      "total"
+     ]
+    },
+    {
+     "id": "hair_buzz",
+     "label": "Buzz cut",
+     "image": "https://static.higgsfield.ai/ai-influencer/option-previews/2026-10-03-icons-full/hair_buzz.webp",
+     "visibleIn": [
+      "normal",
+      "freak",
+      "total"
+     ]
+    },
+    {
+     "id": "hair_bowl",
+     "label": "Bowl cut",
+     "image": "https://static.higgsfield.ai/ai-influencer/option-previews/2026-10-03-icons-full/hair_bowl.webp",
+     "visibleIn": [
+      "normal",
+      "freak",
+      "total"
+     ]
+    },
+    {
+     "id": "hair_mullet",
+     "label": "Mullet",
+     "image": "https://static.higgsfield.ai/ai-influencer/option-previews/2026-10-03-icons-full/hair_mullet.webp",
+     "visibleIn": [
+      "normal",
+      "freak",
+      "total"
+     ]
+    },
+    {
+     "id": "hair_braids",
+     "label": "Braids",
+     "image": "https://static.higgsfield.ai/ai-influencer/option-previews/2026-10-03-icons-full/hair_braids.webp",
+     "visibleIn": [
+      "normal",
+      "freak",
+      "total"
+     ]
+    },
+    {
+     "id": "hair_pigtails",
+     "label": "Pigtails",
+     "image": "https://static.higgsfield.ai/ai-influencer/option-previews/2026-10-03-icons-full/hair_pigtails.webp",
+     "visibleIn": [
+      "normal",
+      "freak",
+      "total"
+     ]
+    },
+    {
+     "id": "hair_afro",
+     "label": "Afro",
+     "image": "https://static.higgsfield.ai/ai-influencer/option-previews/2026-10-03-icons-full/hair_afro.webp",
+     "visibleIn": [
+      "normal",
+      "freak",
+      "total"
+     ]
+    },
+    {
+     "id": "hair_punk",
+     "label": "Mohawk",
+     "image": "https://static.higgsfield.ai/ai-influencer/option-previews/2026-10-03-icons-full/hair_punk.webp",
+     "visibleIn": [
+      "normal",
+      "freak",
+      "total"
+     ]
+    },
+    {
+     "id": "hs_pompadour",
+     "label": "Volume waves",
+     "image": "https://static.higgsfield.ai/ai-influencer/option-previews/2026-10-03-icons-full/hs_pompadour.webp",
+     "visibleIn": [
+      "freak",
+      "total"
+     ]
+    },
+    {
+     "id": "hs_beehive",
+     "label": "Beehive",
+     "image": "https://static.higgsfield.ai/ai-influencer/option-previews/2026-10-03-icons-full/hs_beehive.webp",
+     "visibleIn": [
+      "freak",
+      "total"
+     ]
+    },
+    {
+     "id": "hs_dome",
+     "label": "Perm",
+     "image": "https://static.higgsfield.ai/ai-influencer/option-previews/2026-10-03-icons-full/hs_dome.webp",
+     "visibleIn": [
+      "freak",
+      "total"
+     ]
+    },
+    {
+     "id": "hair_long",
+     "label": "Long hair",
+     "image": "https://static.higgsfield.ai/ai-influencer/option-previews/2026-10-03-icons-full/hair_long.webp",
+     "visibleIn": [
+      "normal",
+      "freak",
+      "total"
+     ]
+    },
+    {
+     "id": "hair_short",
+     "label": "Short hair",
+     "image": "https://static.higgsfield.ai/ai-influencer/option-previews/2026-10-03-icons-full/hair_short.webp",
+     "visibleIn": [
+      "normal",
+      "freak",
+      "total"
+     ]
+    },
+    {
+     "id": "hs_horns",
+     "label": "Hair horns",
+     "image": "https://static.higgsfield.ai/ai-influencer/option-previews/2026-10-03-icons-full/hs_horns.webp",
+     "visibleIn": [
+      "freak",
+      "total"
+     ]
+    },
+    {
+     "id": "hs_softserve",
+     "label": "Soft-serve swirl",
+     "image": "https://static.higgsfield.ai/ai-influencer/option-previews/2026-10-03-icons-full/hs_softserve.webp",
+     "visibleIn": [
+      "freak",
+      "total"
+     ]
+    },
+    {
+     "id": "hs_sphere",
+     "label": "Curl sphere",
+     "image": "https://static.higgsfield.ai/ai-influencer/option-previews/2026-10-03-icons-full/hs_sphere.webp",
+     "visibleIn": [
+      "freak",
+      "total"
+     ]
+    },
+    {
+     "id": "hs_mouse",
+     "label": "Mouse-ear puffs",
+     "image": "https://static.higgsfield.ai/ai-influencer/option-previews/2026-10-03-icons-full/hs_mouse.webp",
+     "visibleIn": [
+      "freak",
+      "total"
+     ]
+    },
+    {
+     "id": "hs_wings",
+     "label": "Hair wings",
+     "image": "https://static.higgsfield.ai/ai-influencer/option-previews/2026-10-03-icons-full/hs_wings.webp",
+     "visibleIn": [
+      "freak",
+      "total"
+     ]
+    },
+    {
+     "id": "hs_hedgehog",
+     "label": "Hedgehog spikes",
+     "image": "https://static.higgsfield.ai/ai-influencer/option-previews/2026-10-03-icons-full/hs_hedgehog.webp",
+     "visibleIn": [
+      "freak",
+      "total"
+     ]
+    },
+    {
+     "id": "hs_tufts",
+     "label": "Side tufts",
+     "image": "https://static.higgsfield.ai/ai-influencer/option-previews/2026-10-03-icons-full/hs_tufts.webp",
+     "visibleIn": [
+      "freak",
+      "total"
+     ]
+    },
+    {
+     "id": "hs_stairs",
+     "label": "Stair steps",
+     "image": "https://static.higgsfield.ai/ai-influencer/option-previews/2026-10-03-hair-body/hs_stairs.webp",
+     "visibleIn": [
+      "freak",
+      "total"
+     ]
+    },
+    {
+     "id": "hs_shelf",
+     "label": "Shelf bob",
+     "image": "https://static.higgsfield.ai/ai-influencer/option-previews/2026-10-03-hair-body/hs_shelf.webp",
+     "visibleIn": [
+      "freak",
+      "total"
+     ]
+    },
+    {
+     "id": "hs_corkscrews",
+     "label": "Corkscrews",
+     "image": "https://static.higgsfield.ai/ai-influencer/option-previews/2026-10-03-hair-body/hs_corkscrews.webp",
+     "visibleIn": [
+      "freak",
+      "total"
+     ]
+    },
+    {
+     "id": "hs_sidecoil",
+     "label": "Side coil",
+     "image": "https://static.higgsfield.ai/ai-influencer/option-previews/2026-10-03-hair-body/hs_sidecoil.webp",
+     "visibleIn": [
+      "freak",
+      "total"
+     ]
+    },
+    {
+     "id": "hs_mushroom",
+     "label": "Mushroom",
+     "image": "https://static.higgsfield.ai/ai-influencer/option-previews/2026-10-03-hair-body/hs_mushroom.webp",
+     "visibleIn": [
+      "freak",
+      "total"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "hair_colour",
+   "label": "Hair Color",
+   "kind": "color",
+   "max": 1,
+   "style": "color",
+   "icon": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><path fill=\"currentColor\" fill-rule=\"evenodd\" d=\"M2 12c0-5.285 4.517-9.5 10-9.5S22 6.715 22 12c0 1.888-.506 3.152-1.565 3.812-.986.615-2.235.548-3.285.412-.369-.048-.753-.112-1.12-.172l-.492-.08c-.52-.082-.988-.143-1.405-.149-.835-.012-1.24.186-1.462.63-.132.264-.131.583.015 1.018.129.383.335.757.557 1.159l.12.216c.123.226.254.476.345.716.085.226.18.555.108.904-.086.42-.373.705-.727.858-.312.135-.69.176-1.089.176-5.483 0-10-4.215-10-9.5m8.25-5.75a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3m-3 4.25a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3m8-2.75a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3\" clip-rule=\"evenodd\"></path></svg>",
+   "options": [
+    {
+     "id": "hc_black",
+     "label": "Jet black",
+     "swatch": "#151515",
+     "visibleIn": [
+      "normal",
+      "freak",
+      "total"
+     ]
+    },
+    {
+     "id": "hc_darkbrown",
+     "label": "Dark brown",
+     "swatch": "#39281f",
+     "visibleIn": [
+      "normal",
+      "freak",
+      "total"
+     ]
+    },
+    {
+     "id": "hc_chestnut",
+     "label": "Chestnut",
+     "swatch": "#794a33",
+     "visibleIn": [
+      "normal",
+      "freak",
+      "total"
+     ]
+    },
+    {
+     "id": "hc_ginger",
+     "label": "Ginger",
+     "swatch": "#b56131",
+     "visibleIn": [
+      "normal",
+      "freak",
+      "total"
+     ]
+    },
+    {
+     "id": "hc_red",
+     "label": "Red",
+     "swatch": "#b43636",
+     "visibleIn": [
+      "normal",
+      "freak",
+      "total"
+     ]
+    },
+    {
+     "id": "hc_blonde",
+     "label": "Blonde",
+     "swatch": "#d9b774",
+     "visibleIn": [
+      "normal",
+      "freak",
+      "total"
+     ]
+    },
+    {
+     "id": "hc_platinum",
+     "label": "Platinum",
+     "swatch": "#e4d9bc",
+     "visibleIn": [
+      "normal",
+      "freak",
+      "total"
+     ]
+    },
+    {
+     "id": "hc_grey",
+     "label": "Grey",
+     "swatch": "#8c8c8c",
+     "visibleIn": [
+      "normal",
+      "freak",
+      "total"
+     ]
+    },
+    {
+     "id": "hc_white",
+     "label": "White",
+     "swatch": "#eee9dd",
+     "visibleIn": [
+      "normal",
+      "freak",
+      "total"
+     ]
+    },
+    {
+     "id": "hc_pink",
+     "label": "Pastel pink",
+     "swatch": "#dd9ab7",
+     "visibleIn": [
+      "normal",
+      "freak",
+      "total"
+     ]
+    },
+    {
+     "id": "hc_lilac",
+     "label": "Lilac",
+     "swatch": "#b0a0ce",
+     "visibleIn": [
+      "normal",
+      "freak",
+      "total"
+     ]
+    },
+    {
+     "id": "hc_blue",
+     "label": "Blue",
+     "swatch": "#4080bb",
+     "visibleIn": [
+      "normal",
+      "freak",
+      "total"
+     ]
+    },
+    {
+     "id": "hc_green",
+     "label": "Green",
+     "swatch": "#548060",
+     "visibleIn": [
+      "normal",
+      "freak",
+      "total"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "aesthetic",
+   "label": "Style",
+   "kind": "media",
+   "max": 1,
+   "style": "cover",
+   "icon": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><path fill=\"currentColor\" d=\"M20 13.25A1.75 1.75 0 0 1 18.25 15H14.5l.3 4.507a2.807 2.807 0 1 1-5.6 0L9.5 15H5.75A1.75 1.75 0 0 1 4 13.25V12h16zM8.125 2a.75.75 0 0 1 .6.3L9.8 3.733c.1.134.3.134.4 0L11.275 2.3a.75.75 0 0 1 .6-.3h6.375c.966 0 1.75.784 1.75 1.75v6.75H4V3.75C4 2.784 4.784 2 5.75 2z\"></path></svg>",
+   "options": [
+    {
+     "id": "retro",
+     "label": "Retro",
+     "image": "https://static.higgsfield.ai/ai-influencer/option-previews/2026-10-03-icons-full/retro.webp",
+     "visibleIn": [
+      "normal",
+      "freak",
+      "total"
+     ]
+    },
+    {
+     "id": "sporty",
+     "label": "Sporty",
+     "image": "https://static.higgsfield.ai/ai-influencer/option-previews/2026-10-03-icons-full/sporty.webp",
+     "visibleIn": [
+      "normal",
+      "freak",
+      "total"
+     ]
+    },
+    {
+     "id": "y2k",
+     "label": "Y2K",
+     "image": "https://static.higgsfield.ai/ai-influencer/option-previews/2026-10-03-icons-full/y2k.webp",
+     "visibleIn": [
+      "normal",
+      "freak",
+      "total"
+     ]
+    },
+    {
+     "id": "theatrical",
+     "label": "Theatre",
+     "image": "https://static.higgsfield.ai/ai-influencer/option-previews/2026-10-03-icons-full/theatrical.webp",
+     "visibleIn": [
+      "normal",
+      "freak",
+      "total"
+     ]
+    },
+    {
+     "id": "goth",
+     "label": "Goth",
+     "image": "https://static.higgsfield.ai/ai-influencer/option-previews/2026-10-03-icons-full/goth.webp",
+     "visibleIn": [
+      "normal",
+      "freak",
+      "total"
+     ]
+    },
+    {
+     "id": "suits",
+     "label": "Suits",
+     "image": "https://static.higgsfield.ai/ai-influencer/option-previews/2026-10-03-suits/suits_black_B_1.webp",
+     "visibleIn": [
+      "normal",
+      "freak",
+      "total"
+     ]
+    },
+    {
+     "id": "streetstyle",
+     "label": "Streetstyle",
+     "image": "https://static.higgsfield.ai/ai-influencer/option-previews/2026-10-03-icons-full/streetstyle.webp",
+     "visibleIn": [
+      "normal",
+      "freak",
+      "total"
+     ]
+    },
+    {
+     "id": "casual",
+     "label": "Casual",
+     "image": "https://static.higgsfield.ai/ai-influencer/option-previews/2026-10-03-icons-full/casual.webp",
+     "visibleIn": [
+      "normal",
+      "freak",
+      "total"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "ethnicity_origin_base",
+   "label": "Ethnicity",
+   "kind": "media",
+   "max": 1,
+   "style": "cover",
+   "icon": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><path stroke=\"currentColor\" stroke-linecap=\"square\" stroke-width=\"1.5\" d=\"M21 12H3m18.25 0a9.25 9.25 0 1 1-18.5 0 9.25 9.25 0 0 1 18.5 0ZM12 21c-2.21 0-4-4.03-4-9s1.79-9 4-9 4 4.03 4 9-1.79 9-4 9Z\"></path></svg>",
+   "options": [
+    {
+     "id": "african",
+     "label": "African",
+     "image": "https://static.higgsfield.ai/ai-influencer/option-previews/2026-10-03-icons-full/african.webp",
+     "visibleIn": [
+      "normal",
+      "freak",
+      "total"
+     ]
+    },
+    {
+     "id": "east_asian",
+     "label": "Asian",
+     "image": "https://static.higgsfield.ai/ai-influencer/option-previews/2026-10-03-icons-full/east_asian.webp",
+     "visibleIn": [
+      "normal",
+      "freak",
+      "total"
+     ]
+    },
+    {
+     "id": "european",
+     "label": "European",
+     "image": "https://static.higgsfield.ai/ai-influencer/option-previews/2026-10-03-icons-full/european.webp",
+     "visibleIn": [
+      "normal",
+      "freak",
+      "total"
+     ]
+    },
+    {
+     "id": "indian",
+     "label": "Indian",
+     "image": "https://static.higgsfield.ai/ai-influencer/option-previews/2026-10-03-icons-full/indian.webp",
+     "visibleIn": [
+      "normal",
+      "freak",
+      "total"
+     ]
+    },
+    {
+     "id": "middle_eastern",
+     "label": "Middle Eastern",
+     "image": "https://static.higgsfield.ai/ai-influencer/option-previews/2026-10-03-icons-full/middle_eastern.webp",
+     "visibleIn": [
+      "normal",
+      "freak",
+      "total"
+     ]
+    },
+    {
+     "id": "latin_american",
+     "label": "Mixed",
+     "image": "https://static.higgsfield.ai/ai-influencer/option-previews/2026-10-03-icons-full/latin_american.webp",
+     "visibleIn": [
+      "normal",
+      "freak",
+      "total"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "age",
+   "label": "Age",
+   "kind": "text",
+   "max": 1,
+   "style": "text",
+   "icon": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><path fill=\"currentColor\" d=\"M8 12c-1.961 0-3.553.783-4.717 2.085-1.148 1.285-1.854 3.041-2.153 4.982C.965 20.137 1.828 21 2.826 21h10.349c.998 0 1.861-.864 1.696-1.933-.3-1.94-1.005-3.697-2.154-4.982C11.553 12.783 9.962 12 8 12M4 7a4 4 0 1 1 8 0 4 4 0 0 1-8 0M13.5 7.5a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0M14.208 12.752c1.476 1.65 2.3 3.804 2.64 6.01.064.415.059.813-.004 1.188h4.525c1.023 0 1.927-.89 1.731-2.002-.289-1.647-.927-3.14-1.95-4.231-1.036-1.107-2.438-1.767-4.15-1.767-1.079 0-2.035.262-2.854.734z\"></path></svg>",
+   "options": [
+    {
+     "id": "adult",
+     "label": "Adult",
+     "visibleIn": [
+      "normal",
+      "freak",
+      "total"
+     ]
+    },
+    {
+     "id": "mature",
+     "label": "Mature",
+     "visibleIn": [
+      "normal",
+      "freak",
+      "total"
+     ]
+    },
+    {
+     "id": "senior",
+     "label": "Senior",
+     "visibleIn": [
+      "normal",
+      "freak",
+      "total"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "skin_tone",
+   "label": "Skin color",
+   "kind": "color",
+   "max": 1,
+   "style": "color",
+   "icon": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><path fill=\"currentColor\" fill-rule=\"evenodd\" d=\"M2 12c0-5.285 4.517-9.5 10-9.5S22 6.715 22 12c0 1.888-.506 3.152-1.565 3.812-.986.615-2.235.548-3.285.412-.369-.048-.753-.112-1.12-.172l-.492-.08c-.52-.082-.988-.143-1.405-.149-.835-.012-1.24.186-1.462.63-.132.264-.131.583.015 1.018.129.383.335.757.557 1.159l.12.216c.123.226.254.476.345.716.085.226.18.555.108.904-.086.42-.373.705-.727.858-.312.135-.69.176-1.089.176-5.483 0-10-4.215-10-9.5m8.25-5.75a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3m-3 4.25a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3m8-2.75a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3\" clip-rule=\"evenodd\"></path></svg>",
+   "options": [
+    {
+     "id": "st_porcelain",
+     "label": "Porcelain",
+     "swatch": "#f1e2d5",
+     "visibleIn": [
+      "normal",
+      "freak",
+      "total"
+     ]
+    },
+    {
+     "id": "st_fair",
+     "label": "Fair",
+     "swatch": "#e8c9b5",
+     "visibleIn": [
+      "normal",
+      "freak",
+      "total"
+     ]
+    },
+    {
+     "id": "st_light",
+     "label": "Light",
+     "swatch": "#dab49a",
+     "visibleIn": [
+      "normal",
+      "freak",
+      "total"
+     ]
+    },
+    {
+     "id": "st_olive",
+     "label": "Olive",
+     "swatch": "#b6976e",
+     "visibleIn": [
+      "normal",
+      "freak",
+      "total"
+     ]
+    },
+    {
+     "id": "st_tan",
+     "label": "Tan",
+     "swatch": "#bc8e67",
+     "visibleIn": [
+      "normal",
+      "freak",
+      "total"
+     ]
+    },
+    {
+     "id": "st_brown",
+     "label": "Brown",
+     "swatch": "#805135",
+     "visibleIn": [
+      "normal",
+      "freak",
+      "total"
+     ]
+    },
+    {
+     "id": "st_deep",
+     "label": "Deep brown",
+     "swatch": "#543621",
+     "visibleIn": [
+      "normal",
+      "freak",
+      "total"
+     ]
+    },
+    {
+     "id": "st_ebony",
+     "label": "Ebony",
+     "swatch": "#2d211b",
+     "visibleIn": [
+      "normal",
+      "freak",
+      "total"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "height",
+   "label": "Height",
+   "kind": "media",
+   "max": 1,
+   "style": "cover",
+   "icon": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><path stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"1.5\" d=\"M2.75 4.75h18.5m-18.5 14.5h18.5M9.75 10 12 7.75 14.25 10m-4.5 4.25L12 16.5l2.25-2.25\"></path></svg>",
+   "options": [
+    {
+     "id": "h_short",
+     "label": "Short",
+     "visibleIn": [
+      "insects",
+      "frogs",
+      "cats",
+      "dogs",
+      "capybaras",
+      "birds"
+     ]
+    },
+    {
+     "id": "h_average",
+     "label": "Average",
+     "image": "https://static.higgsfield.ai/ai-influencer/option-previews/2026-10-03-icons-full/h_average.webp",
+     "visibleIn": [
+      "normal",
+      "freak",
+      "total"
+     ]
+    },
+    {
+     "id": "h_tall",
+     "label": "Tall",
+     "image": "https://static.higgsfield.ai/ai-influencer/option-previews/2026-10-03-icons-full/h_tall.webp",
+     "visibleIn": [
+      "normal",
+      "freak",
+      "total"
+     ]
+    },
+    {
+     "id": "h_very_tall",
+     "label": "Very tall",
+     "image": "https://static.higgsfield.ai/ai-influencer/option-previews/2026-10-03-icons-full/h_very_tall.webp",
+     "visibleIn": [
+      "normal",
+      "freak",
+      "total"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "proportions",
+   "label": "Proportions",
+   "kind": "media",
+   "max": 2,
+   "style": "cover",
+   "icon": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><path fill=\"currentColor\" d=\"M8 12c-1.961 0-3.553.783-4.717 2.085-1.148 1.285-1.854 3.041-2.153 4.982C.965 20.137 1.828 21 2.826 21h10.349c.998 0 1.861-.864 1.696-1.933-.3-1.94-1.005-3.697-2.154-4.982C11.553 12.783 9.962 12 8 12M4 7a4 4 0 1 1 8 0 4 4 0 0 1-8 0M13.5 7.5a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0M14.208 12.752c1.476 1.65 2.3 3.804 2.64 6.01.064.415.059.813-.004 1.188h4.525c1.023 0 1.927-.89 1.731-2.002-.289-1.647-.927-3.14-1.95-4.231-1.036-1.107-2.438-1.767-4.15-1.767-1.079 0-2.035.262-2.854.734z\"></path></svg>",
+   "options": [
+    {
+     "id": "pr_longlimbs",
+     "label": "Long limbs",
+     "image": "https://static.higgsfield.ai/ai-influencer/option-previews/2026-10-03-icons-full/pr_longlimbs.webp",
+     "visibleIn": [
+      "normal",
+      "freak",
+      "total"
+     ]
+    },
+    {
+     "id": "pr_shortlegs",
+     "label": "Short legs",
+     "image": "https://static.higgsfield.ai/ai-influencer/option-previews/2026-10-03-icons-full/pr_shortlegs.webp",
+     "visibleIn": [
+      "normal",
+      "freak",
+      "total"
+     ]
+    },
+    {
+     "id": "pr_shoulders",
+     "label": "Broad shoulders",
+     "image": "https://static.higgsfield.ai/ai-influencer/option-previews/2026-10-03-icons-full/pr_shoulders.webp",
+     "visibleIn": [
+      "normal",
+      "freak",
+      "total"
+     ]
+    },
+    {
+     "id": "pr_waist",
+     "label": "Tiny waist",
+     "image": "https://static.higgsfield.ai/ai-influencer/option-previews/2026-10-03-icons-full/pr_waist.webp",
+     "visibleIn": [
+      "normal",
+      "freak",
+      "total"
+     ]
+    },
+    {
+     "id": "pr_egg",
+     "label": "Egg body",
+     "image": "https://static.higgsfield.ai/ai-influencer/option-previews/2026-10-03-hair-body/pr_egg.webp",
+     "visibleIn": [
+      "freak",
+      "total"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "freak_head",
+   "label": "Head shape",
+   "kind": "media",
+   "max": 1,
+   "style": "cover",
+   "icon": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><path fill=\"currentColor\" d=\"M10.962 2C6.567 2 3 5.555 3 9.944c0 1.849.633 3.551 1.695 4.9 1.295 1.647 1.332 3.244 1.312 5.399A1.74 1.74 0 0 0 7.75 22h5.5A1.75 1.75 0 0 0 15 20.25v-1.083a.25.25 0 0 1 .25-.25h2a1.75 1.75 0 0 0 1.75-1.75V14.15a.25.25 0 0 1 .135-.223l.965-.498c.929-.48 1.23-1.66.649-2.527-.937-1.397-1.724-2.624-2.334-4.18C17.162 3.53 14.13 2 10.962 2\"></path></svg>",
+   "options": [
+    {
+     "id": "head_oval",
+     "label": "Standard",
+     "image": "https://static.higgsfield.ai/ai-influencer/option-previews/2026-10-03-icons-full/head_oval.webp",
+     "visibleIn": [
+      "normal",
+      "freak",
+      "total"
+     ]
+    },
+    {
+     "id": "head_long",
+     "label": "Long",
+     "image": "https://static.higgsfield.ai/ai-influencer/option-previews/2026-10-03-icons-full/head_long.webp",
+     "visibleIn": [
+      "normal",
+      "freak",
+      "total"
+     ]
+    },
+    {
+     "id": "head_tiny",
+     "label": "Tiny",
+     "image": "https://static.higgsfield.ai/ai-influencer/option-previews/2026-10-03-icons-full/head_tiny.webp",
+     "visibleIn": [
+      "freak",
+      "total"
+     ]
+    },
+    {
+     "id": "head_forehead",
+     "label": "High forehead",
+     "image": "https://static.higgsfield.ai/ai-influencer/option-previews/2026-10-03-icons-full/head_forehead.webp",
+     "visibleIn": [
+      "freak",
+      "total"
+     ]
+    },
+    {
+     "id": "head_ancient",
+     "label": "Caveman",
+     "image": "https://static.higgsfield.ai/ai-influencer/option-previews/2026-10-03-head-shapes/head_ancient.webp",
+     "visibleIn": [
+      "total"
+     ]
+    },
+    {
+     "id": "head_herojaw",
+     "label": "Gigachad",
+     "image": "https://static.higgsfield.ai/ai-influencer/option-previews/2026-10-03-head-shapes/head_herojaw.webp",
+     "visibleIn": [
+      "total"
+     ]
+    },
+    {
+     "id": "head_megachin",
+     "label": "Mega jaw",
+     "image": "https://static.higgsfield.ai/ai-influencer/option-previews/2026-10-03-head-shapes/head_megachin.webp",
+     "visibleIn": [
+      "total"
+     ]
+    },
+    {
+     "id": "head_round",
+     "label": "Round",
+     "image": "https://static.higgsfield.ai/ai-influencer/option-previews/2026-10-03-icons-full/head_round.webp",
+     "visibleIn": [
+      "normal",
+      "freak",
+      "total"
+     ]
+    },
+    {
+     "id": "head_square",
+     "label": "Square",
+     "image": "https://static.higgsfield.ai/ai-influencer/option-previews/2026-10-03-icons-full/head_square.webp",
+     "visibleIn": [
+      "normal",
+      "freak",
+      "total"
+     ]
+    },
+    {
+     "id": "head_heart",
+     "label": "Heart",
+     "image": "https://static.higgsfield.ai/ai-influencer/option-previews/2026-10-03-icons-full/head_heart.webp",
+     "visibleIn": [
+      "normal",
+      "freak",
+      "total"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "freak_neck",
+   "label": "Neck",
+   "kind": "media",
+   "max": 1,
+   "style": "cover",
+   "icon": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><path fill=\"currentColor\" d=\"M10.962 2C6.567 2 3 5.555 3 9.944c0 1.849.633 3.551 1.695 4.9 1.295 1.647 1.332 3.244 1.312 5.399A1.74 1.74 0 0 0 7.75 22h5.5A1.75 1.75 0 0 0 15 20.25v-1.083a.25.25 0 0 1 .25-.25h2a1.75 1.75 0 0 0 1.75-1.75V14.15a.25.25 0 0 1 .135-.223l.965-.498c.929-.48 1.23-1.66.649-2.527-.937-1.397-1.724-2.624-2.334-4.18C17.162 3.53 14.13 2 10.962 2\"></path></svg>",
+   "options": [
+    {
+     "id": "neck_normal",
+     "label": "Standard",
+     "image": "https://static.higgsfield.ai/ai-influencer/option-previews/2026-10-03-icons-full/neck_normal.webp",
+     "visibleIn": [
+      "normal",
+      "freak",
+      "total"
+     ]
+    },
+    {
+     "id": "neck_column",
+     "label": "Column",
+     "image": "https://static.higgsfield.ai/ai-influencer/option-previews/2026-10-03-icons-full/neck_column.webp",
+     "visibleIn": [
+      "freak",
+      "total"
+     ]
+    },
+    {
+     "id": "neck_long",
+     "label": "Long",
+     "image": "https://static.higgsfield.ai/ai-influencer/option-previews/2026-10-03-icons-full/neck_long.webp",
+     "visibleIn": [
+      "freak",
+      "total"
+     ]
+    },
+    {
+     "id": "neck_short",
+     "label": "Short",
+     "image": "https://static.higgsfield.ai/ai-influencer/option-previews/2026-10-03-icons-full/neck_short.webp",
+     "visibleIn": [
+      "normal",
+      "freak",
+      "total"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "eye_shape",
+   "label": "Eye shape",
+   "kind": "media",
+   "max": 1,
+   "style": "cover",
+   "icon": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><path fill=\"currentColor\" fill-rule=\"evenodd\" d=\"M12 4c4.01 0 7.91 2.477 10.43 7.2a1.71 1.71 0 0 1 0 1.6C19.91 17.524 16.01 20 12 20s-7.91-2.477-10.43-7.2a1.71 1.71 0 0 1 0-1.6C4.09 6.476 7.99 4 12 4m-3.625 8a3.625 3.625 0 1 1 7.25 0 3.625 3.625 0 0 1-7.25 0\" clip-rule=\"evenodd\"></path></svg>",
+   "options": [
+    {
+     "id": "es_almond",
+     "label": "Almond",
+     "image": "https://static.higgsfield.ai/ai-influencer/option-previews/2026-10-02/es_almond.webp",
+     "visibleIn": [
+      "normal",
+      "freak",
+      "total"
+     ]
+    },
+    {
+     "id": "es_round",
+     "label": "Round",
+     "image": "https://static.higgsfield.ai/ai-influencer/option-previews/2026-10-02/es_round.webp",
+     "visibleIn": [
+      "normal",
+      "freak",
+      "total"
+     ]
+    },
+    {
+     "id": "es_monolid",
+     "label": "Monolid",
+     "image": "https://static.higgsfield.ai/ai-influencer/option-previews/2026-10-02/es_monolid.webp",
+     "visibleIn": [
+      "normal",
+      "freak",
+      "total"
+     ]
+    },
+    {
+     "id": "es_close",
+     "label": "Close-set",
+     "image": "https://static.higgsfield.ai/ai-influencer/option-previews/2026-10-02-v2/es_close.webp",
+     "visibleIn": [
+      "freak",
+      "total"
+     ]
+    },
+    {
+     "id": "es_wide",
+     "label": "Wide-set",
+     "image": "https://static.higgsfield.ai/ai-influencer/option-previews/2026-10-02-v2/es_wide.webp",
+     "visibleIn": [
+      "freak",
+      "total"
+     ]
+    },
+    {
+     "id": "es_uneven",
+     "label": "Uneven",
+     "image": "https://static.higgsfield.ai/ai-influencer/option-previews/2026-10-02-v2/es_uneven.webp",
+     "visibleIn": [
+      "freak",
+      "total"
+     ]
+    },
+    {
+     "id": "es_large",
+     "label": "Large",
+     "image": "https://static.higgsfield.ai/ai-influencer/option-previews/2026-10-02/es_large.webp",
+     "visibleIn": [
+      "normal",
+      "freak",
+      "total"
+     ]
+    },
+    {
+     "id": "es_huge",
+     "label": "Huge",
+     "image": "https://static.higgsfield.ai/ai-influencer/option-previews/2026-10-02-v2/es_huge.webp",
+     "visibleIn": [
+      "freak",
+      "total"
+     ]
+    },
+    {
+     "id": "es_hooded",
+     "label": "Hooded",
+     "image": "https://static.higgsfield.ai/ai-influencer/option-previews/2026-10-02/es_hooded.webp",
+     "visibleIn": [
+      "normal",
+      "freak",
+      "total"
+     ]
+    },
+    {
+     "id": "es_upturned",
+     "label": "Upturned",
+     "image": "https://static.higgsfield.ai/ai-influencer/option-previews/2026-10-02/es_upturned.webp",
+     "visibleIn": [
+      "normal",
+      "freak",
+      "total"
+     ]
+    },
+    {
+     "id": "es_downturned",
+     "label": "Downturned",
+     "image": "https://static.higgsfield.ai/ai-influencer/option-previews/2026-10-02/es_downturned.webp",
+     "visibleIn": [
+      "normal",
+      "freak",
+      "total"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "eye_color",
+   "label": "Eye color",
+   "kind": "color",
+   "max": 1,
+   "style": "color",
+   "icon": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><path fill=\"currentColor\" fill-rule=\"evenodd\" d=\"M2 12c0-5.285 4.517-9.5 10-9.5S22 6.715 22 12c0 1.888-.506 3.152-1.565 3.812-.986.615-2.235.548-3.285.412-.369-.048-.753-.112-1.12-.172l-.492-.08c-.52-.082-.988-.143-1.405-.149-.835-.012-1.24.186-1.462.63-.132.264-.131.583.015 1.018.129.383.335.757.557 1.159l.12.216c.123.226.254.476.345.716.085.226.18.555.108.904-.086.42-.373.705-.727.858-.312.135-.69.176-1.089.176-5.483 0-10-4.215-10-9.5m8.25-5.75a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3m-3 4.25a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3m8-2.75a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3\" clip-rule=\"evenodd\"></path></svg>",
+   "options": [
+    {
+     "id": "eye_black",
+     "label": "Black",
+     "swatch": "#191615",
+     "visibleIn": [
+      "normal",
+      "freak",
+      "total"
+     ]
+    },
+    {
+     "id": "eye_brown",
+     "label": "Brown",
+     "swatch": "#67432c",
+     "visibleIn": [
+      "normal",
+      "freak",
+      "total"
+     ]
+    },
+    {
+     "id": "eye_hazel",
+     "label": "Hazel",
+     "swatch": "#887546",
+     "visibleIn": [
+      "normal",
+      "freak",
+      "total"
+     ]
+    },
+    {
+     "id": "eye_green",
+     "label": "Green",
+     "swatch": "#648254",
+     "visibleIn": [
+      "normal",
+      "freak",
+      "total"
+     ]
+    },
+    {
+     "id": "eye_blue",
+     "label": "Blue",
+     "swatch": "#5182a1",
+     "visibleIn": [
+      "normal",
+      "freak",
+      "total"
+     ]
+    },
+    {
+     "id": "eye_ice_blue",
+     "label": "Ice blue",
+     "swatch": "#a5cbd6",
+     "visibleIn": [
+      "normal",
+      "freak",
+      "total"
+     ]
+    },
+    {
+     "id": "eye_amber",
+     "label": "Amber",
+     "swatch": "#bd8c45",
+     "visibleIn": [
+      "normal",
+      "freak",
+      "total"
+     ]
+    },
+    {
+     "id": "eye_grey",
+     "label": "Grey",
+     "swatch": "#939b9d",
+     "visibleIn": [
+      "normal",
+      "freak",
+      "total"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "freak_face",
+   "label": "Features",
+   "kind": "media",
+   "max": 4,
+   "style": "cover",
+   "icon": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><path fill=\"currentColor\" fill-rule=\"evenodd\" d=\"M12 2c1.197 0 2.342.223 3.398.627a1.89 1.89 0 0 0-1.648 1.875l.009.178a1.89 1.89 0 0 0 1.667 1.697l.173.025c.638.114.962.479 1.02 1.127l.025.18c.164.885.94 1.542 1.858 1.541l.182-.009a1.89 1.89 0 0 0 1.698-1.717l.02-.16q.016-.11.046-.208A9.46 9.46 0 0 1 21.5 11.5v7.898c0 .884-.718 1.602-1.602 1.602H4.103A1.603 1.603 0 0 1 2.5 19.398V11.5A9.5 9.5 0 0 1 12 2m-3.295 8C7.763 10 7 10.763 7 11.705V14.5a5 5 0 0 0 10 0v-2.795c0-.942-.763-1.705-1.705-1.705z\" clip-rule=\"evenodd\"></path><path fill=\"currentColor\" d=\"M18.985 1.433a.488.488 0 0 0-.97-.001c-.177 1.538-1.045 2.406-2.583 2.583a.488.488 0 0 0 0 .97c1.517.171 2.445 1.031 2.582 2.57a.488.488 0 0 0 .972 0c.131-1.518 1.05-2.438 2.568-2.569a.488.488 0 0 0 .001-.972c-1.539-.137-2.399-1.065-2.57-2.581\"></path></svg>",
+   "options": [
+    {
+     "id": "fn_freckles",
+     "label": "Freckles",
+     "image": "https://static.higgsfield.ai/ai-influencer/option-previews/2026-10-03-icons-full/fn_freckles.webp",
+     "visibleIn": [
+      "normal",
+      "freak",
+      "total"
+     ],
+     "slot": "marks"
+    },
+    {
+     "id": "fn_dimples",
+     "label": "Dimples",
+     "image": "https://static.higgsfield.ai/ai-influencer/option-previews/2026-10-03-icons-full/fn_dimples.webp",
+     "visibleIn": [
+      "normal",
+      "freak",
+      "total"
+     ],
+     "slot": "cheeks"
+    },
+    {
+     "id": "fn_eyebags",
+     "label": "Heavy eye bags",
+     "image": "https://static.higgsfield.ai/ai-influencer/option-previews/2026-10-03-icons-full/fn_eyebags.webp",
+     "visibleIn": [
+      "normal",
+      "freak",
+      "total"
+     ],
+     "slot": "eyes"
+    },
+    {
+     "id": "ff_marks_12",
+     "label": "Blush",
+     "image": "https://static.higgsfield.ai/ai-influencer/option-previews/2026-10-03-icons-full/ff_marks_12.webp",
+     "visibleIn": [
+      "freak",
+      "total"
+     ],
+     "slot": "marks"
+    },
+    {
+     "id": "fn_cheekbones",
+     "label": "High cheekbones",
+     "image": "https://static.higgsfield.ai/ai-influencer/option-previews/2026-10-03-icons-full/fn_cheekbones.webp",
+     "visibleIn": [
+      "normal",
+      "freak",
+      "total"
+     ],
+     "slot": "cheeks"
+    },
+    {
+     "id": "fn_fulllips",
+     "label": "Full lips",
+     "image": "https://static.higgsfield.ai/ai-influencer/option-previews/2026-10-03-icons-full/fn_fulllips.webp",
+     "visibleIn": [
+      "normal",
+      "freak",
+      "total"
+     ],
+     "slot": "lips"
+    },
+    {
+     "id": "fn_thickbrows",
+     "label": "Thick brows",
+     "image": "https://static.higgsfield.ai/ai-influencer/option-previews/2026-10-03-icons-full/fn_thickbrows.webp",
+     "visibleIn": [
+      "normal",
+      "freak",
+      "total"
+     ],
+     "slot": "brows"
+    },
+    {
+     "id": "fn_mole",
+     "label": "Beauty mark",
+     "image": "https://static.higgsfield.ai/ai-influencer/option-previews/2026-10-03-icons-full/fn_mole.webp",
+     "visibleIn": [
+      "normal",
+      "freak",
+      "total"
+     ],
+     "slot": "marks"
+    },
+    {
+     "id": "ff_nose_0",
+     "label": "Potato nose",
+     "image": "https://static.higgsfield.ai/ai-influencer/option-previews/2026-10-03-icons-full/ff_nose_0.webp",
+     "visibleIn": [
+      "freak",
+      "total"
+     ],
+     "slot": "nose"
+    },
+    {
+     "id": "ff_nose_1",
+     "label": "Button nose",
+     "image": "https://static.higgsfield.ai/ai-influencer/option-previews/2026-10-03-icons-full/ff_nose_1.webp",
+     "visibleIn": [
+      "freak",
+      "total"
+     ],
+     "slot": "nose"
+    },
+    {
+     "id": "ff_nose_2",
+     "label": "Pointy nose",
+     "image": "https://static.higgsfield.ai/ai-influencer/option-previews/2026-10-03-icons-full/ff_nose_2.webp",
+     "visibleIn": [
+      "freak",
+      "total"
+     ],
+     "slot": "nose"
+    },
+    {
+     "id": "fn_tinynose",
+     "label": "Tiny nose",
+     "image": "https://static.higgsfield.ai/ai-influencer/option-previews/2026-10-03-icons-full/fn_tinynose.webp",
+     "visibleIn": [
+      "normal",
+      "freak",
+      "total"
+     ],
+     "slot": "nose"
+    },
+    {
+     "id": "ff_lips_3",
+     "label": "Pouty lips",
+     "image": "https://static.higgsfield.ai/ai-influencer/option-previews/2026-10-03-icons-full/ff_lips_3.webp",
+     "visibleIn": [
+      "freak",
+      "total"
+     ],
+     "slot": "lips"
+    },
+    {
+     "id": "ff_lips_4",
+     "label": "Tiny pursed mouth",
+     "image": "https://static.higgsfield.ai/ai-influencer/option-previews/2026-10-03-icons-full/ff_lips_4.webp",
+     "visibleIn": [
+      "freak",
+      "total"
+     ],
+     "slot": "lips"
+    },
+    {
+     "id": "fn_widemouth",
+     "label": "Wide mouth",
+     "image": "https://static.higgsfield.ai/ai-influencer/option-previews/2026-10-03-icons-full/fn_widemouth.webp",
+     "visibleIn": [
+      "normal",
+      "freak",
+      "total"
+     ],
+     "slot": "lips"
+    },
+    {
+     "id": "ff_brows_5",
+     "label": "Unibrow",
+     "image": "https://static.higgsfield.ai/ai-influencer/option-previews/2026-10-03-icons-full/ff_brows_5.webp",
+     "visibleIn": [
+      "freak",
+      "total"
+     ],
+     "slot": "brows"
+    },
+    {
+     "id": "ff_brows_6",
+     "label": "Thin high brows",
+     "image": "https://static.higgsfield.ai/ai-influencer/option-previews/2026-10-03-icons-full/ff_brows_6.webp",
+     "visibleIn": [
+      "freak",
+      "total"
+     ],
+     "slot": "brows"
+    },
+    {
+     "id": "ff_brows_7",
+     "label": "Brush brows",
+     "image": "https://static.higgsfield.ai/ai-influencer/option-previews/2026-10-03-icons-full/ff_brows_7.webp",
+     "visibleIn": [
+      "freak",
+      "total"
+     ],
+     "slot": "brows"
+    },
+    {
+     "id": "ff_ears_8",
+     "label": "Jug ears",
+     "image": "https://static.higgsfield.ai/ai-influencer/option-previews/2026-10-03-icons-full/ff_ears_8.webp",
+     "visibleIn": [
+      "freak",
+      "total"
+     ],
+     "slot": "ears"
+    },
+    {
+     "id": "ff_ears_9",
+     "label": "Uneven ears",
+     "image": "https://static.higgsfield.ai/ai-influencer/option-previews/2026-10-03-icons-full/ff_ears_9.webp",
+     "visibleIn": [
+      "freak",
+      "total"
+     ],
+     "slot": "ears"
+    },
+    {
+     "id": "ff_teeth_10",
+     "label": "Gap teeth",
+     "image": "https://static.higgsfield.ai/ai-influencer/option-previews/2026-10-03-icons-full/ff_teeth_10.webp",
+     "visibleIn": [
+      "freak",
+      "total"
+     ],
+     "slot": "teeth"
+    },
+    {
+     "id": "ff_teeth_11",
+     "label": "Buck teeth",
+     "image": "https://static.higgsfield.ai/ai-influencer/option-previews/2026-10-03-icons-full/ff_teeth_11.webp",
+     "visibleIn": [
+      "freak",
+      "total"
+     ],
+     "slot": "teeth"
+    },
+    {
+     "id": "fn_pointychin",
+     "label": "Pointy chin",
+     "image": "https://static.higgsfield.ai/ai-influencer/option-previews/2026-10-03-icons-full/fn_pointychin.webp",
+     "visibleIn": [
+      "normal",
+      "freak",
+      "total"
+     ],
+     "slot": "chin"
+    },
+    {
+     "id": "ff_chin_13",
+     "label": "Weak chin",
+     "image": "https://static.higgsfield.ai/ai-influencer/option-previews/2026-10-03-icons-full/ff_chin_13.webp",
+     "visibleIn": [
+      "freak",
+      "total"
+     ],
+     "slot": "chin"
+    },
+    {
+     "id": "ff_forehead_14",
+     "label": "Big forehead",
+     "image": "https://static.higgsfield.ai/ai-influencer/option-previews/2026-10-03-icons-full/ff_forehead_14.webp",
+     "visibleIn": [
+      "freak",
+      "total"
+     ],
+     "slot": "forehead"
+    }
+   ]
+  },
+  {
+   "id": "facial_hair",
+   "label": "Facial hair",
+   "kind": "media",
+   "max": 1,
+   "style": "cover",
+   "icon": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><path fill=\"currentColor\" fill-rule=\"evenodd\" d=\"M2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10S2 17.523 2 12m7.5-1.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3M16 9a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m-9.75 3a.75.75 0 0 0-1.5 0 7.25 7.25 0 1 0 14.5 0 .75.75 0 0 0-1.5 0 5.75 5.75 0 0 1-11.5 0\" clip-rule=\"evenodd\"></path></svg>",
+   "options": [
+    {
+     "id": "fh_none",
+     "label": "Clean",
+     "image": "https://static.higgsfield.ai/ai-influencer/option-previews/2026-10-03-icons-full/fh_none.webp",
+     "visibleIn": [
+      "normal",
+      "freak",
+      "total"
+     ]
+    },
+    {
+     "id": "fh_stubble",
+     "label": "Stubble",
+     "image": "https://static.higgsfield.ai/ai-influencer/option-previews/2026-10-03-icons-full/fh_stubble.webp",
+     "visibleIn": [
+      "normal",
+      "freak",
+      "total"
+     ]
+    },
+    {
+     "id": "fh_beard",
+     "label": "Full beard",
+     "image": "https://static.higgsfield.ai/ai-influencer/option-previews/2026-10-03-icons-full/fh_beard.webp",
+     "visibleIn": [
+      "normal",
+      "freak",
+      "total"
+     ]
+    },
+    {
+     "id": "fh_goatee",
+     "label": "Goatee",
+     "image": "https://static.higgsfield.ai/ai-influencer/option-previews/2026-10-03-icons-full/fh_goatee.webp",
+     "visibleIn": [
+      "normal",
+      "freak",
+      "total"
+     ]
+    },
+    {
+     "id": "fh_moustache",
+     "label": "Moustache",
+     "image": "https://static.higgsfield.ai/ai-influencer/option-previews/2026-10-03-icons-full/fh_moustache.webp",
+     "visibleIn": [
+      "normal",
+      "freak",
+      "total"
+     ]
+    },
+    {
+     "id": "fh_pencil",
+     "label": "Pencil",
+     "image": "https://static.higgsfield.ai/ai-influencer/option-previews/2026-10-03-icons-full/fh_pencil.webp",
+     "visibleIn": [
+      "normal",
+      "freak",
+      "total"
+     ]
+    },
+    {
+     "id": "fh_pushbroom",
+     "label": "Push-broom",
+     "image": "https://static.higgsfield.ai/ai-influencer/option-previews/2026-10-03-icons-full/fh_pushbroom.webp",
+     "visibleIn": [
+      "freak",
+      "total"
+     ]
+    },
+    {
+     "id": "fh_braid",
+     "label": "Braided",
+     "image": "https://static.higgsfield.ai/ai-influencer/option-previews/2026-10-03-icons-full/fh_braid.webp",
+     "visibleIn": [
+      "freak",
+      "total"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "distinctive",
+   "label": "Distinctive features",
+   "kind": "media",
+   "max": 2,
+   "style": "cover",
+   "icon": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><path fill=\"currentColor\" fill-rule=\"evenodd\" d=\"M12 2c1.197 0 2.342.223 3.398.627a1.89 1.89 0 0 0-1.648 1.875l.009.178a1.89 1.89 0 0 0 1.667 1.697l.173.025c.638.114.962.479 1.02 1.127l.025.18c.164.885.94 1.542 1.858 1.541l.182-.009a1.89 1.89 0 0 0 1.698-1.717l.02-.16q.016-.11.046-.208A9.46 9.46 0 0 1 21.5 11.5v7.898c0 .884-.718 1.602-1.602 1.602H4.103A1.603 1.603 0 0 1 2.5 19.398V11.5A9.5 9.5 0 0 1 12 2m-3.295 8C7.763 10 7 10.763 7 11.705V14.5a5 5 0 0 0 10 0v-2.795c0-.942-.763-1.705-1.705-1.705z\" clip-rule=\"evenodd\"></path><path fill=\"currentColor\" d=\"M18.985 1.433a.488.488 0 0 0-.97-.001c-.177 1.538-1.045 2.406-2.583 2.583a.488.488 0 0 0 0 .97c1.517.171 2.445 1.031 2.582 2.57a.488.488 0 0 0 .972 0c.131-1.518 1.05-2.438 2.568-2.569a.488.488 0 0 0 .001-.972c-1.539-.137-2.399-1.065-2.57-2.581\"></path></svg>",
+   "options": [
+    {
+     "id": "df_hetero",
+     "label": "Odd eyes",
+     "image": "https://static.higgsfield.ai/ai-influencer/option-previews/2026-10-03-icons-full/df_hetero.webp",
+     "visibleIn": [
+      "normal",
+      "freak",
+      "total"
+     ]
+    },
+    {
+     "id": "df_facetattoo",
+     "label": "Face tattoo",
+     "image": "https://static.higgsfield.ai/ai-influencer/option-previews/2026-10-03-icons-full/df_facetattoo.webp",
+     "visibleIn": [
+      "normal",
+      "freak",
+      "total"
+     ]
+    },
+    {
+     "id": "df_septum",
+     "label": "Piercing",
+     "image": "https://static.higgsfield.ai/ai-influencer/option-previews/2026-10-03-icons-full/df_septum.webp",
+     "visibleIn": [
+      "normal",
+      "freak",
+      "total"
+     ]
+    },
+    {
+     "id": "df_ears",
+     "label": "Ear piercing",
+     "image": "https://static.higgsfield.ai/ai-influencer/option-previews/2026-10-03-icons-full/df_ears.webp",
+     "visibleIn": [
+      "normal",
+      "freak",
+      "total"
+     ]
+    },
+    {
+     "id": "df_slits",
+     "label": "Brow slits",
+     "image": "https://static.higgsfield.ai/ai-influencer/option-previews/2026-10-03-icons-full/df_slits.webp",
+     "visibleIn": [
+      "normal",
+      "freak",
+      "total"
+     ]
+    },
+    {
+     "id": "df_bleached",
+     "label": "Bleached",
+     "image": "https://static.higgsfield.ai/ai-influencer/option-previews/2026-10-03-icons-full/df_bleached.webp",
+     "visibleIn": [
+      "normal",
+      "freak",
+      "total"
+     ]
+    },
+    {
+     "id": "df_nobrows",
+     "label": "No brows",
+     "image": "https://static.higgsfield.ai/ai-influencer/option-previews/2026-10-03-icons-full/df_nobrows.webp",
+     "visibleIn": [
+      "normal",
+      "freak",
+      "total"
+     ]
+    },
+    {
+     "id": "df_grill",
+     "label": "Gold grill",
+     "image": "https://static.higgsfield.ai/ai-influencer/option-previews/2026-10-03-icons-full/df_grill.webp",
+     "visibleIn": [
+      "normal",
+      "freak",
+      "total"
+     ]
+    },
+    {
+     "id": "df_braces",
+     "label": "Braces",
+     "image": "https://static.higgsfield.ai/ai-influencer/option-previews/2026-10-03-icons-full/df_braces.webp",
+     "visibleIn": [
+      "normal",
+      "freak",
+      "total"
+     ]
+    },
+    {
+     "id": "df_scar",
+     "label": "Brow scar",
+     "image": "https://static.higgsfield.ai/ai-influencer/option-previews/2026-10-03-icons-full/df_scar.webp",
+     "visibleIn": [
+      "normal",
+      "freak",
+      "total"
+     ]
+    },
+    {
+     "id": "df_gems",
+     "label": "Face gems",
+     "image": "https://static.higgsfield.ai/ai-influencer/option-previews/2026-10-03-icons-full/df_gems.webp",
+     "visibleIn": [
+      "normal",
+      "freak",
+      "total"
+     ]
+    },
+    {
+     "id": "df_elf",
+     "label": "Elf ears",
+     "image": "https://static.higgsfield.ai/ai-influencer/option-previews/2026-10-03-icons-full/df_elf.webp",
+     "visibleIn": [
+      "normal",
+      "freak",
+      "total"
+     ]
+    },
+    {
+     "id": "df_lashes",
+     "label": "Big lashes",
+     "image": "https://static.higgsfield.ai/ai-influencer/option-previews/2026-10-03-icons-full/df_lashes.webp",
+     "visibleIn": [
+      "normal",
+      "freak",
+      "total"
+     ]
+    },
+    {
+     "id": "df_bandage",
+     "label": "Nose tape",
+     "image": "https://static.higgsfield.ai/ai-influencer/option-previews/2026-10-03-icons-full/df_bandage.webp",
+     "visibleIn": [
+      "normal",
+      "freak",
+      "total"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "accessory",
+   "label": "Accessories",
+   "kind": "media",
+   "max": 3,
+   "style": "cover",
+   "icon": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><path fill=\"currentColor\" fill-rule=\"evenodd\" d=\"M12 2c1.197 0 2.342.223 3.398.627a1.89 1.89 0 0 0-1.648 1.875l.009.178a1.89 1.89 0 0 0 1.667 1.697l.173.025c.638.114.962.479 1.02 1.127l.025.18c.164.885.94 1.542 1.858 1.541l.182-.009a1.89 1.89 0 0 0 1.698-1.717l.02-.16q.016-.11.046-.208A9.46 9.46 0 0 1 21.5 11.5v7.898c0 .884-.718 1.602-1.602 1.602H4.103A1.603 1.603 0 0 1 2.5 19.398V11.5A9.5 9.5 0 0 1 12 2m-3.295 8C7.763 10 7 10.763 7 11.705V14.5a5 5 0 0 0 10 0v-2.795c0-.942-.763-1.705-1.705-1.705z\" clip-rule=\"evenodd\"></path><path fill=\"currentColor\" d=\"M18.985 1.433a.488.488 0 0 0-.97-.001c-.177 1.538-1.045 2.406-2.583 2.583a.488.488 0 0 0 0 .97c1.517.171 2.445 1.031 2.582 2.57a.488.488 0 0 0 .972 0c.131-1.518 1.05-2.438 2.568-2.569a.488.488 0 0 0 .001-.972c-1.539-.137-2.399-1.065-2.57-2.581\"></path></svg>",
+   "options": [
+    {
+     "id": "acc_none",
+     "label": "None",
+     "image": "https://static.higgsfield.ai/ai-influencer/option-previews/2026-10-02/acc_none.webp",
+     "visibleIn": [
+      "normal",
+      "freak",
+      "total"
+     ]
+    },
+    {
+     "id": "acc_glasses",
+     "label": "Glasses",
+     "image": "https://static.higgsfield.ai/ai-influencer/option-previews/2026-10-02/acc_glasses.webp",
+     "visibleIn": [
+      "normal",
+      "freak",
+      "total"
+     ]
+    },
+    {
+     "id": "acc_headphones",
+     "label": "Headphones",
+     "image": "https://static.higgsfield.ai/ai-influencer/option-previews/2026-10-02/acc_headphones.webp",
+     "visibleIn": [
+      "normal",
+      "freak",
+      "total"
+     ]
+    },
+    {
+     "id": "acc_jewelry",
+     "label": "Jewelry",
+     "image": "https://static.higgsfield.ai/ai-influencer/option-previews/2026-10-02/acc_jewelry.webp",
+     "visibleIn": [
+      "normal",
+      "freak",
+      "total"
+     ]
+    },
+    {
+     "id": "acc_hat",
+     "label": "Hat",
+     "image": "https://static.higgsfield.ai/ai-influencer/option-previews/2026-10-02/acc_hat.webp",
+     "visibleIn": [
+      "normal",
+      "freak",
+      "total"
+     ]
+    },
+    {
+     "id": "acc_bag",
+     "label": "Bag",
+     "image": "https://static.higgsfield.ai/ai-influencer/option-previews/2026-10-02/acc_bag.webp",
+     "visibleIn": [
+      "normal",
+      "freak",
+      "total"
+     ]
+    }
+   ]
+  }
+ ],
+ "styleRefIcon": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><path fill=\"currentColor\" d=\"M14.5 7a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5\"></path><path fill=\"currentColor\" fill-rule=\"evenodd\" d=\"M4.75 3A1.75 1.75 0 0 0 3 4.75v14.5q0 .181.036.353A1.75 1.75 0 0 0 4.75 21h14.5A1.75 1.75 0 0 0 21 19.25V4.75A1.75 1.75 0 0 0 19.25 3zm11.81 16.5h2.69a.25.25 0 0 0 .25-.25V4.75a.25.25 0 0 0-.25-.25H4.75a.25.25 0 0 0-.25.25v9.69l2.263-2.263a1.75 1.75 0 0 1 2.474 0z\" clip-rule=\"evenodd\"></path></svg>",
+ "animalSections": [
+  "gender",
+  "body_type",
+  "height",
+  "proportions",
+  "facial_hair",
+  "distinctive",
+  "accessory",
+  "hair",
+  "hair_colour",
+  "aesthetic"
+ ],
+ "animalSubtypes": {
+  "insects": [
+   "ant",
+   "mantis",
+   "grasshopper",
+   "honeybee",
+   "bumblebee",
+   "butterfly",
+   "moth",
+   "dragonfly",
+   "ladybird",
+   "fluffy_tarantula"
+  ],
+  "frogs": [
+   "tree_frog",
+   "bullfrog",
+   "horned_frog",
+   "tomato_frog",
+   "rain_frog"
+  ],
+  "cats": [
+   "sphynx",
+   "maine_coon",
+   "british_shorthair",
+   "siamese",
+   "persian"
+  ],
+  "dogs": [
+   "pug",
+   "borzoi",
+   "dachshund",
+   "poodle",
+   "corgi"
+  ],
+  "capybaras": [
+   "cylindrical",
+   "barrel",
+   "slender",
+   "pear",
+   "broad_shoulders"
+  ],
+  "birds": [
+   "goose",
+   "duck",
+   "platypus",
+   "puffin",
+   "pigeon"
+  ]
+ },
+ "rules": [
+  {
+   "id": "kfgdXQ",
+   "message": "Heavy build cannot be combined with Tall or Very tall."
+  },
+  {
+   "id": "tTsi1Q",
+   "message": "This build cannot be combined with Short legs or Long limbs in this mode."
+  }
+ ],
+ "defaults": {
+  "tier": "total"
+ }
+}

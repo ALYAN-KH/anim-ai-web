@@ -7,6 +7,7 @@ import data from "@/data/content";
 import { soulCinemaCapturedHtml } from "@/data/soulCinemaCaptured";
 import { useAppDispatch, useAppSelector } from "@/store/hooks";
 import { tick } from "@/store";
+import { previewVideo } from "@/lib/videoPreview";
 
 export function Influencer() {
   const influencer = data.influencerSection;
@@ -47,12 +48,12 @@ export function Influencer() {
         <p className="mt-4 text-base text-zinc-400 md:text-lg max-md:mt-3 max-md:max-w-[280px] max-md:text-sm">
           {influencer.desc}
         </p>
-        <Link
+        <a
           href={influencer.href}
           className="btn mt-8 shadow-[0_4px_0_rgba(209,254,23,0.35)] max-md:mt-5 max-md:px-3.5 max-md:py-1.5 max-md:text-[13px]"
         >
           {influencer.cta}
-        </Link>
+        </a>
       </div>
     </section>
   );
@@ -91,13 +92,13 @@ function FestivalFilmCard({
         hoverEffects={false}
       />
 
-      <span className="pointer-events-none absolute left-3 right-[45px] top-[10px] z-20 overflow-hidden text-left text-[clamp(11px,1.1vw,17px)] font-bold leading-[1.15] text-white opacity-0 [text-overflow:ellipsis] [white-space:nowrap] transition-opacity duration-200 group-hover/festival-card:opacity-100 group-focus-within/festival-card:opacity-100 [@media(hover:none)]:text-[11px] [@media(hover:none)]:opacity-100" aria-hidden="true">
+      <span className="pointer-events-none absolute left-3 right-[45px] top-[10px] max-[767px]:right-9 max-[767px]:left-2 max-[767px]:top-2 max-[767px]:!text-[9px] z-20 overflow-hidden text-left text-[clamp(11px,1.1vw,17px)] font-bold leading-[1.15] text-white opacity-0 [text-overflow:ellipsis] [white-space:nowrap] transition-opacity duration-200 group-hover/festival-card:opacity-100 group-focus-within/festival-card:opacity-100 [@media(hover:none)]:text-[11px] [@media(hover:none)]:opacity-100" aria-hidden="true">
         {film.t}
       </span>
 
       <span
         role="img"
-        className={`pointer-events-none absolute right-3 top-0 z-20 flex h-10 w-8 justify-center pt-2 text-[#0b0c0e] [clip-path:polygon(0_0,100%_0,100%_100%,50%_82%,0_100%)] ${
+        className={`pointer-events-none absolute right-3 top-0 z-20 flex h-10 w-8 justify-center pt-2 max-[767px]:right-2 max-[767px]:h-7 max-[767px]:w-6 max-[767px]:pt-1.5 max-[767px]:[&_svg]:size-3.5 text-[#0b0c0e] [clip-path:polygon(0_0,100%_0,100%_100%,50%_82%,0_100%)] ${
           badge === "laurel" ? "bg-[#39adff]" : "bg-[#d6ff00]"
         }`}
         aria-label={badge === "laurel" ? "Create in Public Shortlist" : "Higgsfield Picks"}
@@ -120,9 +121,9 @@ function FestivalFilmCard({
         )}
       </span>
 
-      <span className="pointer-events-none absolute bottom-[10px] left-[10px] z-20 flex h-7 w-7 items-center gap-[7px] overflow-hidden rounded-full border border-white/30 bg-black/50 p-0.5 backdrop-blur-sm transition-all duration-200 group-hover/festival-card:w-max group-focus-within/festival-card:w-max group-hover/festival-card:max-w-[calc(100%_-_20px)] group-focus-within/festival-card:max-w-[calc(100%_-_20px)] group-hover/festival-card:pr-[10px] group-focus-within/festival-card:pr-[10px] group-hover/festival-card:bg-[rgba(24,24,24,0.82)] group-focus-within/festival-card:bg-[rgba(24,24,24,0.82)]" aria-hidden="true">
+      <span className="pointer-events-none absolute bottom-[10px] left-[10px] z-20 flex h-7 w-7 max-[767px]:bottom-1.5 max-[767px]:left-1.5 max-[767px]:h-5 max-[767px]:w-5 items-center gap-[7px] overflow-hidden rounded-full border border-white/30 bg-black/50 p-0.5 backdrop-blur-sm transition-all duration-200 group-hover/festival-card:w-max group-focus-within/festival-card:w-max group-hover/festival-card:max-w-[calc(100%_-_20px)] group-focus-within/festival-card:max-w-[calc(100%_-_20px)] group-hover/festival-card:pr-[10px] group-focus-within/festival-card:pr-[10px] group-hover/festival-card:bg-[rgba(24,24,24,0.82)] group-focus-within/festival-card:bg-[rgba(24,24,24,0.82)]" aria-hidden="true">
         {avatar ? (
-          <img className="h-[22px] w-[22px] flex-none rounded-full object-cover [object-position:center_28%]" src={avatar} alt="" loading="lazy" />
+          <img className="h-[22px] w-[22px] max-[767px]:h-4 max-[767px]:w-4 flex-none rounded-full object-cover [object-position:center_28%]" src={avatar} alt="" loading="lazy" />
         ) : (
           <span className="grid h-[22px] w-[22px] place-items-center rounded-full bg-lime text-[10px] font-extrabold text-[#0b0c0e]">{film.author.slice(0, 1).toUpperCase()}</span>
         )}
@@ -183,7 +184,7 @@ export function Festival() {
           <video
             ref={videoRef}
             className="absolute inset-0 z-0 h-full w-full object-cover"
-            src={meta.bannerVideo}
+            src={previewVideo(meta.bannerVideo)}
             poster={meta.banner}
             autoPlay
             muted
@@ -230,7 +231,7 @@ export function Festival() {
           ))}
         </div>
         <div className="text-center">
-          <Link href={meta.href} className="btn relative z-[3] mt-[-12px] inline-flex h-[42px] items-center justify-center px-4 text-[17px] font-semibold leading-none shadow-[0_4px_0_rgba(209,254,23,0.35)] max-[767px]:mt-[-8px] max-[767px]:h-[34px] max-[767px]:px-3 max-[767px]:text-[13px]">
+          <Link href={meta.href} className="btn relative z-[3] mt-[-12px] inline-flex h-[42px] items-center justify-center px-4 text-[17px] font-semibold leading-none shadow-[0_4px_0_rgba(209,254,23,0.35)] max-[767px]:mt-[-8px] max-[767px]:h-[44px] max-[767px]:px-3 max-[767px]:text-[13px]">
             {meta.cta}
           </Link>
         </div>

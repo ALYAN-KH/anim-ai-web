@@ -284,7 +284,7 @@ export const shineCss = `
 `;
 
 export const panelClass =
-  "fixed z-30 overflow-hidden rounded-[22px] border border-white/10 bg-[#181a1c] shadow-[0_24px_80px_#000]";
+  "soul-panel fixed z-30 overflow-hidden rounded-[22px] border border-white/10 bg-[#181a1c] shadow-[0_24px_80px_#000]";
 
 export const panelStyle = {
   left: "50%",

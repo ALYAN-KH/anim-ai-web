@@ -1,0 +1,28 @@
+/* Undo the site-wide main layout overrides only inside the reference markup. */
+[data-academy-root] main {
+  display: flex !important;
+  overflow: clip !important;
+}
+
+[data-academy-root] main > div {
+  max-width: 84rem !important;
+  align-items: stretch;
+}
+
+[data-academy-root] [hidden] {
+  display: none !important;
+}
+
+/* The video studio shares this class name but adds a panel-wide surface. */
+[data-academy-root] .q-tabs-segmented {
+  background: transparent;
+  border-radius: 0;
+}
+
+/* Reference utilities use individual transforms. The site's Tailwind 3
+   utilities also set transform, which otherwise applies every offset twice. */
+[data-academy-root] [class*="translate-"],
+[data-academy-root] [class*="rotate-"],
+[data-academy-root] [class*="scale-"] {
+  transform: none;
+}

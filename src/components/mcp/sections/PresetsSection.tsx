@@ -2,14 +2,17 @@
 import { useMemo, useState } from "react";
 import { PRESETS, PRESET_CATEGORIES } from "../config";
 import { filterPresets } from "../lib/filter";
-import { CategoryIcon, SearchIcon } from "../ui/Icons";
+import { CategoryGlyph } from "../ui/CategoryGlyph";
+import { SearchIcon } from "../ui/Icons";
+import type { AgentId } from "../types";
 import { PresetCard } from "./PresetCard";
 
 interface PresetsSectionProps {
   agentParam: string;
+  agentId: AgentId;
 }
 
-export function PresetsSection({ agentParam }: PresetsSectionProps) {
+export function PresetsSection({ agentParam, agentId }: PresetsSectionProps) {
   const [categoryId, setCategoryId] = useState("popular");
   const [query, setQuery] = useState("");
   const visible = useMemo(() => filterPresets(PRESETS, categoryId, query), [categoryId, query]);
@@ -27,16 +30,10 @@ export function PresetsSection({ agentParam }: PresetsSectionProps) {
             setCategoryId(category.id);
             setQuery("");
           }}
-          className={`flex h-12 w-full items-center gap-3 rounded-xl px-2 text-left text-lg font-semibold transition-colors ${
-            active ? "text-[#d1fe17]" : "text-white hover:text-[#d1fe17]/80"
-          }`}
+          className={`mcp-filter ${active ? "is-active" : ""}`}
         >
-          <span
-            className={`grid size-8 shrink-0 place-items-center rounded-full transition-colors ${
-              active ? "bg-[#d1fe17] text-black" : "bg-[#2a2c2f] text-white/80"
-            }`}
-          >
-            <CategoryIcon name={category.icon} className="size-5" />
+          <span className="mcp-filter-icon">
+            <CategoryGlyph label={category.label} />
           </span>
           {category.label}
         </button>
@@ -45,41 +42,41 @@ export function PresetsSection({ agentParam }: PresetsSectionProps) {
   };
 
   return (
-    <section aria-labelledby="mcp-presets-title" className="mx-auto w-full max-w-[1720px] px-4 pb-28 sm:px-7 lg:px-[109px]">
+    <section aria-labelledby="mcp-presets-title" className="mx-auto w-full max-w-[1700px] px-4 pb-28 sm:px-7 lg:px-10">
       <h2
         id="mcp-presets-title"
-        className="mb-10 text-center font-grotesk text-4xl font-bold uppercase leading-10 tracking-[-0.03em] text-white sm:text-5xl"
+        className="sr-only"
       >
         Discover what you can create
       </h2>
 
-      <div className="grid gap-8 lg:grid-cols-[424px_1fr] lg:gap-[65px]">
+      <div className="grid grid-cols-[minmax(0,1fr)] gap-8 lg:grid-cols-[424px_1fr] lg:gap-[50px]">
         <aside className="lg:sticky lg:top-24 lg:self-start">
-          <label className="relative block">
+          <label className="flex h-[45px] w-full items-center gap-2.5 rounded-[15px] bg-white/10 p-2.5 text-white/50 focus-within:outline focus-within:outline-2 focus-within:outline-[#d1fe17]">
             <span className="sr-only">Search presets</span>
-            <SearchIcon className="pointer-events-none absolute left-4 top-1/2 size-5 -translate-y-1/2 text-white/45" />
+            <SearchIcon className="size-[22px] shrink-0" />
             <input
               type="search"
               value={query}
               onChange={(event) => setQuery(event.target.value)}
               placeholder="Search presets"
-              className="h-11 w-full rounded-2xl bg-[#17181a] pl-12 pr-4 text-base font-medium text-white placeholder:text-white/45 focus:outline-none focus-visible:ring-2 focus-visible:ring-white/20"
+              className="h-full min-w-0 flex-1 bg-transparent text-[17.5px] font-normal text-white placeholder:text-white/45 focus:outline-none"
             />
           </label>
           <nav aria-label="Preset categories" className="hide-scrollbar mt-5 overflow-x-auto lg:overflow-visible">
-            <ul className="flex gap-2 lg:flex-col lg:gap-0">{main.map(renderCategory)}</ul>
+            <ul className="flex gap-2 lg:flex-col lg:gap-[2.5px]">{main.map(renderCategory)}</ul>
             <div className="my-3 hidden border-t border-white/5 lg:block" />
-            <ul className="mt-2 flex gap-2 lg:mt-0 lg:flex-col lg:gap-0">{plugins.map(renderCategory)}</ul>
+            <ul className="mt-2 flex gap-2 lg:mt-0 lg:flex-col lg:gap-[2.5px]">{plugins.map(renderCategory)}</ul>
           </nav>
         </aside>
 
-        <div className="flex min-w-0 flex-col gap-14">
+        <div className="flex min-w-0 flex-col gap-[35px]">
           {visible.length === 0 ? (
             <p className="py-16 text-center text-lg font-medium text-white/45">
               {query ? `No presets match “${query}”.` : "No presets in this category yet."}
             </p>
           ) : (
-            visible.map((preset) => <PresetCard key={preset.id} preset={preset} agentParam={agentParam} />)
+            visible.map((preset) => <PresetCard key={preset.id} preset={preset} agentParam={agentParam} agentId={agentId} />)
           )}
         </div>
       </div>

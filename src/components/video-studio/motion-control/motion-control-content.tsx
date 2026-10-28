@@ -36,22 +36,22 @@ function MotionClip({ preset, selected, onSelect }: { preset: VideoPreset; selec
 
 export function MotionControlContent({ selectedVideo, onSelect }: { selectedVideo: VideoSelection | null; onSelect: (video: VideoSelection) => void }) {
   return <div className="space-y-3 pr-0.5">
-    <section className="relative flex h-[270px] w-full overflow-hidden rounded-2xl border border-white/[.04] bg-[#111314] px-8 py-6 max-sm:h-auto max-sm:flex-col">
+    <section className="relative flex h-[270px] w-full overflow-hidden rounded-2xl border border-white/[.04] bg-[#111314] px-8 py-6 max-sm:h-auto max-sm:flex-col max-sm:px-4 max-sm:py-5">
       <div className="pointer-events-none absolute inset-0 overflow-hidden" aria-hidden="true">
         <svg className="absolute -top-[106px] left-8 size-[478px]" viewBox="0 0 477 477" fill="none"><circle cx="238.5" cy="238.5" r="238" stroke="url(#kmc-mesh-gradient)" strokeOpacity=".08" /><defs><radialGradient id="kmc-mesh-gradient" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(238.5 238.5) scale(238.5)"><stop stopColor="#D1FE17" stopOpacity=".15" /><stop offset="1" stopColor="#D1FE17" stopOpacity="0" /></radialGradient></defs></svg>
         <div className="absolute right-[52px] top-[70px] h-[200px] w-[432px] bg-[radial-gradient(50%_50%,rgba(209,254,23,0.12)_0%,transparent_100%)]" />
       </div>
       <div className="relative z-10 flex w-full items-center gap-5 pb-2 max-sm:flex-col">
         <header className="flex min-w-0 flex-1 flex-col justify-center gap-4">
-          <h2 className="font-grotesk text-[40px] font-bold uppercase leading-[1.2] tracking-[-1.6px] max-xl:text-[32px]">Recreate any <span className={`relative inline-block px-1 text-lime ${styles.motionWord}`}><i /><i /><i /><i />Motion</span><br />with Your Image</h2>
-          <p className="max-w-[372px] text-base leading-6 text-white">Copy motion from any video and place your character into the same movement</p>
+          <h2 className="font-grotesk text-[40px] font-bold uppercase leading-[1.2] tracking-[-1.6px] max-xl:text-[32px] max-sm:text-[26px] max-sm:tracking-[-1px]">Recreate any <span className={`relative inline-block px-1 text-lime ${styles.motionWord}`}><i /><i /><i /><i />Motion</span><br />with Your Image</h2>
+          <p className="max-w-[372px] text-base leading-6 text-white max-sm:text-sm max-sm:leading-[22px]">Copy motion from any video and place your character into the same movement</p>
         </header>
         <div className="relative aspect-video w-[40%] max-w-[380px] shrink-0 overflow-hidden rounded-xl max-sm:w-full lg:mr-4">
           <img alt="Motion control preview" src="https://static.higgsfield.ai/v3-kmc-how-it-works-hero-section.webp" className="absolute inset-0 size-full object-cover" />
         </div>
       </div>
     </section>
-    <section className="rounded-2xl border border-white/[.04] bg-[#111314] px-6 py-4">
+    <section className="rounded-2xl border border-white/[.04] bg-[#111314] px-6 py-4 max-sm:px-3">
       <h3 className="mb-4 text-base font-semibold leading-6">Start by copying motion from library</h3>
       <div className="grid grid-cols-2 gap-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5">
         {motionPresets.map((preset, index) => <MotionClip key={`${index}:${preset.url}`} preset={preset} selected={selectedVideo?.url === preset.url} onSelect={onSelect} />)}

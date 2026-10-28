@@ -52,6 +52,13 @@ export interface AssetsPickerProps {
   voicesPanel?: ReactNode;
   pickerWidth?: number;
   tabCounts?: Partial<Record<AssetsPickerTabId, number>>;
+  /** Optional project-specific media, while retaining the shared picker and panels. */
+  panels?: Partial<Record<AssetsPickerTabId, ReactNode>>;
+  renderUploads?: (filters: { scope: "recent" | "all"; sort: SortKey; media: MediaFilter }) => ReactNode;
+  label?: string;
+  uploadLabel?: string;
+  error?: string | null;
+  modal?: boolean;
 }
 
 export function AssetsPicker({
@@ -67,6 +74,12 @@ export function AssetsPicker({
   voicesPanel,
   pickerWidth,
   tabCounts,
+  panels,
+  renderUploads,
+  label = "Assets",
+  uploadLabel = "Upload file",
+  error,
+  modal = false,
 }: AssetsPickerProps) {
   const visibleTabs = tabs ? TABS.filter((t) => tabs.includes(t.id)) : TABS.filter(t => t.id !== "voices");
   const [activeId, setActiveId] = useState<AssetsPickerTabId>(
@@ -83,6 +96,20 @@ export function AssetsPicker({
   const [media, setMedia] = useState<MediaFilter>("all");
   const [uploadScope, setUploadScope] = useState<"recent" | "all">("recent");
   const [uploadsLoading, setUploadsLoading] = useState(true);
+
+  useEffect(() => {
+    if (!modal) return;
+    const previous = document.activeElement as HTMLElement | null;
+    panelRef.current?.querySelector<HTMLButtonElement>('[role="tab"]')?.focus();
+    const trap = (event: KeyboardEvent) => {
+      if (event.key !== "Tab" || document.querySelector("[data-preset-dialog]")) return;
+      const items = Array.from(panelRef.current?.querySelectorAll<HTMLElement>('button:not([disabled]):not([tabindex="-1"]), [role="button"][tabindex="0"], a[href], select') ?? []);
+      if (event.shiftKey && document.activeElement === items[0]) { event.preventDefault(); items[items.length - 1]?.focus(); }
+      else if (!event.shiftKey && document.activeElement === items[items.length - 1]) { event.preventDefault(); items[0]?.focus(); }
+    };
+    document.addEventListener("keydown", trap);
+    return () => { document.removeEventListener("keydown", trap); previous?.focus(); };
+  }, [modal]);
 
   useEffect(() => {
     if (activeId !== "uploads") return;
@@ -135,14 +162,23 @@ export function AssetsPicker({
     <div
       ref={panelRef}
       role="dialog"
-      aria-label="Assets"
-      style={{ left, top, height, width, ...(motionUploadStyle ? { backgroundColor: voicesPanel ? "#121516" : "#232628" } : {}) }}
+      aria-label={label}
+      aria-modal={modal || undefined}
+      style={{ left, top, height, width, ...(modal ? { zIndex: 100, backgroundColor: "#1d1f20" } : {}), ...(motionUploadStyle ? { backgroundColor: voicesPanel ? "#121516" : "#232628" } : {}) }}
       className="fixed z-50 flex max-h-[calc(100vh-16px)] w-[min(750px,calc(100vw-16px))] flex-col rounded-3xl border border-white/10 bg-[#1b1d1f]/95 shadow-2xl backdrop-blur-2xl"
     >
       <div className="flex h-[42px] shrink-0 items-center justify-between gap-2 pl-3 pr-4 pt-3">
         <div
           ref={tabListRef}
           role="tablist"
+          aria-label="Media sources"
+          onKeyDown={event => {
+            const index = visibleTabs.findIndex(tab => tab.id === activeId);
+            const next = { ArrowRight: (index + 1) % visibleTabs.length, ArrowLeft: (index - 1 + visibleTabs.length) % visibleTabs.length, Home: 0, End: visibleTabs.length - 1 }[event.key];
+            if (next === undefined) return;
+            event.preventDefault(); setActiveId(visibleTabs[next].id);
+            tabListRef.current?.querySelectorAll<HTMLButtonElement>("button")[next]?.focus();
+          }}
           className="flex min-w-0 items-center gap-1.5 overflow-x-auto [scrollbar-width:none]"
         >
           {visibleTabs.map((tab) => (
@@ -151,6 +187,7 @@ export function AssetsPicker({
               type="button"
               role="tab"
               aria-selected={activeId === tab.id}
+              tabIndex={activeId === tab.id ? 0 : -1}
               onClick={() => {
                 if (tab.id === "uploads") setUploadsLoading(true);
                 setActiveId(tab.id);
@@ -206,7 +243,7 @@ export function AssetsPicker({
           style={motionUploadStyle ? { backgroundColor: voicesPanel ? "#202325" : "#303334" } : undefined}
           className="relative flex min-h-0 flex-1 flex-col overflow-hidden rounded-[var(--assets-picker-block-radius,1rem)] bg-[var(--assets-picker-block-bg,var(--color-neutral-primary-reverted-5))]"
         >
-          {active.id === "voices" ? voicesPanel : active.id === "presets" ? (
+          {panels?.[active.id] ?? (active.id === "voices" ? voicesPanel : active.id === "presets" ? (
             <PresetVideosPanel onSelect={onPresetSelected} />
           ) : active.id === "influencer" ? (
             <AiInfluencerBanner />
@@ -219,6 +256,7 @@ export function AssetsPicker({
             />
           ) : (
             <>
+              {error && <p role="alert" className="px-3 py-2 text-xs text-red-300">{error}</p>}
               <div className="flex h-11 shrink-0 items-center gap-2 p-2 shadow-[inset_0_-1px_0_var(--color-neutral-primary-20)]">
                 <div className="flex min-w-0 flex-1 items-center gap-2">
                   {motionUploadStyle ? <span className="px-1.5 text-xs font-semibold text-white/45">Uploads</span> : (["recent", "all"] as const).map((scope) => (
@@ -287,7 +325,7 @@ export function AssetsPicker({
                               </svg>
                             </span>
                             <span className="text-q-caption-sm-medium text-q-text-primary" style={motionUploadStyle ? { fontSize: 12, fontWeight: 600 } : undefined}>
-                              Upload file
+                              {uploadLabel}
                             </span>
                           </div>
                         </div>
@@ -304,13 +342,14 @@ export function AssetsPicker({
                           e.target.value = "";
                         }}
                       />
+                      {renderUploads?.({ scope: uploadScope, sort, media })}
                       <div className="h-1" />
                     </div>
-                    <div className="flex min-h-0 flex-1 items-center justify-center p-6">
+                    {!renderUploads && <div className="flex min-h-0 flex-1 items-center justify-center p-6">
                       <p className="text-sm-medium text-font-secondary">
                         No uploads found
                       </p>
-                    </div>
+                    </div>}
                   </div>
                 </div>
               </div>}
@@ -325,7 +364,7 @@ export function AssetsPicker({
                 />
               )}
             </>
-          )}
+          ))}
         </section>
       </div>
     </div>,

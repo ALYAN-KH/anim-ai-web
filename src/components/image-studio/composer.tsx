@@ -88,7 +88,7 @@ export function ControlsBar({
   const mask = `linear-gradient(to right, ${maskStops})`;
 
   return (
-    <><div className="absolute bottom-3.5 left-[16px] right-[352px] flex h-8 items-center gap-[6px]">
+    <><div className="soul-f-controls absolute bottom-3.5 left-[16px] right-[352px] flex h-8 items-center gap-[6px]">
       <Control className="!w-8 !px-0" aria-label="Add">
         <Plus size={16} strokeWidth={2} />
       </Control>
@@ -195,7 +195,7 @@ export function ControlsBar({
       <button
         type="button"
         onClick={onCharacterClick}
-        className="absolute bottom-3.5 right-[268px] flex h-20 w-20 shrink-0 flex-col items-center justify-end rounded-xl bg-[#2a2c2f] px-2"
+        className="soul-f-char absolute bottom-3.5 right-[268px] flex h-20 w-20 shrink-0 flex-col items-center justify-end rounded-xl bg-[#2a2c2f] px-2"
         aria-label="Character"
         aria-pressed={characterActive}
       >
@@ -225,7 +225,7 @@ export function MoodboardButton({
       onKeyDown={(e) => {
         if (e.key === "Enter" || e.key === " ") onClick();
       }}
-      className="absolute bottom-3.5 right-[140px] h-20 w-[120px] cursor-pointer overflow-hidden rounded-xl border-2 border-white/80"
+      className="soul-f-mood absolute bottom-3.5 right-[140px] h-20 w-[120px] cursor-pointer overflow-hidden rounded-xl border-2 border-white/80"
     >
       <SafeImage
         key={preset.name}
@@ -251,7 +251,7 @@ export function GenerateButton({ cost }: { cost: number }) {
   return (
     <button
       type="submit"
-      className="absolute bottom-3.5 right-3.5 flex h-20 w-[120px] flex-col items-center justify-center rounded-xl bg-lime text-xs font-extrabold uppercase text-black shadow-[0_3px_0_#839700]"
+      className="soul-f-gen absolute bottom-3.5 right-3.5 flex h-20 w-[120px] flex-col items-center justify-center rounded-xl bg-lime text-xs font-extrabold uppercase text-black shadow-[0_3px_0_#839700]"
     >
       Generate
       <span className="mt-0.5 text-[11px]">✦ {cost}</span>

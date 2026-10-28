@@ -169,7 +169,7 @@ export function ImageStudio() {
       )}
 
       {/* View button + dropdown */}
-      <div className="absolute right-4 top-3 z-50">
+      <div className="soul-view-wrap absolute right-4 top-3 z-50">
         <button
           onClick={() => setViewDropdownOpen((v) => !v)}
           className="flex h-11 items-center gap-2 rounded-xl border border-white/10 px-4 text-base font-semibold"
@@ -320,14 +320,14 @@ export function ImageStudio() {
           e.preventDefault();
           setNotice("Demo only — generation backend is not connected.");
         }}
-        className="fixed z-40 rounded-[20px] border border-[#2a2c2f] bg-[#1b1c1e] p-2.5 shadow-[0_24px_80px_#000]"
+        className="soul-form fixed z-40 rounded-[20px] border border-[#2a2c2f] bg-[#1b1c1e] p-2.5 shadow-[0_24px_80px_#000]"
       >
         <textarea
           value={prompt}
           onChange={(e) => setPrompt(e.target.value)}
           placeholder="Describe the scene you imagine"
           aria-label="Prompt"
-          className="mt-1 h-10 w-[calc(100%-368px)] resize-none bg-transparent px-2 py-1 text-sm outline-none placeholder:text-[#77797c]"
+          className="soul-f-text mt-1 h-10 w-[calc(100%-368px)] resize-none bg-transparent px-2 py-1 text-sm outline-none placeholder:text-[#77797c]"
         />
 
         <ControlsBar
