@@ -1,0 +1,571 @@
+{
+  "courses": [
+    {
+      "title": "Blockbuster 4K: The AI Filmmaking Pipeline",
+      "description": "One 40-minute tutorial — scripting, asset creation, and scene-by-scene prompt engineering — chaptered into sections you can follow along with, shot by shot.",
+      "image": {
+        "src": "https://images.higgs.ai/?default=1&output=webp&url=https%3A%2F%2Fd2245ubjcvacnx.cloudfront.net%2Fassets%2Fblockbuster-4k__cover__course-thumbnail.d3aeddb8.webp&w=1920&q=85",
+        "srcset": "https://images.higgs.ai/?default=1&output=webp&url=https%3A%2F%2Fd2245ubjcvacnx.cloudfront.net%2Fassets%2Fblockbuster-4k__cover__course-thumbnail.d3aeddb8.webp&w=384&q=85 384w, https://images.higgs.ai/?default=1&output=webp&url=https%3A%2F%2Fd2245ubjcvacnx.cloudfront.net%2Fassets%2Fblockbuster-4k__cover__course-thumbnail.d3aeddb8.webp&w=640&q=85 640w, https://images.higgs.ai/?default=1&output=webp&url=https%3A%2F%2Fd2245ubjcvacnx.cloudfront.net%2Fassets%2Fblockbuster-4k__cover__course-thumbnail.d3aeddb8.webp&w=1280&q=85 1280w, https://images.higgs.ai/?default=1&output=webp&url=https%3A%2F%2Fd2245ubjcvacnx.cloudfront.net%2Fassets%2Fblockbuster-4k__cover__course-thumbnail.d3aeddb8.webp&w=1920&q=85 1920w",
+        "sizes": "(max-width: 1023px) 100vw, 435px",
+        "alt": "Course cover for Blockbuster 4K: The AI Filmmaking Pipeline"
+      },
+      "badges": [
+        {
+          "label": "Movie making",
+          "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><path fill=\"currentColor\" fill-rule=\"evenodd\" d=\"M22 12a9.99 9.99 0 0 1-4.73 8.5h3.98a.75.75 0 0 1 0 1.5H12C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10M7.5 10a2 2 0 1 0 0 4 2 2 0 0 0 0-4M10 7.5a2 2 0 1 1 4 0 2 2 0 0 1-4 0m2 7a2 2 0 1 0 0 4 2 2 0 0 0 0-4m2.5-2.5a2 2 0 1 1 4 0 2 2 0 0 1-4 0\" clip-rule=\"evenodd\"></path></svg>"
+        },
+        {
+          "label": "Intermediate",
+          "svg": "<svg width=\"16\" height=\"16\" viewBox=\"0 0 16 16\" fill=\"none\" aria-hidden=\"true\"><rect x=\"2\" y=\"9\" width=\"3\" height=\"4\" rx=\"1\" fill=\"currentColor\" opacity=\"1\"></rect><rect x=\"6.5\" y=\"6\" width=\"3\" height=\"7\" rx=\"1\" fill=\"currentColor\" opacity=\"1\"></rect><rect x=\"11\" y=\"3\" width=\"3\" height=\"10\" rx=\"1\" fill=\"currentColor\" opacity=\"0.25\"></rect></svg>"
+        },
+        {
+          "label": "10 modules",
+          "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><path fill=\"currentColor\" d=\"M20.233 10a1.75 1.75 0 0 1 1.704 2.153l-1.777 7.5A1.75 1.75 0 0 1 18.457 21H5.54a1.75 1.75 0 0 1-1.703-1.347l-1.776-7.5A1.75 1.75 0 0 1 3.763 10zM19.248 6.5a.75.75 0 0 1 0 1.5h-14.5a.75.75 0 0 1 0-1.5zM17.248 3a.75.75 0 0 1 0 1.5h-10.5a.75.75 0 0 1 0-1.5z\"></path></svg>"
+        },
+        {
+          "label": "40 min",
+          "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><path stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"1.5\" d=\"M12 7.75V12l2.75 2.75m6.5-2.75a9.25 9.25 0 1 1-18.5 0 9.25 9.25 0 0 1 18.5 0\"></path></svg>"
+        }
+      ],
+      "certificate": null,
+      "url": "https://higgsfield.ai/academy/courses/blockbuster-4k",
+      "slug": "blockbuster-4k",
+      "minutes": 40,
+      "order": 0
+    },
+    {
+      "title": "Build an Ultra-Realistic Short Film in 4K",
+      "description": "A 33-minute director's masterclass. A football drama built shot by shot with Claude Fable 5 and Seedance 2.0 4K.",
+      "image": {
+        "src": "https://images.higgs.ai/?default=1&output=webp&url=https%3A%2F%2Fd2245ubjcvacnx.cloudfront.net%2Fassets%2Fsantiago-cinematic__cover__course-thumbnail.789b1f0e.webp&w=1920&q=85",
+        "srcset": "https://images.higgs.ai/?default=1&output=webp&url=https%3A%2F%2Fd2245ubjcvacnx.cloudfront.net%2Fassets%2Fsantiago-cinematic__cover__course-thumbnail.789b1f0e.webp&w=384&q=85 384w, https://images.higgs.ai/?default=1&output=webp&url=https%3A%2F%2Fd2245ubjcvacnx.cloudfront.net%2Fassets%2Fsantiago-cinematic__cover__course-thumbnail.789b1f0e.webp&w=640&q=85 640w, https://images.higgs.ai/?default=1&output=webp&url=https%3A%2F%2Fd2245ubjcvacnx.cloudfront.net%2Fassets%2Fsantiago-cinematic__cover__course-thumbnail.789b1f0e.webp&w=1280&q=85 1280w, https://images.higgs.ai/?default=1&output=webp&url=https%3A%2F%2Fd2245ubjcvacnx.cloudfront.net%2Fassets%2Fsantiago-cinematic__cover__course-thumbnail.789b1f0e.webp&w=1920&q=85 1920w",
+        "sizes": "(max-width: 1023px) 100vw, 435px",
+        "alt": "Course cover for Build an Ultra-Realistic Short Film in 4K"
+      },
+      "badges": [
+        {
+          "label": "Movie making",
+          "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><path fill=\"currentColor\" fill-rule=\"evenodd\" d=\"M22 12a9.99 9.99 0 0 1-4.73 8.5h3.98a.75.75 0 0 1 0 1.5H12C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10M7.5 10a2 2 0 1 0 0 4 2 2 0 0 0 0-4M10 7.5a2 2 0 1 1 4 0 2 2 0 0 1-4 0m2 7a2 2 0 1 0 0 4 2 2 0 0 0 0-4m2.5-2.5a2 2 0 1 1 4 0 2 2 0 0 1-4 0\" clip-rule=\"evenodd\"></path></svg>"
+        },
+        {
+          "label": "Intermediate",
+          "svg": "<svg width=\"16\" height=\"16\" viewBox=\"0 0 16 16\" fill=\"none\" aria-hidden=\"true\"><rect x=\"2\" y=\"9\" width=\"3\" height=\"4\" rx=\"1\" fill=\"currentColor\" opacity=\"1\"></rect><rect x=\"6.5\" y=\"6\" width=\"3\" height=\"7\" rx=\"1\" fill=\"currentColor\" opacity=\"1\"></rect><rect x=\"11\" y=\"3\" width=\"3\" height=\"10\" rx=\"1\" fill=\"currentColor\" opacity=\"0.25\"></rect></svg>"
+        },
+        {
+          "label": "19 modules",
+          "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><path fill=\"currentColor\" d=\"M20.233 10a1.75 1.75 0 0 1 1.704 2.153l-1.777 7.5A1.75 1.75 0 0 1 18.457 21H5.54a1.75 1.75 0 0 1-1.703-1.347l-1.776-7.5A1.75 1.75 0 0 1 3.763 10zM19.248 6.5a.75.75 0 0 1 0 1.5h-14.5a.75.75 0 0 1 0-1.5zM17.248 3a.75.75 0 0 1 0 1.5h-10.5a.75.75 0 0 1 0-1.5z\"></path></svg>"
+        },
+        {
+          "label": "33 min",
+          "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><path stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"1.5\" d=\"M12 7.75V12l2.75 2.75m6.5-2.75a9.25 9.25 0 1 1-18.5 0 9.25 9.25 0 0 1 18.5 0\"></path></svg>"
+        }
+      ],
+      "certificate": null,
+      "url": "https://higgsfield.ai/academy/courses/santiago-cinematic",
+      "slug": "santiago-cinematic",
+      "minutes": 33,
+      "order": 1
+    },
+    {
+      "title": "Add AI VFX to Real Footage",
+      "description": "Turn footage you shot on a normal camera into cinematic 4K VFX with Seedance 2.0 — world swaps, creatures, and full handheld showcase shots, one sentence at a time.",
+      "image": {
+        "src": "https://images.higgs.ai/?default=1&output=webp&url=https%3A%2F%2Fd2245ubjcvacnx.cloudfront.net%2Fassets%2Fai-vfx-real-footage__cover__course-thumbnail.3771a5bf.webp&w=1920&q=85",
+        "srcset": "https://images.higgs.ai/?default=1&output=webp&url=https%3A%2F%2Fd2245ubjcvacnx.cloudfront.net%2Fassets%2Fai-vfx-real-footage__cover__course-thumbnail.3771a5bf.webp&w=384&q=85 384w, https://images.higgs.ai/?default=1&output=webp&url=https%3A%2F%2Fd2245ubjcvacnx.cloudfront.net%2Fassets%2Fai-vfx-real-footage__cover__course-thumbnail.3771a5bf.webp&w=640&q=85 640w, https://images.higgs.ai/?default=1&output=webp&url=https%3A%2F%2Fd2245ubjcvacnx.cloudfront.net%2Fassets%2Fai-vfx-real-footage__cover__course-thumbnail.3771a5bf.webp&w=1280&q=85 1280w, https://images.higgs.ai/?default=1&output=webp&url=https%3A%2F%2Fd2245ubjcvacnx.cloudfront.net%2Fassets%2Fai-vfx-real-footage__cover__course-thumbnail.3771a5bf.webp&w=1920&q=85 1920w",
+        "sizes": "(max-width: 1023px) 100vw, 435px",
+        "alt": "Course cover for Add AI VFX to Real Footage"
+      },
+      "badges": [
+        {
+          "label": "Movie making",
+          "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><path fill=\"currentColor\" fill-rule=\"evenodd\" d=\"M22 12a9.99 9.99 0 0 1-4.73 8.5h3.98a.75.75 0 0 1 0 1.5H12C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10M7.5 10a2 2 0 1 0 0 4 2 2 0 0 0 0-4M10 7.5a2 2 0 1 1 4 0 2 2 0 0 1-4 0m2 7a2 2 0 1 0 0 4 2 2 0 0 0 0-4m2.5-2.5a2 2 0 1 1 4 0 2 2 0 0 1-4 0\" clip-rule=\"evenodd\"></path></svg>"
+        },
+        {
+          "label": "Advanced",
+          "svg": "<svg width=\"16\" height=\"16\" viewBox=\"0 0 16 16\" fill=\"none\" aria-hidden=\"true\"><rect x=\"2\" y=\"9\" width=\"3\" height=\"4\" rx=\"1\" fill=\"currentColor\" opacity=\"1\"></rect><rect x=\"6.5\" y=\"6\" width=\"3\" height=\"7\" rx=\"1\" fill=\"currentColor\" opacity=\"1\"></rect><rect x=\"11\" y=\"3\" width=\"3\" height=\"10\" rx=\"1\" fill=\"currentColor\" opacity=\"1\"></rect></svg>"
+        },
+        {
+          "label": "11 modules",
+          "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><path fill=\"currentColor\" d=\"M20.233 10a1.75 1.75 0 0 1 1.704 2.153l-1.777 7.5A1.75 1.75 0 0 1 18.457 21H5.54a1.75 1.75 0 0 1-1.703-1.347l-1.776-7.5A1.75 1.75 0 0 1 3.763 10zM19.248 6.5a.75.75 0 0 1 0 1.5h-14.5a.75.75 0 0 1 0-1.5zM17.248 3a.75.75 0 0 1 0 1.5h-10.5a.75.75 0 0 1 0-1.5z\"></path></svg>"
+        },
+        {
+          "label": "12 min",
+          "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><path stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"1.5\" d=\"M12 7.75V12l2.75 2.75m6.5-2.75a9.25 9.25 0 1 1-18.5 0 9.25 9.25 0 0 1 18.5 0\"></path></svg>"
+        }
+      ],
+      "certificate": null,
+      "url": "https://higgsfield.ai/academy/courses/ai-vfx-real-footage",
+      "slug": "ai-vfx-real-footage",
+      "minutes": 12,
+      "order": 2
+    },
+    {
+      "title": "Make an AI Animated Short",
+      "description": "Build one animated story across eight distinct visual worlds, from concept and scene design to a finished short.",
+      "image": {
+        "src": "https://images.higgs.ai/?default=1&output=webp&url=https%3A%2F%2Fd2245ubjcvacnx.cloudfront.net%2Fassets%2Fai-animated-short__cover__course-thumbnail.156a9661.webp&w=1920&q=85",
+        "srcset": "https://images.higgs.ai/?default=1&output=webp&url=https%3A%2F%2Fd2245ubjcvacnx.cloudfront.net%2Fassets%2Fai-animated-short__cover__course-thumbnail.156a9661.webp&w=384&q=85 384w, https://images.higgs.ai/?default=1&output=webp&url=https%3A%2F%2Fd2245ubjcvacnx.cloudfront.net%2Fassets%2Fai-animated-short__cover__course-thumbnail.156a9661.webp&w=640&q=85 640w, https://images.higgs.ai/?default=1&output=webp&url=https%3A%2F%2Fd2245ubjcvacnx.cloudfront.net%2Fassets%2Fai-animated-short__cover__course-thumbnail.156a9661.webp&w=1280&q=85 1280w, https://images.higgs.ai/?default=1&output=webp&url=https%3A%2F%2Fd2245ubjcvacnx.cloudfront.net%2Fassets%2Fai-animated-short__cover__course-thumbnail.156a9661.webp&w=1920&q=85 1920w",
+        "sizes": "(max-width: 1023px) 100vw, 435px",
+        "alt": "Course cover for Make an AI Animated Short"
+      },
+      "badges": [
+        {
+          "label": "Movie making",
+          "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><path fill=\"currentColor\" fill-rule=\"evenodd\" d=\"M22 12a9.99 9.99 0 0 1-4.73 8.5h3.98a.75.75 0 0 1 0 1.5H12C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10M7.5 10a2 2 0 1 0 0 4 2 2 0 0 0 0-4M10 7.5a2 2 0 1 1 4 0 2 2 0 0 1-4 0m2 7a2 2 0 1 0 0 4 2 2 0 0 0 0-4m2.5-2.5a2 2 0 1 1 4 0 2 2 0 0 1-4 0\" clip-rule=\"evenodd\"></path></svg>"
+        },
+        {
+          "label": "Intermediate",
+          "svg": "<svg width=\"16\" height=\"16\" viewBox=\"0 0 16 16\" fill=\"none\" aria-hidden=\"true\"><rect x=\"2\" y=\"9\" width=\"3\" height=\"4\" rx=\"1\" fill=\"currentColor\" opacity=\"1\"></rect><rect x=\"6.5\" y=\"6\" width=\"3\" height=\"7\" rx=\"1\" fill=\"currentColor\" opacity=\"1\"></rect><rect x=\"11\" y=\"3\" width=\"3\" height=\"10\" rx=\"1\" fill=\"currentColor\" opacity=\"0.25\"></rect></svg>"
+        },
+        {
+          "label": "11 modules",
+          "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><path fill=\"currentColor\" d=\"M20.233 10a1.75 1.75 0 0 1 1.704 2.153l-1.777 7.5A1.75 1.75 0 0 1 18.457 21H5.54a1.75 1.75 0 0 1-1.703-1.347l-1.776-7.5A1.75 1.75 0 0 1 3.763 10zM19.248 6.5a.75.75 0 0 1 0 1.5h-14.5a.75.75 0 0 1 0-1.5zM17.248 3a.75.75 0 0 1 0 1.5h-10.5a.75.75 0 0 1 0-1.5z\"></path></svg>"
+        },
+        {
+          "label": "17 min",
+          "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><path stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"1.5\" d=\"M12 7.75V12l2.75 2.75m6.5-2.75a9.25 9.25 0 1 1-18.5 0 9.25 9.25 0 0 1 18.5 0\"></path></svg>"
+        }
+      ],
+      "certificate": null,
+      "url": "https://higgsfield.ai/academy/courses/ai-animated-short",
+      "slug": "ai-animated-short",
+      "minutes": 17,
+      "order": 3
+    },
+    {
+      "title": "How to evaluate AI filmmaking demos",
+      "description": "Learn to evaluate AI filmmaking demos by examining camera movement, performance, continuity, and delivery constraints.",
+      "image": {
+        "src": "https://images.higgs.ai/?default=1&output=webp&url=https%3A%2F%2Fd2245ubjcvacnx.cloudfront.net%2Fassets%2Fseedance-25-ai-filmmaking__cover__course-thumbnail.6edc159e.webp&w=1920&q=85",
+        "srcset": "https://images.higgs.ai/?default=1&output=webp&url=https%3A%2F%2Fd2245ubjcvacnx.cloudfront.net%2Fassets%2Fseedance-25-ai-filmmaking__cover__course-thumbnail.6edc159e.webp&w=384&q=85 384w, https://images.higgs.ai/?default=1&output=webp&url=https%3A%2F%2Fd2245ubjcvacnx.cloudfront.net%2Fassets%2Fseedance-25-ai-filmmaking__cover__course-thumbnail.6edc159e.webp&w=640&q=85 640w, https://images.higgs.ai/?default=1&output=webp&url=https%3A%2F%2Fd2245ubjcvacnx.cloudfront.net%2Fassets%2Fseedance-25-ai-filmmaking__cover__course-thumbnail.6edc159e.webp&w=1280&q=85 1280w, https://images.higgs.ai/?default=1&output=webp&url=https%3A%2F%2Fd2245ubjcvacnx.cloudfront.net%2Fassets%2Fseedance-25-ai-filmmaking__cover__course-thumbnail.6edc159e.webp&w=1920&q=85 1920w",
+        "sizes": "(max-width: 1023px) 100vw, 435px",
+        "alt": "Course cover for How to evaluate AI filmmaking demos"
+      },
+      "badges": [
+        {
+          "label": "Movie making",
+          "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><path fill=\"currentColor\" fill-rule=\"evenodd\" d=\"M22 12a9.99 9.99 0 0 1-4.73 8.5h3.98a.75.75 0 0 1 0 1.5H12C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10M7.5 10a2 2 0 1 0 0 4 2 2 0 0 0 0-4M10 7.5a2 2 0 1 1 4 0 2 2 0 0 1-4 0m2 7a2 2 0 1 0 0 4 2 2 0 0 0 0-4m2.5-2.5a2 2 0 1 1 4 0 2 2 0 0 1-4 0\" clip-rule=\"evenodd\"></path></svg>"
+        },
+        {
+          "label": "Beginner",
+          "svg": "<svg width=\"16\" height=\"16\" viewBox=\"0 0 16 16\" fill=\"none\" aria-hidden=\"true\"><rect x=\"2\" y=\"9\" width=\"3\" height=\"4\" rx=\"1\" fill=\"currentColor\" opacity=\"1\"></rect><rect x=\"6.5\" y=\"6\" width=\"3\" height=\"7\" rx=\"1\" fill=\"currentColor\" opacity=\"0.25\"></rect><rect x=\"11\" y=\"3\" width=\"3\" height=\"10\" rx=\"1\" fill=\"currentColor\" opacity=\"0.25\"></rect></svg>"
+        },
+        {
+          "label": "11 modules",
+          "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><path fill=\"currentColor\" d=\"M20.233 10a1.75 1.75 0 0 1 1.704 2.153l-1.777 7.5A1.75 1.75 0 0 1 18.457 21H5.54a1.75 1.75 0 0 1-1.703-1.347l-1.776-7.5A1.75 1.75 0 0 1 3.763 10zM19.248 6.5a.75.75 0 0 1 0 1.5h-14.5a.75.75 0 0 1 0-1.5zM17.248 3a.75.75 0 0 1 0 1.5h-10.5a.75.75 0 0 1 0-1.5z\"></path></svg>"
+        },
+        {
+          "label": "20 min",
+          "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><path stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"1.5\" d=\"M12 7.75V12l2.75 2.75m6.5-2.75a9.25 9.25 0 1 1-18.5 0 9.25 9.25 0 0 1 18.5 0\"></path></svg>"
+        }
+      ],
+      "certificate": null,
+      "url": "https://higgsfield.ai/academy/courses/seedance-25-ai-filmmaking",
+      "slug": "seedance-25-ai-filmmaking",
+      "minutes": 20,
+      "order": 4
+    },
+    {
+      "title": "The 3-Step Realistic AI Ad Workflow",
+      "description": "Build a fully AI-generated commercial from scratch — lock every asset, turn a script into a connected shotlist with a Claude skill, then generate and stitch the final scenes.",
+      "image": {
+        "src": "https://images.higgs.ai/?default=1&output=webp&url=https%3A%2F%2Fd2245ubjcvacnx.cloudfront.net%2Fassets%2Fai-ad-3-step__cover__course-thumbnail.62ff5493.webp&w=1920&q=85",
+        "srcset": "https://images.higgs.ai/?default=1&output=webp&url=https%3A%2F%2Fd2245ubjcvacnx.cloudfront.net%2Fassets%2Fai-ad-3-step__cover__course-thumbnail.62ff5493.webp&w=384&q=85 384w, https://images.higgs.ai/?default=1&output=webp&url=https%3A%2F%2Fd2245ubjcvacnx.cloudfront.net%2Fassets%2Fai-ad-3-step__cover__course-thumbnail.62ff5493.webp&w=640&q=85 640w, https://images.higgs.ai/?default=1&output=webp&url=https%3A%2F%2Fd2245ubjcvacnx.cloudfront.net%2Fassets%2Fai-ad-3-step__cover__course-thumbnail.62ff5493.webp&w=1280&q=85 1280w, https://images.higgs.ai/?default=1&output=webp&url=https%3A%2F%2Fd2245ubjcvacnx.cloudfront.net%2Fassets%2Fai-ad-3-step__cover__course-thumbnail.62ff5493.webp&w=1920&q=85 1920w",
+        "sizes": "(max-width: 1023px) 100vw, 435px",
+        "alt": "Course cover for The 3-Step Realistic AI Ad Workflow"
+      },
+      "badges": [
+        {
+          "label": "UGC & Social Content",
+          "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><path fill=\"currentColor\" fill-rule=\"evenodd\" d=\"M22 12a9.99 9.99 0 0 1-4.73 8.5h3.98a.75.75 0 0 1 0 1.5H12C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10M7.5 10a2 2 0 1 0 0 4 2 2 0 0 0 0-4M10 7.5a2 2 0 1 1 4 0 2 2 0 0 1-4 0m2 7a2 2 0 1 0 0 4 2 2 0 0 0 0-4m2.5-2.5a2 2 0 1 1 4 0 2 2 0 0 1-4 0\" clip-rule=\"evenodd\"></path></svg>"
+        },
+        {
+          "label": "Intermediate",
+          "svg": "<svg width=\"16\" height=\"16\" viewBox=\"0 0 16 16\" fill=\"none\" aria-hidden=\"true\"><rect x=\"2\" y=\"9\" width=\"3\" height=\"4\" rx=\"1\" fill=\"currentColor\" opacity=\"1\"></rect><rect x=\"6.5\" y=\"6\" width=\"3\" height=\"7\" rx=\"1\" fill=\"currentColor\" opacity=\"1\"></rect><rect x=\"11\" y=\"3\" width=\"3\" height=\"10\" rx=\"1\" fill=\"currentColor\" opacity=\"0.25\"></rect></svg>"
+        },
+        {
+          "label": "16 modules",
+          "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><path fill=\"currentColor\" d=\"M20.233 10a1.75 1.75 0 0 1 1.704 2.153l-1.777 7.5A1.75 1.75 0 0 1 18.457 21H5.54a1.75 1.75 0 0 1-1.703-1.347l-1.776-7.5A1.75 1.75 0 0 1 3.763 10zM19.248 6.5a.75.75 0 0 1 0 1.5h-14.5a.75.75 0 0 1 0-1.5zM17.248 3a.75.75 0 0 1 0 1.5h-10.5a.75.75 0 0 1 0-1.5z\"></path></svg>"
+        },
+        {
+          "label": "36 min",
+          "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><path stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"1.5\" d=\"M12 7.75V12l2.75 2.75m6.5-2.75a9.25 9.25 0 1 1-18.5 0 9.25 9.25 0 0 1 18.5 0\"></path></svg>"
+        }
+      ],
+      "certificate": null,
+      "url": "https://higgsfield.ai/academy/courses/ai-ad-3-step",
+      "slug": "ai-ad-3-step",
+      "minutes": 36,
+      "order": 5
+    },
+    {
+      "title": "Build an AI Ad Agency with Claude + Higgsfield",
+      "description": "Research a niche, shape an offer, build a varied ad portfolio, and test a small client pipeline with Claude and Higgsfield.",
+      "image": {
+        "src": "https://images.higgs.ai/?default=1&output=webp&url=https%3A%2F%2Fd2245ubjcvacnx.cloudfront.net%2Fassets%2Fclaude-higgsfield-ai-ad-agency__cover__course-thumbnail.efcc9ac1.webp&w=1920&q=85",
+        "srcset": "https://images.higgs.ai/?default=1&output=webp&url=https%3A%2F%2Fd2245ubjcvacnx.cloudfront.net%2Fassets%2Fclaude-higgsfield-ai-ad-agency__cover__course-thumbnail.efcc9ac1.webp&w=384&q=85 384w, https://images.higgs.ai/?default=1&output=webp&url=https%3A%2F%2Fd2245ubjcvacnx.cloudfront.net%2Fassets%2Fclaude-higgsfield-ai-ad-agency__cover__course-thumbnail.efcc9ac1.webp&w=640&q=85 640w, https://images.higgs.ai/?default=1&output=webp&url=https%3A%2F%2Fd2245ubjcvacnx.cloudfront.net%2Fassets%2Fclaude-higgsfield-ai-ad-agency__cover__course-thumbnail.efcc9ac1.webp&w=1280&q=85 1280w, https://images.higgs.ai/?default=1&output=webp&url=https%3A%2F%2Fd2245ubjcvacnx.cloudfront.net%2Fassets%2Fclaude-higgsfield-ai-ad-agency__cover__course-thumbnail.efcc9ac1.webp&w=1920&q=85 1920w",
+        "sizes": "(max-width: 1023px) 100vw, 435px",
+        "alt": "Course cover for Build an AI Ad Agency with Claude + Higgsfield"
+      },
+      "badges": [
+        {
+          "label": "UGC & Social Content",
+          "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><path fill=\"currentColor\" fill-rule=\"evenodd\" d=\"M22 12a9.99 9.99 0 0 1-4.73 8.5h3.98a.75.75 0 0 1 0 1.5H12C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10M7.5 10a2 2 0 1 0 0 4 2 2 0 0 0 0-4M10 7.5a2 2 0 1 1 4 0 2 2 0 0 1-4 0m2 7a2 2 0 1 0 0 4 2 2 0 0 0 0-4m2.5-2.5a2 2 0 1 1 4 0 2 2 0 0 1-4 0\" clip-rule=\"evenodd\"></path></svg>"
+        },
+        {
+          "label": "Beginner",
+          "svg": "<svg width=\"16\" height=\"16\" viewBox=\"0 0 16 16\" fill=\"none\" aria-hidden=\"true\"><rect x=\"2\" y=\"9\" width=\"3\" height=\"4\" rx=\"1\" fill=\"currentColor\" opacity=\"1\"></rect><rect x=\"6.5\" y=\"6\" width=\"3\" height=\"7\" rx=\"1\" fill=\"currentColor\" opacity=\"0.25\"></rect><rect x=\"11\" y=\"3\" width=\"3\" height=\"10\" rx=\"1\" fill=\"currentColor\" opacity=\"0.25\"></rect></svg>"
+        },
+        {
+          "label": "12 modules",
+          "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><path fill=\"currentColor\" d=\"M20.233 10a1.75 1.75 0 0 1 1.704 2.153l-1.777 7.5A1.75 1.75 0 0 1 18.457 21H5.54a1.75 1.75 0 0 1-1.703-1.347l-1.776-7.5A1.75 1.75 0 0 1 3.763 10zM19.248 6.5a.75.75 0 0 1 0 1.5h-14.5a.75.75 0 0 1 0-1.5zM17.248 3a.75.75 0 0 1 0 1.5h-10.5a.75.75 0 0 1 0-1.5z\"></path></svg>"
+        },
+        {
+          "label": "22 min",
+          "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><path stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"1.5\" d=\"M12 7.75V12l2.75 2.75m6.5-2.75a9.25 9.25 0 1 1-18.5 0 9.25 9.25 0 0 1 18.5 0\"></path></svg>"
+        }
+      ],
+      "certificate": null,
+      "url": "https://higgsfield.ai/academy/courses/claude-higgsfield-ai-ad-agency",
+      "slug": "claude-higgsfield-ai-ad-agency",
+      "minutes": 22,
+      "order": 6
+    },
+    {
+      "title": "Seedance 4K: Cinematic Realism",
+      "description": "Test Seedance 4K across hyper-detailed realism, wide crowd shots, real-footage VFX, animation, ads, games, and fast action.",
+      "image": {
+        "src": "https://images.higgs.ai/?default=1&output=webp&url=https%3A%2F%2Fd2245ubjcvacnx.cloudfront.net%2Fassets%2Fcinematic-realism-4k__cover__course-thumbnail.b0cb3096.webp&w=1920&q=85",
+        "srcset": "https://images.higgs.ai/?default=1&output=webp&url=https%3A%2F%2Fd2245ubjcvacnx.cloudfront.net%2Fassets%2Fcinematic-realism-4k__cover__course-thumbnail.b0cb3096.webp&w=384&q=85 384w, https://images.higgs.ai/?default=1&output=webp&url=https%3A%2F%2Fd2245ubjcvacnx.cloudfront.net%2Fassets%2Fcinematic-realism-4k__cover__course-thumbnail.b0cb3096.webp&w=640&q=85 640w, https://images.higgs.ai/?default=1&output=webp&url=https%3A%2F%2Fd2245ubjcvacnx.cloudfront.net%2Fassets%2Fcinematic-realism-4k__cover__course-thumbnail.b0cb3096.webp&w=1280&q=85 1280w, https://images.higgs.ai/?default=1&output=webp&url=https%3A%2F%2Fd2245ubjcvacnx.cloudfront.net%2Fassets%2Fcinematic-realism-4k__cover__course-thumbnail.b0cb3096.webp&w=1920&q=85 1920w",
+        "sizes": "(max-width: 1023px) 100vw, 435px",
+        "alt": "Course cover for Seedance 4K: Cinematic Realism"
+      },
+      "badges": [
+        {
+          "label": "Movie making",
+          "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><path fill=\"currentColor\" fill-rule=\"evenodd\" d=\"M22 12a9.99 9.99 0 0 1-4.73 8.5h3.98a.75.75 0 0 1 0 1.5H12C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10M7.5 10a2 2 0 1 0 0 4 2 2 0 0 0 0-4M10 7.5a2 2 0 1 1 4 0 2 2 0 0 1-4 0m2 7a2 2 0 1 0 0 4 2 2 0 0 0 0-4m2.5-2.5a2 2 0 1 1 4 0 2 2 0 0 1-4 0\" clip-rule=\"evenodd\"></path></svg>"
+        },
+        {
+          "label": "Intermediate",
+          "svg": "<svg width=\"16\" height=\"16\" viewBox=\"0 0 16 16\" fill=\"none\" aria-hidden=\"true\"><rect x=\"2\" y=\"9\" width=\"3\" height=\"4\" rx=\"1\" fill=\"currentColor\" opacity=\"1\"></rect><rect x=\"6.5\" y=\"6\" width=\"3\" height=\"7\" rx=\"1\" fill=\"currentColor\" opacity=\"1\"></rect><rect x=\"11\" y=\"3\" width=\"3\" height=\"10\" rx=\"1\" fill=\"currentColor\" opacity=\"0.25\"></rect></svg>"
+        },
+        {
+          "label": "8 modules",
+          "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><path fill=\"currentColor\" d=\"M20.233 10a1.75 1.75 0 0 1 1.704 2.153l-1.777 7.5A1.75 1.75 0 0 1 18.457 21H5.54a1.75 1.75 0 0 1-1.703-1.347l-1.776-7.5A1.75 1.75 0 0 1 3.763 10zM19.248 6.5a.75.75 0 0 1 0 1.5h-14.5a.75.75 0 0 1 0-1.5zM17.248 3a.75.75 0 0 1 0 1.5h-10.5a.75.75 0 0 1 0-1.5z\"></path></svg>"
+        },
+        {
+          "label": "14 min",
+          "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><path stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"1.5\" d=\"M12 7.75V12l2.75 2.75m6.5-2.75a9.25 9.25 0 1 1-18.5 0 9.25 9.25 0 0 1 18.5 0\"></path></svg>"
+        }
+      ],
+      "certificate": null,
+      "url": "https://higgsfield.ai/academy/courses/cinematic-realism-4k",
+      "slug": "cinematic-realism-4k",
+      "minutes": 14,
+      "order": 7
+    },
+    {
+      "title": "Build a Brand's Visuals with AI",
+      "description": "Create a complete AI brand visual system, from the brand and products to try-ons, ads, social content, TV spots, and packaging.",
+      "image": {
+        "src": "https://images.higgs.ai/?default=1&output=webp&url=https%3A%2F%2Fd2245ubjcvacnx.cloudfront.net%2Fassets%2Fbrand-visuals-ai__cover__course-thumbnail.88cd9d62.webp&w=1920&q=85",
+        "srcset": "https://images.higgs.ai/?default=1&output=webp&url=https%3A%2F%2Fd2245ubjcvacnx.cloudfront.net%2Fassets%2Fbrand-visuals-ai__cover__course-thumbnail.88cd9d62.webp&w=384&q=85 384w, https://images.higgs.ai/?default=1&output=webp&url=https%3A%2F%2Fd2245ubjcvacnx.cloudfront.net%2Fassets%2Fbrand-visuals-ai__cover__course-thumbnail.88cd9d62.webp&w=640&q=85 640w, https://images.higgs.ai/?default=1&output=webp&url=https%3A%2F%2Fd2245ubjcvacnx.cloudfront.net%2Fassets%2Fbrand-visuals-ai__cover__course-thumbnail.88cd9d62.webp&w=1280&q=85 1280w, https://images.higgs.ai/?default=1&output=webp&url=https%3A%2F%2Fd2245ubjcvacnx.cloudfront.net%2Fassets%2Fbrand-visuals-ai__cover__course-thumbnail.88cd9d62.webp&w=1920&q=85 1920w",
+        "sizes": "(max-width: 1023px) 100vw, 435px",
+        "alt": "Course cover for Build a Brand's Visuals with AI"
+      },
+      "badges": [
+        {
+          "label": "UGC & Social Content",
+          "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><path fill=\"currentColor\" fill-rule=\"evenodd\" d=\"M22 12a9.99 9.99 0 0 1-4.73 8.5h3.98a.75.75 0 0 1 0 1.5H12C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10M7.5 10a2 2 0 1 0 0 4 2 2 0 0 0 0-4M10 7.5a2 2 0 1 1 4 0 2 2 0 0 1-4 0m2 7a2 2 0 1 0 0 4 2 2 0 0 0 0-4m2.5-2.5a2 2 0 1 1 4 0 2 2 0 0 1-4 0\" clip-rule=\"evenodd\"></path></svg>"
+        },
+        {
+          "label": "Intermediate",
+          "svg": "<svg width=\"16\" height=\"16\" viewBox=\"0 0 16 16\" fill=\"none\" aria-hidden=\"true\"><rect x=\"2\" y=\"9\" width=\"3\" height=\"4\" rx=\"1\" fill=\"currentColor\" opacity=\"1\"></rect><rect x=\"6.5\" y=\"6\" width=\"3\" height=\"7\" rx=\"1\" fill=\"currentColor\" opacity=\"1\"></rect><rect x=\"11\" y=\"3\" width=\"3\" height=\"10\" rx=\"1\" fill=\"currentColor\" opacity=\"0.25\"></rect></svg>"
+        },
+        {
+          "label": "9 modules",
+          "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><path fill=\"currentColor\" d=\"M20.233 10a1.75 1.75 0 0 1 1.704 2.153l-1.777 7.5A1.75 1.75 0 0 1 18.457 21H5.54a1.75 1.75 0 0 1-1.703-1.347l-1.776-7.5A1.75 1.75 0 0 1 3.763 10zM19.248 6.5a.75.75 0 0 1 0 1.5h-14.5a.75.75 0 0 1 0-1.5zM17.248 3a.75.75 0 0 1 0 1.5h-10.5a.75.75 0 0 1 0-1.5z\"></path></svg>"
+        },
+        {
+          "label": "26 min",
+          "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><path stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"1.5\" d=\"M12 7.75V12l2.75 2.75m6.5-2.75a9.25 9.25 0 1 1-18.5 0 9.25 9.25 0 0 1 18.5 0\"></path></svg>"
+        }
+      ],
+      "certificate": null,
+      "url": "https://higgsfield.ai/academy/courses/brand-visuals-ai",
+      "slug": "brand-visuals-ai",
+      "minutes": 26,
+      "order": 8
+    },
+    {
+      "title": "Make a Cinematic Ad End-to-End",
+      "description": "Build a cinematic AI ad from reusable assets and a prompting framework through a 12-scene story, winning beat, and pack shot.",
+      "image": {
+        "src": "https://images.higgs.ai/?default=1&output=webp&url=https%3A%2F%2Fd2245ubjcvacnx.cloudfront.net%2Fassets%2Fcinematic-ad-e2e__cover__course-thumbnail.947cf14f.webp&w=1920&q=85",
+        "srcset": "https://images.higgs.ai/?default=1&output=webp&url=https%3A%2F%2Fd2245ubjcvacnx.cloudfront.net%2Fassets%2Fcinematic-ad-e2e__cover__course-thumbnail.947cf14f.webp&w=384&q=85 384w, https://images.higgs.ai/?default=1&output=webp&url=https%3A%2F%2Fd2245ubjcvacnx.cloudfront.net%2Fassets%2Fcinematic-ad-e2e__cover__course-thumbnail.947cf14f.webp&w=640&q=85 640w, https://images.higgs.ai/?default=1&output=webp&url=https%3A%2F%2Fd2245ubjcvacnx.cloudfront.net%2Fassets%2Fcinematic-ad-e2e__cover__course-thumbnail.947cf14f.webp&w=1280&q=85 1280w, https://images.higgs.ai/?default=1&output=webp&url=https%3A%2F%2Fd2245ubjcvacnx.cloudfront.net%2Fassets%2Fcinematic-ad-e2e__cover__course-thumbnail.947cf14f.webp&w=1920&q=85 1920w",
+        "sizes": "(max-width: 1023px) 100vw, 435px",
+        "alt": "Course cover for Make a Cinematic Ad End-to-End"
+      },
+      "badges": [
+        {
+          "label": "UGC & Social Content",
+          "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><path fill=\"currentColor\" fill-rule=\"evenodd\" d=\"M22 12a9.99 9.99 0 0 1-4.73 8.5h3.98a.75.75 0 0 1 0 1.5H12C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10M7.5 10a2 2 0 1 0 0 4 2 2 0 0 0 0-4M10 7.5a2 2 0 1 1 4 0 2 2 0 0 1-4 0m2 7a2 2 0 1 0 0 4 2 2 0 0 0 0-4m2.5-2.5a2 2 0 1 1 4 0 2 2 0 0 1-4 0\" clip-rule=\"evenodd\"></path></svg>"
+        },
+        {
+          "label": "Intermediate",
+          "svg": "<svg width=\"16\" height=\"16\" viewBox=\"0 0 16 16\" fill=\"none\" aria-hidden=\"true\"><rect x=\"2\" y=\"9\" width=\"3\" height=\"4\" rx=\"1\" fill=\"currentColor\" opacity=\"1\"></rect><rect x=\"6.5\" y=\"6\" width=\"3\" height=\"7\" rx=\"1\" fill=\"currentColor\" opacity=\"1\"></rect><rect x=\"11\" y=\"3\" width=\"3\" height=\"10\" rx=\"1\" fill=\"currentColor\" opacity=\"0.25\"></rect></svg>"
+        },
+        {
+          "label": "10 modules",
+          "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><path fill=\"currentColor\" d=\"M20.233 10a1.75 1.75 0 0 1 1.704 2.153l-1.777 7.5A1.75 1.75 0 0 1 18.457 21H5.54a1.75 1.75 0 0 1-1.703-1.347l-1.776-7.5A1.75 1.75 0 0 1 3.763 10zM19.248 6.5a.75.75 0 0 1 0 1.5h-14.5a.75.75 0 0 1 0-1.5zM17.248 3a.75.75 0 0 1 0 1.5h-10.5a.75.75 0 0 1 0-1.5z\"></path></svg>"
+        },
+        {
+          "label": "46 min",
+          "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><path stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"1.5\" d=\"M12 7.75V12l2.75 2.75m6.5-2.75a9.25 9.25 0 1 1-18.5 0 9.25 9.25 0 0 1 18.5 0\"></path></svg>"
+        }
+      ],
+      "certificate": null,
+      "url": "https://higgsfield.ai/academy/courses/cinematic-ad-e2e",
+      "slug": "cinematic-ad-e2e",
+      "minutes": 46,
+      "order": 9
+    },
+    {
+      "title": "Automate a Faceless Niche Channel",
+      "description": "Build a faceless explainer channel with live research, monetizable scripts, video generation, localization, voice, packaging, and a release plan.",
+      "image": {
+        "src": "https://images.higgs.ai/?default=1&output=webp&url=https%3A%2F%2Fd2245ubjcvacnx.cloudfront.net%2Fassets%2Fautomate-faceless-niche__cover__course-thumbnail.1d76d259.webp&w=1920&q=85",
+        "srcset": "https://images.higgs.ai/?default=1&output=webp&url=https%3A%2F%2Fd2245ubjcvacnx.cloudfront.net%2Fassets%2Fautomate-faceless-niche__cover__course-thumbnail.1d76d259.webp&w=384&q=85 384w, https://images.higgs.ai/?default=1&output=webp&url=https%3A%2F%2Fd2245ubjcvacnx.cloudfront.net%2Fassets%2Fautomate-faceless-niche__cover__course-thumbnail.1d76d259.webp&w=640&q=85 640w, https://images.higgs.ai/?default=1&output=webp&url=https%3A%2F%2Fd2245ubjcvacnx.cloudfront.net%2Fassets%2Fautomate-faceless-niche__cover__course-thumbnail.1d76d259.webp&w=1280&q=85 1280w, https://images.higgs.ai/?default=1&output=webp&url=https%3A%2F%2Fd2245ubjcvacnx.cloudfront.net%2Fassets%2Fautomate-faceless-niche__cover__course-thumbnail.1d76d259.webp&w=1920&q=85 1920w",
+        "sizes": "(max-width: 1023px) 100vw, 435px",
+        "alt": "Course cover for Automate a Faceless Niche Channel"
+      },
+      "badges": [
+        {
+          "label": "Automate & Agents",
+          "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><path fill=\"currentColor\" fill-rule=\"evenodd\" d=\"M22 12a9.99 9.99 0 0 1-4.73 8.5h3.98a.75.75 0 0 1 0 1.5H12C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10M7.5 10a2 2 0 1 0 0 4 2 2 0 0 0 0-4M10 7.5a2 2 0 1 1 4 0 2 2 0 0 1-4 0m2 7a2 2 0 1 0 0 4 2 2 0 0 0 0-4m2.5-2.5a2 2 0 1 1 4 0 2 2 0 0 1-4 0\" clip-rule=\"evenodd\"></path></svg>"
+        },
+        {
+          "label": "Intermediate",
+          "svg": "<svg width=\"16\" height=\"16\" viewBox=\"0 0 16 16\" fill=\"none\" aria-hidden=\"true\"><rect x=\"2\" y=\"9\" width=\"3\" height=\"4\" rx=\"1\" fill=\"currentColor\" opacity=\"1\"></rect><rect x=\"6.5\" y=\"6\" width=\"3\" height=\"7\" rx=\"1\" fill=\"currentColor\" opacity=\"1\"></rect><rect x=\"11\" y=\"3\" width=\"3\" height=\"10\" rx=\"1\" fill=\"currentColor\" opacity=\"0.25\"></rect></svg>"
+        },
+        {
+          "label": "11 modules",
+          "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><path fill=\"currentColor\" d=\"M20.233 10a1.75 1.75 0 0 1 1.704 2.153l-1.777 7.5A1.75 1.75 0 0 1 18.457 21H5.54a1.75 1.75 0 0 1-1.703-1.347l-1.776-7.5A1.75 1.75 0 0 1 3.763 10zM19.248 6.5a.75.75 0 0 1 0 1.5h-14.5a.75.75 0 0 1 0-1.5zM17.248 3a.75.75 0 0 1 0 1.5h-10.5a.75.75 0 0 1 0-1.5z\"></path></svg>"
+        },
+        {
+          "label": "10 min",
+          "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><path stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"1.5\" d=\"M12 7.75V12l2.75 2.75m6.5-2.75a9.25 9.25 0 1 1-18.5 0 9.25 9.25 0 0 1 18.5 0\"></path></svg>"
+        }
+      ],
+      "certificate": null,
+      "url": "https://higgsfield.ai/academy/courses/automate-faceless-niche",
+      "slug": "automate-faceless-niche",
+      "minutes": 10,
+      "order": 10
+    },
+    {
+      "title": "Build a Faceless Channel",
+      "description": "Build and test a faceless AI channel by connecting Claude and Higgsfield, writing a script, generating a video, packaging it, and reading early results.",
+      "image": {
+        "src": "https://images.higgs.ai/?default=1&output=webp&url=https%3A%2F%2Fd2245ubjcvacnx.cloudfront.net%2Fassets%2Ffaceless-channel__cover__course-thumbnail.f48521f1.webp&w=1920&q=85",
+        "srcset": "https://images.higgs.ai/?default=1&output=webp&url=https%3A%2F%2Fd2245ubjcvacnx.cloudfront.net%2Fassets%2Ffaceless-channel__cover__course-thumbnail.f48521f1.webp&w=384&q=85 384w, https://images.higgs.ai/?default=1&output=webp&url=https%3A%2F%2Fd2245ubjcvacnx.cloudfront.net%2Fassets%2Ffaceless-channel__cover__course-thumbnail.f48521f1.webp&w=640&q=85 640w, https://images.higgs.ai/?default=1&output=webp&url=https%3A%2F%2Fd2245ubjcvacnx.cloudfront.net%2Fassets%2Ffaceless-channel__cover__course-thumbnail.f48521f1.webp&w=1280&q=85 1280w, https://images.higgs.ai/?default=1&output=webp&url=https%3A%2F%2Fd2245ubjcvacnx.cloudfront.net%2Fassets%2Ffaceless-channel__cover__course-thumbnail.f48521f1.webp&w=1920&q=85 1920w",
+        "sizes": "(max-width: 1023px) 100vw, 435px",
+        "alt": "Course cover for Build a Faceless Channel"
+      },
+      "badges": [
+        {
+          "label": "UGC & Social Content",
+          "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><path fill=\"currentColor\" fill-rule=\"evenodd\" d=\"M22 12a9.99 9.99 0 0 1-4.73 8.5h3.98a.75.75 0 0 1 0 1.5H12C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10M7.5 10a2 2 0 1 0 0 4 2 2 0 0 0 0-4M10 7.5a2 2 0 1 1 4 0 2 2 0 0 1-4 0m2 7a2 2 0 1 0 0 4 2 2 0 0 0 0-4m2.5-2.5a2 2 0 1 1 4 0 2 2 0 0 1-4 0\" clip-rule=\"evenodd\"></path></svg>"
+        },
+        {
+          "label": "Beginner",
+          "svg": "<svg width=\"16\" height=\"16\" viewBox=\"0 0 16 16\" fill=\"none\" aria-hidden=\"true\"><rect x=\"2\" y=\"9\" width=\"3\" height=\"4\" rx=\"1\" fill=\"currentColor\" opacity=\"1\"></rect><rect x=\"6.5\" y=\"6\" width=\"3\" height=\"7\" rx=\"1\" fill=\"currentColor\" opacity=\"0.25\"></rect><rect x=\"11\" y=\"3\" width=\"3\" height=\"10\" rx=\"1\" fill=\"currentColor\" opacity=\"0.25\"></rect></svg>"
+        },
+        {
+          "label": "7 modules",
+          "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><path fill=\"currentColor\" d=\"M20.233 10a1.75 1.75 0 0 1 1.704 2.153l-1.777 7.5A1.75 1.75 0 0 1 18.457 21H5.54a1.75 1.75 0 0 1-1.703-1.347l-1.776-7.5A1.75 1.75 0 0 1 3.763 10zM19.248 6.5a.75.75 0 0 1 0 1.5h-14.5a.75.75 0 0 1 0-1.5zM17.248 3a.75.75 0 0 1 0 1.5h-10.5a.75.75 0 0 1 0-1.5z\"></path></svg>"
+        },
+        {
+          "label": "14 min",
+          "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><path stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"1.5\" d=\"M12 7.75V12l2.75 2.75m6.5-2.75a9.25 9.25 0 1 1-18.5 0 9.25 9.25 0 0 1 18.5 0\"></path></svg>"
+        }
+      ],
+      "certificate": null,
+      "url": "https://higgsfield.ai/academy/courses/faceless-channel",
+      "slug": "faceless-channel",
+      "minutes": 14,
+      "order": 11
+    },
+    {
+      "title": "Mix AI with Real Footage",
+      "description": "Combine AI edits with real footage by removing or adding elements, changing wardrobe and backgrounds, building transitions, reframing, and upscaling.",
+      "image": {
+        "src": "https://images.higgs.ai/?default=1&output=webp&url=https%3A%2F%2Fd2245ubjcvacnx.cloudfront.net%2Fassets%2Fmix-ai-real-footage__cover__course-thumbnail.dbdf2682.webp&w=1920&q=85",
+        "srcset": "https://images.higgs.ai/?default=1&output=webp&url=https%3A%2F%2Fd2245ubjcvacnx.cloudfront.net%2Fassets%2Fmix-ai-real-footage__cover__course-thumbnail.dbdf2682.webp&w=384&q=85 384w, https://images.higgs.ai/?default=1&output=webp&url=https%3A%2F%2Fd2245ubjcvacnx.cloudfront.net%2Fassets%2Fmix-ai-real-footage__cover__course-thumbnail.dbdf2682.webp&w=640&q=85 640w, https://images.higgs.ai/?default=1&output=webp&url=https%3A%2F%2Fd2245ubjcvacnx.cloudfront.net%2Fassets%2Fmix-ai-real-footage__cover__course-thumbnail.dbdf2682.webp&w=1280&q=85 1280w, https://images.higgs.ai/?default=1&output=webp&url=https%3A%2F%2Fd2245ubjcvacnx.cloudfront.net%2Fassets%2Fmix-ai-real-footage__cover__course-thumbnail.dbdf2682.webp&w=1920&q=85 1920w",
+        "sizes": "(max-width: 1023px) 100vw, 435px",
+        "alt": "Course cover for Mix AI with Real Footage"
+      },
+      "badges": [
+        {
+          "label": "UGC & Social Content",
+          "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><path fill=\"currentColor\" fill-rule=\"evenodd\" d=\"M22 12a9.99 9.99 0 0 1-4.73 8.5h3.98a.75.75 0 0 1 0 1.5H12C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10M7.5 10a2 2 0 1 0 0 4 2 2 0 0 0 0-4M10 7.5a2 2 0 1 1 4 0 2 2 0 0 1-4 0m2 7a2 2 0 1 0 0 4 2 2 0 0 0 0-4m2.5-2.5a2 2 0 1 1 4 0 2 2 0 0 1-4 0\" clip-rule=\"evenodd\"></path></svg>"
+        },
+        {
+          "label": "Intermediate",
+          "svg": "<svg width=\"16\" height=\"16\" viewBox=\"0 0 16 16\" fill=\"none\" aria-hidden=\"true\"><rect x=\"2\" y=\"9\" width=\"3\" height=\"4\" rx=\"1\" fill=\"currentColor\" opacity=\"1\"></rect><rect x=\"6.5\" y=\"6\" width=\"3\" height=\"7\" rx=\"1\" fill=\"currentColor\" opacity=\"1\"></rect><rect x=\"11\" y=\"3\" width=\"3\" height=\"10\" rx=\"1\" fill=\"currentColor\" opacity=\"0.25\"></rect></svg>"
+        },
+        {
+          "label": "10 modules",
+          "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><path fill=\"currentColor\" d=\"M20.233 10a1.75 1.75 0 0 1 1.704 2.153l-1.777 7.5A1.75 1.75 0 0 1 18.457 21H5.54a1.75 1.75 0 0 1-1.703-1.347l-1.776-7.5A1.75 1.75 0 0 1 3.763 10zM19.248 6.5a.75.75 0 0 1 0 1.5h-14.5a.75.75 0 0 1 0-1.5zM17.248 3a.75.75 0 0 1 0 1.5h-10.5a.75.75 0 0 1 0-1.5z\"></path></svg>"
+        },
+        {
+          "label": "5 min",
+          "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><path stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"1.5\" d=\"M12 7.75V12l2.75 2.75m6.5-2.75a9.25 9.25 0 1 1-18.5 0 9.25 9.25 0 0 1 18.5 0\"></path></svg>"
+        }
+      ],
+      "certificate": null,
+      "url": "https://higgsfield.ai/academy/courses/mix-ai-real-footage",
+      "slug": "mix-ai-real-footage",
+      "minutes": 5,
+      "order": 12
+    },
+    {
+      "title": "Build 3D Games with MCP",
+      "description": "Build and publish three no-code 3D game prototypes with an MCP-connected workflow, then compare output, cost, and early marketplace results.",
+      "image": {
+        "src": "https://images.higgs.ai/?default=1&output=webp&url=https%3A%2F%2Fd2245ubjcvacnx.cloudfront.net%2Fassets%2Fbuild-3d-games-mcp__cover__course-thumbnail.464055e4.webp&w=1920&q=85",
+        "srcset": "https://images.higgs.ai/?default=1&output=webp&url=https%3A%2F%2Fd2245ubjcvacnx.cloudfront.net%2Fassets%2Fbuild-3d-games-mcp__cover__course-thumbnail.464055e4.webp&w=384&q=85 384w, https://images.higgs.ai/?default=1&output=webp&url=https%3A%2F%2Fd2245ubjcvacnx.cloudfront.net%2Fassets%2Fbuild-3d-games-mcp__cover__course-thumbnail.464055e4.webp&w=640&q=85 640w, https://images.higgs.ai/?default=1&output=webp&url=https%3A%2F%2Fd2245ubjcvacnx.cloudfront.net%2Fassets%2Fbuild-3d-games-mcp__cover__course-thumbnail.464055e4.webp&w=1280&q=85 1280w, https://images.higgs.ai/?default=1&output=webp&url=https%3A%2F%2Fd2245ubjcvacnx.cloudfront.net%2Fassets%2Fbuild-3d-games-mcp__cover__course-thumbnail.464055e4.webp&w=1920&q=85 1920w",
+        "sizes": "(max-width: 1023px) 100vw, 435px",
+        "alt": "Course cover for Build 3D Games with MCP"
+      },
+      "badges": [
+        {
+          "label": "Automate & Agents",
+          "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><path fill=\"currentColor\" fill-rule=\"evenodd\" d=\"M22 12a9.99 9.99 0 0 1-4.73 8.5h3.98a.75.75 0 0 1 0 1.5H12C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10M7.5 10a2 2 0 1 0 0 4 2 2 0 0 0 0-4M10 7.5a2 2 0 1 1 4 0 2 2 0 0 1-4 0m2 7a2 2 0 1 0 0 4 2 2 0 0 0 0-4m2.5-2.5a2 2 0 1 1 4 0 2 2 0 0 1-4 0\" clip-rule=\"evenodd\"></path></svg>"
+        },
+        {
+          "label": "Beginner",
+          "svg": "<svg width=\"16\" height=\"16\" viewBox=\"0 0 16 16\" fill=\"none\" aria-hidden=\"true\"><rect x=\"2\" y=\"9\" width=\"3\" height=\"4\" rx=\"1\" fill=\"currentColor\" opacity=\"1\"></rect><rect x=\"6.5\" y=\"6\" width=\"3\" height=\"7\" rx=\"1\" fill=\"currentColor\" opacity=\"0.25\"></rect><rect x=\"11\" y=\"3\" width=\"3\" height=\"10\" rx=\"1\" fill=\"currentColor\" opacity=\"0.25\"></rect></svg>"
+        },
+        {
+          "label": "10 modules",
+          "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><path fill=\"currentColor\" d=\"M20.233 10a1.75 1.75 0 0 1 1.704 2.153l-1.777 7.5A1.75 1.75 0 0 1 18.457 21H5.54a1.75 1.75 0 0 1-1.703-1.347l-1.776-7.5A1.75 1.75 0 0 1 3.763 10zM19.248 6.5a.75.75 0 0 1 0 1.5h-14.5a.75.75 0 0 1 0-1.5zM17.248 3a.75.75 0 0 1 0 1.5h-10.5a.75.75 0 0 1 0-1.5z\"></path></svg>"
+        },
+        {
+          "label": "12 min",
+          "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><path stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"1.5\" d=\"M12 7.75V12l2.75 2.75m6.5-2.75a9.25 9.25 0 1 1-18.5 0 9.25 9.25 0 0 1 18.5 0\"></path></svg>"
+        }
+      ],
+      "certificate": null,
+      "url": "https://higgsfield.ai/academy/courses/build-3d-games-mcp",
+      "slug": "build-3d-games-mcp",
+      "minutes": 12,
+      "order": 13
+    },
+    {
+      "title": "Direct a cinematic AI car commercial",
+      "description": "Build a cinematic car commercial from reusable assets, controlled iterations, and continuity-aware editing.",
+      "image": {
+        "src": "https://images.higgs.ai/?default=1&output=webp&url=https%3A%2F%2Fd2245ubjcvacnx.cloudfront.net%2Fassets%2Fcinematic-car-commercial__cover__course-thumbnail.645f0af3.webp&w=1920&q=85",
+        "srcset": "https://images.higgs.ai/?default=1&output=webp&url=https%3A%2F%2Fd2245ubjcvacnx.cloudfront.net%2Fassets%2Fcinematic-car-commercial__cover__course-thumbnail.645f0af3.webp&w=384&q=85 384w, https://images.higgs.ai/?default=1&output=webp&url=https%3A%2F%2Fd2245ubjcvacnx.cloudfront.net%2Fassets%2Fcinematic-car-commercial__cover__course-thumbnail.645f0af3.webp&w=640&q=85 640w, https://images.higgs.ai/?default=1&output=webp&url=https%3A%2F%2Fd2245ubjcvacnx.cloudfront.net%2Fassets%2Fcinematic-car-commercial__cover__course-thumbnail.645f0af3.webp&w=1280&q=85 1280w, https://images.higgs.ai/?default=1&output=webp&url=https%3A%2F%2Fd2245ubjcvacnx.cloudfront.net%2Fassets%2Fcinematic-car-commercial__cover__course-thumbnail.645f0af3.webp&w=1920&q=85 1920w",
+        "sizes": "(max-width: 1023px) 100vw, 435px",
+        "alt": "Course cover for Direct a cinematic AI car commercial"
+      },
+      "badges": [
+        {
+          "label": "UGC & Social Content",
+          "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><path fill=\"currentColor\" fill-rule=\"evenodd\" d=\"M22 12a9.99 9.99 0 0 1-4.73 8.5h3.98a.75.75 0 0 1 0 1.5H12C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10M7.5 10a2 2 0 1 0 0 4 2 2 0 0 0 0-4M10 7.5a2 2 0 1 1 4 0 2 2 0 0 1-4 0m2 7a2 2 0 1 0 0 4 2 2 0 0 0 0-4m2.5-2.5a2 2 0 1 1 4 0 2 2 0 0 1-4 0\" clip-rule=\"evenodd\"></path></svg>"
+        },
+        {
+          "label": "Intermediate",
+          "svg": "<svg width=\"16\" height=\"16\" viewBox=\"0 0 16 16\" fill=\"none\" aria-hidden=\"true\"><rect x=\"2\" y=\"9\" width=\"3\" height=\"4\" rx=\"1\" fill=\"currentColor\" opacity=\"1\"></rect><rect x=\"6.5\" y=\"6\" width=\"3\" height=\"7\" rx=\"1\" fill=\"currentColor\" opacity=\"1\"></rect><rect x=\"11\" y=\"3\" width=\"3\" height=\"10\" rx=\"1\" fill=\"currentColor\" opacity=\"0.25\"></rect></svg>"
+        },
+        {
+          "label": "11 modules",
+          "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><path fill=\"currentColor\" d=\"M20.233 10a1.75 1.75 0 0 1 1.704 2.153l-1.777 7.5A1.75 1.75 0 0 1 18.457 21H5.54a1.75 1.75 0 0 1-1.703-1.347l-1.776-7.5A1.75 1.75 0 0 1 3.763 10zM19.248 6.5a.75.75 0 0 1 0 1.5h-14.5a.75.75 0 0 1 0-1.5zM17.248 3a.75.75 0 0 1 0 1.5h-10.5a.75.75 0 0 1 0-1.5z\"></path></svg>"
+        },
+        {
+          "label": "35 min",
+          "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><path stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"1.5\" d=\"M12 7.75V12l2.75 2.75m6.5-2.75a9.25 9.25 0 1 1-18.5 0 9.25 9.25 0 0 1 18.5 0\"></path></svg>"
+        }
+      ],
+      "certificate": null,
+      "url": "https://higgsfield.ai/academy/courses/cinematic-car-commercial",
+      "slug": "cinematic-car-commercial",
+      "minutes": 35,
+      "order": 14
+    },
+    {
+      "title": "Direct AI fight scenes through controlled iteration",
+      "description": "Build reusable action assets, diagnose failed generations, and direct scale, transformations, impacts, and cinematic coverage without losing geography or physics.",
+      "image": {
+        "src": "https://images.higgs.ai/?default=1&output=webp&url=https%3A%2F%2Fd2245ubjcvacnx.cloudfront.net%2Fassets%2Fdirect-ai-fight-scenes__cover__course-thumbnail.66447f69.webp&w=1920&q=85",
+        "srcset": "https://images.higgs.ai/?default=1&output=webp&url=https%3A%2F%2Fd2245ubjcvacnx.cloudfront.net%2Fassets%2Fdirect-ai-fight-scenes__cover__course-thumbnail.66447f69.webp&w=384&q=85 384w, https://images.higgs.ai/?default=1&output=webp&url=https%3A%2F%2Fd2245ubjcvacnx.cloudfront.net%2Fassets%2Fdirect-ai-fight-scenes__cover__course-thumbnail.66447f69.webp&w=640&q=85 640w, https://images.higgs.ai/?default=1&output=webp&url=https%3A%2F%2Fd2245ubjcvacnx.cloudfront.net%2Fassets%2Fdirect-ai-fight-scenes__cover__course-thumbnail.66447f69.webp&w=1280&q=85 1280w, https://images.higgs.ai/?default=1&output=webp&url=https%3A%2F%2Fd2245ubjcvacnx.cloudfront.net%2Fassets%2Fdirect-ai-fight-scenes__cover__course-thumbnail.66447f69.webp&w=1920&q=85 1920w",
+        "sizes": "(max-width: 1023px) 100vw, 435px",
+        "alt": "Course cover for Direct AI fight scenes through controlled iteration"
+      },
+      "badges": [
+        {
+          "label": "Movie making",
+          "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><path fill=\"currentColor\" fill-rule=\"evenodd\" d=\"M22 12a9.99 9.99 0 0 1-4.73 8.5h3.98a.75.75 0 0 1 0 1.5H12C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10M7.5 10a2 2 0 1 0 0 4 2 2 0 0 0 0-4M10 7.5a2 2 0 1 1 4 0 2 2 0 0 1-4 0m2 7a2 2 0 1 0 0 4 2 2 0 0 0 0-4m2.5-2.5a2 2 0 1 1 4 0 2 2 0 0 1-4 0\" clip-rule=\"evenodd\"></path></svg>"
+        },
+        {
+          "label": "Intermediate",
+          "svg": "<svg width=\"16\" height=\"16\" viewBox=\"0 0 16 16\" fill=\"none\" aria-hidden=\"true\"><rect x=\"2\" y=\"9\" width=\"3\" height=\"4\" rx=\"1\" fill=\"currentColor\" opacity=\"1\"></rect><rect x=\"6.5\" y=\"6\" width=\"3\" height=\"7\" rx=\"1\" fill=\"currentColor\" opacity=\"1\"></rect><rect x=\"11\" y=\"3\" width=\"3\" height=\"10\" rx=\"1\" fill=\"currentColor\" opacity=\"0.25\"></rect></svg>"
+        },
+        {
+          "label": "5 modules",
+          "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><path fill=\"currentColor\" d=\"M20.233 10a1.75 1.75 0 0 1 1.704 2.153l-1.777 7.5A1.75 1.75 0 0 1 18.457 21H5.54a1.75 1.75 0 0 1-1.703-1.347l-1.776-7.5A1.75 1.75 0 0 1 3.763 10zM19.248 6.5a.75.75 0 0 1 0 1.5h-14.5a.75.75 0 0 1 0-1.5zM17.248 3a.75.75 0 0 1 0 1.5h-10.5a.75.75 0 0 1 0-1.5z\"></path></svg>"
+        },
+        {
+          "label": "16 min",
+          "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><path stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"1.5\" d=\"M12 7.75V12l2.75 2.75m6.5-2.75a9.25 9.25 0 1 1-18.5 0 9.25 9.25 0 0 1 18.5 0\"></path></svg>"
+        }
+      ],
+      "certificate": null,
+      "url": "https://higgsfield.ai/academy/courses/direct-ai-fight-scenes",
+      "slug": "direct-ai-fight-scenes",
+      "minutes": 16,
+      "order": 15
+    },
+    {
+      "title": "AI Creation: First Steps",
+      "description": "Follow the original seven-lesson course, from your first video and working with an assistant to product ads, asset creation, camera direction, and your own scene.",
+      "image": {
+        "src": "https://images.higgs.ai/?default=1&output=webp&url=https%3A%2F%2Fd2245ubjcvacnx.cloudfront.net%2Fassets%2Fai-creation__cover__cover.b03a6f23.webp&w=1920&q=85",
+        "srcset": "https://images.higgs.ai/?default=1&output=webp&url=https%3A%2F%2Fd2245ubjcvacnx.cloudfront.net%2Fassets%2Fai-creation__cover__cover.b03a6f23.webp&w=384&q=85 384w, https://images.higgs.ai/?default=1&output=webp&url=https%3A%2F%2Fd2245ubjcvacnx.cloudfront.net%2Fassets%2Fai-creation__cover__cover.b03a6f23.webp&w=640&q=85 640w, https://images.higgs.ai/?default=1&output=webp&url=https%3A%2F%2Fd2245ubjcvacnx.cloudfront.net%2Fassets%2Fai-creation__cover__cover.b03a6f23.webp&w=1280&q=85 1280w, https://images.higgs.ai/?default=1&output=webp&url=https%3A%2F%2Fd2245ubjcvacnx.cloudfront.net%2Fassets%2Fai-creation__cover__cover.b03a6f23.webp&w=1920&q=85 1920w",
+        "sizes": "(max-width: 1023px) 100vw, 435px",
+        "alt": "Course cover for AI Creation: First Steps"
+      },
+      "badges": [
+        {
+          "label": "Movie making",
+          "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><path fill=\"currentColor\" fill-rule=\"evenodd\" d=\"M22 12a9.99 9.99 0 0 1-4.73 8.5h3.98a.75.75 0 0 1 0 1.5H12C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10M7.5 10a2 2 0 1 0 0 4 2 2 0 0 0 0-4M10 7.5a2 2 0 1 1 4 0 2 2 0 0 1-4 0m2 7a2 2 0 1 0 0 4 2 2 0 0 0 0-4m2.5-2.5a2 2 0 1 1 4 0 2 2 0 0 1-4 0\" clip-rule=\"evenodd\"></path></svg>"
+        },
+        {
+          "label": "Beginner",
+          "svg": "<svg width=\"16\" height=\"16\" viewBox=\"0 0 16 16\" fill=\"none\" aria-hidden=\"true\"><rect x=\"2\" y=\"9\" width=\"3\" height=\"4\" rx=\"1\" fill=\"currentColor\" opacity=\"1\"></rect><rect x=\"6.5\" y=\"6\" width=\"3\" height=\"7\" rx=\"1\" fill=\"currentColor\" opacity=\"0.25\"></rect><rect x=\"11\" y=\"3\" width=\"3\" height=\"10\" rx=\"1\" fill=\"currentColor\" opacity=\"0.25\"></rect></svg>"
+        },
+        {
+          "label": "8 modules",
+          "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><path fill=\"currentColor\" d=\"M20.233 10a1.75 1.75 0 0 1 1.704 2.153l-1.777 7.5A1.75 1.75 0 0 1 18.457 21H5.54a1.75 1.75 0 0 1-1.703-1.347l-1.776-7.5A1.75 1.75 0 0 1 3.763 10zM19.248 6.5a.75.75 0 0 1 0 1.5h-14.5a.75.75 0 0 1 0-1.5zM17.248 3a.75.75 0 0 1 0 1.5h-10.5a.75.75 0 0 1 0-1.5z\"></path></svg>"
+        },
+        {
+          "label": "1h 42m",
+          "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><path stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"1.5\" d=\"M12 7.75V12l2.75 2.75m6.5-2.75a9.25 9.25 0 1 1-18.5 0 9.25 9.25 0 0 1 18.5 0\"></path></svg>"
+        }
+      ],
+      "certificate": "<div class=\"inline-flex items-center gap-1.5 shrink-0 text-q-brand-primary max-sm:scale-90 max-sm:origin-left\"><svg width=\"14.347826086956522\" height=\"30\" viewBox=\"0 0 23 48\" fill=\"none\" aria-hidden=\"true\" style=\"transform:scaleX(-1)\" class=\"text-qc-brand-primary\"><path d=\"M0 46.2178C1.19727 45.0203 3.59206 37.837 16.7614 41.4288C15.9632 45.0205 11.4935 51.0067 0 46.2178Z\" fill=\"currentColor\"></path><path d=\"M22.8365 26.3814C23.5019 30 21.7199 37.2556 9.26928 37.3273C9.90495 35.758 9.57812 27.0617 22.8365 26.3814Z\" fill=\"currentColor\"></path><path d=\"M21.1622 12.5687C22.7699 15.8781 22.9907 23.3471 11.0114 26.7415C11.2048 25.0595 8.56718 16.7654 21.1622 12.5687Z\" fill=\"currentColor\"></path><path d=\"M9.48441 0C12.5769 1.99324 16.6442 8.25953 8.17025 17.3811C7.4616 15.8429 0.90157 10.1262 9.48441 0Z\" fill=\"currentColor\"></path></svg><span class=\"whitespace-nowrap bg-[linear-gradient(65deg,#D1FE17_0.76%,#FED717_39.22%,#D1FE17_108.87%)] bg-clip-text text-q-accent-xs-bold uppercase text-transparent [font-feature-settings:'ss04'_on]\">Earn a certificate</span><svg width=\"14.347826086956522\" height=\"30\" viewBox=\"0 0 23 48\" fill=\"none\" aria-hidden=\"true\" class=\"text-qc-brand-primary\"><path d=\"M0 46.2178C1.19727 45.0203 3.59206 37.837 16.7614 41.4288C15.9632 45.0205 11.4935 51.0067 0 46.2178Z\" fill=\"currentColor\"></path><path d=\"M22.8365 26.3814C23.5019 30 21.7199 37.2556 9.26928 37.3273C9.90495 35.758 9.57812 27.0617 22.8365 26.3814Z\" fill=\"currentColor\"></path><path d=\"M21.1622 12.5687C22.7699 15.8781 22.9907 23.3471 11.0114 26.7415C11.2048 25.0595 8.56718 16.7654 21.1622 12.5687Z\" fill=\"currentColor\"></path><path d=\"M9.48441 0C12.5769 1.99324 16.6442 8.25953 8.17025 17.3811C7.4616 15.8429 0.90157 10.1262 9.48441 0Z\" fill=\"currentColor\"></path></svg></div>",
+      "url": "https://higgsfield.ai/academy/courses/ai-creation",
+      "slug": "ai-creation",
+      "minutes": 102,
+      "order": 16
+    }
+  ],
+  "icons": {
+    "filter": "<svg aria-hidden=\"true\" width=\"24px\" height=\"24px\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M2.75 4.75H21.25M8.75 19.25H15.25M5.75 12H18.25\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\"></path></svg>",
+    "sort": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\" class=\"size-4 shrink-0\"><path stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"1.5\" d=\"M6.002 4.75v14.5m2.998-3-2.998 3-3.002-3m8.75-9.5h8.5m-4.5 10.5h4.5M13.75 12h6.5\"></path></svg>",
+    "chevron": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><path stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"1.5\" d=\"m20 9-7.293 7.293a1 1 0 0 1-1.414 0L4 9\"></path></svg>",
+    "search": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\" aria-hidden=\"true\"><path stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"1.5\" d=\"m20 20-3.873-3.873m0 0A7.25 7.25 0 1 0 5.874 5.874a7.25 7.25 0 0 0 10.253 10.253\"></path></svg>"
+  }
+}

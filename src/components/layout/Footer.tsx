@@ -1,4 +1,11 @@
 import Link from "next/link";
+import { footerLinks, tagLinks } from "./footerLinks";
+
+function FooterLink({ label, href, className }: { label: string; href: string; className?: string }) {
+  return /^https?:/.test(href)
+    ? <a href={href} target="_blank" rel="noopener noreferrer" className={className}>{label}</a>
+    : <Link href={href} className={className}>{label}</Link>;
+}
 
 const tags = [
   "Cinema Studio",
@@ -49,7 +56,7 @@ export function Tags({ items = tags }: { items?: string[] }) {
         {items.map((t) => (
           <Link
             key={t}
-            href="/"
+            href={tagLinks[t] ?? "/"}
             className="rounded-[8px] bg-white/[0.09] px-[14px] py-2 text-[18px] font-normal leading-6 text-white/70 transition-colors hover:bg-white/[0.16] hover:text-white max-md:px-3 max-md:py-1.5 max-md:text-sm"
           >
             {t}
@@ -203,9 +210,7 @@ export function Footer() {
                   <ul className="flex flex-col gap-[21px] text-[18px] font-medium leading-6 max-sm:text-sm">
                     {g.l.map((x) => (
                       <li key={x}>
-                        <Link href="/" className="hover:underline">
-                          {x}
-                        </Link>
+                        <FooterLink label={x} href={footerLinks[x] ?? "/"} className="hover:underline" />
                       </li>
                     ))}
                   </ul>
@@ -220,9 +225,7 @@ export function Footer() {
           <span>535 Mission St, 14th floor, San Francisco, CA, 94105</span>
           <div className="flex flex-wrap items-center gap-x-10 gap-y-2">
             {socials.map((s) => (
-              <Link key={s} href="/" className="hover:underline">
-                {s}
-              </Link>
+              <FooterLink key={s} label={s} href={footerLinks[s] ?? "/"} className="hover:underline" />
             ))}
           </div>
         </div>
@@ -255,9 +258,7 @@ export function Footer() {
             </svg>
           </button>
           {legal.map((x) => (
-            <Link key={x} href="/" className="hover:underline">
-              {x}
-            </Link>
+            <FooterLink key={x} label={x} href={footerLinks[x] ?? "/"} className="hover:underline" />
           ))}
         </div>
       </div>

@@ -1,0 +1,168 @@
+{
+  "icons": {
+    "menu": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\" aria-hidden=\"true\"><path fill=\"#fff\" fill-rule=\"evenodd\" d=\"M9 4.5v15h10.25a.25.25 0 0 0 .25-.25V4.75a.25.25 0 0 0-.25-.25zm-6 .25C3 3.784 3.784 3 4.75 3h14.5c.966 0 1.75.784 1.75 1.75v14.5A1.75 1.75 0 0 1 19.25 21H4.75A1.75 1.75 0 0 1 3 19.25z\" clip-rule=\"evenodd\"></path></svg>",
+    "diamond": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\" aria-hidden=\"true\"><path fill=\"currentColor\" fill-rule=\"evenodd\" d=\"M6.562 3.523A1.75 1.75 0 0 1 7.81 3h8.376c.47 0 .92.189 1.248.523l5.154 5.244a1.75 1.75 0 0 1-.01 2.464l-9.342 9.342a1.75 1.75 0 0 1-2.475 0l-9.342-9.342a1.75 1.75 0 0 1-.01-2.464zM9.028 7.22a.75.75 0 0 1 0 1.06L7.308 10l1.72 1.72a.75.75 0 1 1-1.06 1.06l-2.25-2.25a.75.75 0 0 1 0-1.06l2.25-2.25a.75.75 0 0 1 1.06 0\" clip-rule=\"evenodd\"></path></svg>",
+    "search": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\" aria-hidden=\"true\"><path stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"1.5\" d=\"m20.25 20.25-4.123-4.123m0 0A7.25 7.25 0 1 0 5.874 5.874a7.25 7.25 0 0 0 10.253 10.253\"></path></svg>",
+    "sparkles": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\" aria-hidden=\"true\"><path fill=\"currentColor\" d=\"M14.013 7a1 1 0 0 1 .934.641l1.344 3.494a1 1 0 0 0 .574.574l3.494 1.344a1 1 0 0 1 .641.934v.026a1 1 0 0 1-.641.934l-3.494 1.344a1 1 0 0 0-.574.574l-1.344 3.494a1 1 0 0 1-.934.641h-.026a1 1 0 0 1-.934-.641l-1.344-3.494a1 1 0 0 0-.574-.574l-3.494-1.344A1 1 0 0 1 7 14.013v-.026a1 1 0 0 1 .641-.934l3.494-1.344a1 1 0 0 0 .574-.574l1.344-3.494A1 1 0 0 1 13.987 7zM7 3c.241 0 .458.149.544.374l.697 1.81a1 1 0 0 0 .574.575l1.811.697a.583.583 0 0 1 0 1.088l-1.81.697a1 1 0 0 0-.575.574l-.697 1.811a.583.583 0 0 1-1.088 0l-.697-1.81a1 1 0 0 0-.574-.575l-1.811-.697a.583.583 0 0 1 0-1.088l1.81-.697a1 1 0 0 0 .575-.574l.697-1.811A.58.58 0 0 1 7 3\"></path></svg>",
+    "chevron": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\" aria-hidden=\"true\"><path stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"1.5\" d=\"M9.5 18.25 15.75 12 9.5 5.75\"></path></svg>",
+    "mcp": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><path fill=\"currentColor\" d=\"M9.67 9.28v-1.9c0-.16.06-.28.2-.36l3.785-2.2c.516-.3 1.13-.44 1.764-.44 2.379 0 3.885 1.86 3.885 3.84 0 .14 0 .3-.02.46L15.36 6.36a.66.66 0 0 0-.714 0zm8.841 7.4v-4.54a.67.67 0 0 0-.357-.62L13.18 8.6l1.626-.94a.36.36 0 0 1 .396 0l3.786 2.2c1.09.64 1.824 2 1.824 3.32 0 1.52-.892 2.92-2.3 3.5m-10.01-4-1.625-.96c-.139-.08-.198-.2-.198-.36v-4.4c0-2.14 1.625-3.76 3.826-3.76.832 0 1.605.28 2.26.78L8.857 6.26a.67.67 0 0 0-.356.62zM12 14.72 9.67 13.4v-2.8L12 9.28l2.329 1.32v2.8zm1.496 6.08c-.832 0-1.605-.28-2.26-.78l3.906-2.28a.67.67 0 0 0 .356-.62v-5.8l1.646.96c.138.08.198.2.198.36v4.4c0 2.14-1.645 3.76-3.845 3.76M8.8 16.34l-3.786-2.2c-1.09-.64-1.824-2-1.824-3.32 0-1.54.912-2.92 2.32-3.5v4.56c0 .28.118.48.356.62l4.955 2.9-1.625.94a.36.36 0 0 1-.396 0m-.218 3.28c-2.24 0-3.885-1.7-3.885-3.8 0-.16.02-.32.04-.48l3.904 2.28a.66.66 0 0 0 .714 0l4.975-2.9v1.9c0 .16-.06.28-.198.36l-3.786 2.2c-.516.3-1.13.44-1.764.44M13.497 22c2.398 0 4.4-1.72 4.856-4 2.22-.58 3.647-2.68 3.647-4.82 0-1.4-.595-2.76-1.665-3.74.1-.42.159-.84.159-1.26 0-2.86-2.3-5-4.956-5-.535 0-1.05.08-1.566.26A4.95 4.95 0 0 0 10.504 2c-2.399 0-4.4 1.72-4.857 4C3.427 6.58 2 8.68 2 10.82c0 1.4.595 2.76 1.665 3.74-.1.42-.159.84-.159 1.26 0 2.86 2.3 5 4.956 5 .535 0 1.05-.08 1.566-.26.892.88 2.12 1.44 3.468 1.44\"></path></svg>",
+    "more": "<svg aria-hidden=\"true\" width=\"24px\" height=\"24px\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M12 13C12.5523 13 13 12.5523 13 12C13 11.4477 12.5523 11 12 11C11.4477 11 11 11.4477 11 12C11 12.5523 11.4477 13 12 13Z\" fill=\"currentColor\"></path><path d=\"M20.25 13C20.8023 13 21.25 12.5523 21.25 12C21.25 11.4477 20.8023 11 20.25 11C19.6977 11 19.25 11.4477 19.25 12C19.25 12.5523 19.6977 13 20.25 13Z\" fill=\"currentColor\"></path><path d=\"M3.75 13C4.30228 13 4.75 12.5523 4.75 12C4.75 11.4477 4.30228 11 3.75 11C3.19772 11 2.75 11.4477 2.75 12C2.75 12.5523 3.19772 13 3.75 13Z\" fill=\"currentColor\"></path><path d=\"M12 13C12.5523 13 13 12.5523 13 12C13 11.4477 12.5523 11 12 11C11.4477 11 11 11.4477 11 12C11 12.5523 11.4477 13 12 13Z\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path><path d=\"M20.25 13C20.8023 13 21.25 12.5523 21.25 12C21.25 11.4477 20.8023 11 20.25 11C19.6977 11 19.25 11.4477 19.25 12C19.25 12.5523 19.6977 13 20.25 13Z\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path><path d=\"M3.75 13C4.30228 13 4.75 12.5523 4.75 12C4.75 11.4477 4.30228 11 3.75 11C3.19772 11 2.75 11.4477 2.75 12C2.75 12.5523 3.19772 13 3.75 13Z\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path></svg>",
+    "expand": "<svg aria-hidden=\"true\" width=\"24px\" height=\"24px\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M5.75 12.75V17.25C5.75 17.8023 6.19772 18.25 6.75 18.25H11.25M12.75 5.75H17.25C17.8023 5.75 18.25 6.19772 18.25 6.75V11.25\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path></svg>"
+  },
+  "quick": [
+    {
+      "label": "Image",
+      "href": "/start/agent?mode=image",
+      "poster": "https://static.higgsfield.ai/uploads/a7890c63ad25.webp",
+      "video": "https://static.higgsfield.ai/uploads/create-image-card-v3-480.mp4"
+    },
+    {
+      "label": "Video",
+      "href": "/start/agent?model=seedance_2_5&mode=video",
+      "poster": "https://static.higgsfield.ai/uploads/87c572e4f95d.webp",
+      "video": "https://static.higgsfield.ai/uploads/create-video-card-v3-480.mp4"
+    },
+    {
+      "label": "Assets",
+      "href": "/gallery/all",
+      "poster": "https://static.higgsfield.ai/uploads/6b9d43070592.webp",
+      "video": "https://static.higgsfield.ai/uploads/create-audio-card-v3-480.mp4"
+    },
+    {
+      "label": "MCP",
+      "href": "/mcp"
+    }
+  ],
+  "cards": [
+    {
+      "id": 0,
+      "ratio": "9 / 16",
+      "poster": "https://d8j0ntlcm91z4.cloudfront.net/community-presets/57ea73d1-18b2-42b0-b059-cfd859088c38/generation.webp",
+      "video": "https://d8j0ntlcm91z4.cloudfront.net/community-presets/hls/genjutsu-h264-abr-v1/f92f48ec8752178635c1c43a/215dd7b1-c520-46ac-ba89-331ef5a8bc98/master.m3u8",
+      "mode": "Motion transfer",
+      "images": [
+        "https://d8j0ntlcm91z4.cloudfront.net/community-presets/57ea73d1-18b2-42b0-b059-cfd859088c38/generation.webp"
+      ]
+    },
+    {
+      "id": 1,
+      "ratio": "16 / 9",
+      "poster": "https://d8j0ntlcm91z4.cloudfront.net/community-presets/73336bb9-5c1f-45c4-8f10-84081019ea49/generation.webp",
+      "video": "https://d8j0ntlcm91z4.cloudfront.net/community-presets/hls/genjutsu-h264-abr-v1/13658322d1621a891d61c42b/cafac68b-de7b-4c4c-a6c1-de1497a7dde7/master.m3u8",
+      "mode": "Motion transfer",
+      "images": [
+        "https://d8j0ntlcm91z4.cloudfront.net/community-presets/73336bb9-5c1f-45c4-8f10-84081019ea49/generation.webp"
+      ]
+    },
+    {
+      "id": 2,
+      "ratio": "9 / 16",
+      "poster": "https://d8j0ntlcm91z4.cloudfront.net/community-presets/f0105791-561b-4831-b061-2d0b84cdf923/generation.webp",
+      "video": "https://d8j0ntlcm91z4.cloudfront.net/community-presets/hls/genjutsu-h264-abr-v1/02eb0a2c26bdf0d227c34651/ca13a0d7-30d9-45b8-9329-7436dd81435e/master.m3u8",
+      "mode": "Objects swap",
+      "images": [
+        "https://d8j0ntlcm91z4.cloudfront.net/community-presets/f0105791-561b-4831-b061-2d0b84cdf923/generation.webp"
+      ]
+    },
+    {
+      "id": 3,
+      "ratio": "16 / 9",
+      "poster": "https://d8j0ntlcm91z4.cloudfront.net/community-presets/1adb89f1-0242-4dc7-867b-12a9306ea12f/generation.webp",
+      "video": "https://d8j0ntlcm91z4.cloudfront.net/community-presets/hls/genjutsu-h264-abr-v1/808bac4f1a2d82bfd50b6646/858f943c-ebc7-4ec0-8684-2f34a513ecb2/master.m3u8",
+      "mode": "Objects swap",
+      "images": [
+        "https://d8j0ntlcm91z4.cloudfront.net/community-presets/1adb89f1-0242-4dc7-867b-12a9306ea12f/generation.webp"
+      ]
+    },
+    {
+      "id": 4,
+      "ratio": "16 / 9",
+      "poster": "https://d8j0ntlcm91z4.cloudfront.net/community-presets/ee6bcfea-748f-48a8-98b1-c309602418a8/generation.webp",
+      "video": "https://d8j0ntlcm91z4.cloudfront.net/community-presets/hls/genjutsu-h264-abr-v1/215496c0ee2419de3ba24147/0235ad4e-6918-4622-9c8b-f6675883b079/master.m3u8",
+      "mode": "Objects swap",
+      "images": [
+        "https://d8j0ntlcm91z4.cloudfront.net/community-presets/ee6bcfea-748f-48a8-98b1-c309602418a8/generation.webp"
+      ]
+    },
+    {
+      "id": 5,
+      "ratio": "16 / 9",
+      "poster": "https://d8j0ntlcm91z4.cloudfront.net/community-presets/c7101bb7-fdcd-461c-a06e-3e1226b63b4b/generation.webp",
+      "video": "https://d8j0ntlcm91z4.cloudfront.net/community-presets/hls/genjutsu-h264-abr-v1/2f021ea1ed733010c076aa42/352cf08e-c026-4467-8f04-25e314c7e38e/master.m3u8",
+      "mode": "Motion transfer",
+      "images": [
+        "https://d8j0ntlcm91z4.cloudfront.net/community-presets/c7101bb7-fdcd-461c-a06e-3e1226b63b4b/generation.webp"
+      ]
+    },
+    {
+      "id": 6,
+      "ratio": "3 / 2",
+      "poster": "https://d8j0ntlcm91z4.cloudfront.net/community-presets/ae36d093-9192-40e9-a05f-9253740b63a9/generation.webp",
+      "mode": "Motion transfer",
+      "images": [
+        "https://d8j0ntlcm91z4.cloudfront.net/community-presets/ae36d093-9192-40e9-a05f-9253740b63a9/generation.webp"
+      ]
+    },
+    {
+      "id": 7,
+      "ratio": "9 / 16",
+      "poster": "https://d8j0ntlcm91z4.cloudfront.net/community-presets/d2bb7d0f-bfb0-4e80-a904-e808f9d2eb50/generation.webp",
+      "mode": "Motion transfer",
+      "images": [
+        "https://d8j0ntlcm91z4.cloudfront.net/community-presets/d2bb7d0f-bfb0-4e80-a904-e808f9d2eb50/generation.webp"
+      ]
+    }
+  ],
+  "slides": [
+    {
+      "title": "Higgsfield Genjutsu Lite",
+      "description": "Faster, lighter, cheaper. Same Genjutsu energy.",
+      "video": "https://static-public-media.higgsfield.ai/cards/0019ff9b-e94d-4eec-893c-7ae8c953dc74.mp4",
+      "href": "https://higgsfield.ai/ai/video?model=genjutsu-lite",
+      "ratio": "aspect-ratio:1.85"
+    },
+    {
+      "title": "Higgsfield Genjutsu",
+      "description": "One upload in. Endless new visions out.",
+      "video": "https://cdn.higgsfield.ai/card/16eebc9a-8310-4f68-8a02-1e2e6f109169.mp4",
+      "href": "https://higgsfield.ai/ai/video?model=genjutsu",
+      "ratio": "aspect-ratio: 1.85 / 1;"
+    },
+    {
+      "title": "Sign up and get your extra discount",
+      "description": "Get unlimited Nano Banana Pro",
+      "video": "https://static.higgsfield.ai/promotions/seedance_2_5_explore_image.mp4",
+      "poster": "https://static.higgsfield.ai/public/promotions/seedance-2-5-sale-hero-poster.jpg",
+      "href": "/signup",
+      "discount": true
+    },
+    {
+      "title": "Higgsfield Playable",
+      "description": "You can now make a mobile game from a single prompt",
+      "video": "https://static-public-media.higgsfield.ai/cards/bd7d279c-26c6-4943-b824-cd2f7476da57.mp4",
+      "href": "https://higgsfield.ai/playable",
+      "ratio": "aspect-ratio: 1.85 / 1;"
+    },
+    {
+      "title": "Content Factory",
+      "description": "Trending styles in. Ready-to-post series out.",
+      "video": "https://static-public-media.higgsfield.ai/cards/8dddb16b-6fe1-4cac-a11a-a650691a292d.mp4",
+      "href": "https://higgsfield.ai/content-factory",
+      "ratio": "aspect-ratio: 1.85 / 1;"
+    },
+    {
+      "title": "Kling 4.0",
+      "description": "Create and edit videos with text, images and references",
+      "video": "https://static-public-media.higgsfield.ai/cards/4c2bb5a7-ba39-464d-be1d-01de1c52dcaf.mp4",
+      "href": "https://higgsfield.ai/ai/video?model=kling4_0",
+      "ratio": "aspect-ratio: 1.85 / 1;"
+    },
+    {
+      "title": "HIGGSFIELD ACADEMY",
+      "description": "Learn to create AI images and videos, step by step",
+      "video": "https://static-public-media.higgsfield.ai/cards/d6b970cb-8a24-41e6-8c83-023fd2ab585b.mp4",
+      "href": "https://higgsfield.ai/academy",
+      "ratio": "aspect-ratio: 1.85 / 1;"
+    }
+  ]
+}

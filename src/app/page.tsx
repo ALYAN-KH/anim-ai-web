@@ -1,4 +1,6 @@
 import data from "@/data/content";
+import { MobileExplore } from "@/components/mobile-explore/MobileExplore";
+import mobileExploreStyles from "@/components/mobile-explore/mobile-explore.module.css";
 import { Header, TopBar, Footer, Tags } from "@/components/layout";
 import {
   Hero,
@@ -176,6 +178,8 @@ export default function ExplorePage() {
 
   return (
     <>
+      <MobileExplore />
+      <div className={mobileExploreStyles.desktop} data-desktop-explore="true">
       <TopBar />
       <Header />
       <main className="min-h-screen overflow-x-clip bg-[#0d0f10] text-white">
@@ -187,6 +191,7 @@ export default function ExplorePage() {
         </div>
       </main>
       <Footer />
+      </div>
     </>
   );
 }

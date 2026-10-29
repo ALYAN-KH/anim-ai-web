@@ -202,6 +202,14 @@
 }
 
 
+/* "View" button: the global `main > div { width:100% !important }` stretched its wrapper across the page; keep it a right-aligned button. */
+main > div.soul-view-wrap {
+  width: auto !important;
+  max-width: none !important;
+  margin: 0 !important;
+  left: auto;
+}
+
 /* ---- Mobile responsiveness (<=767px only; desktop untouched) ---- */
 @media (max-width: 767px) {
   /* "View" button: global `main > div { width:100% !important }` stretched it past the left edge */

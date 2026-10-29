@@ -1,0 +1,55 @@
+.pane { display: block; width: 100%; min-width: 0; min-height: 0; height: calc(100dvh - var(--academy-header-height, 53px)); overflow-y: auto !important; overflow-x: hidden !important; overscroll-behavior: none; scrollbar-width: none; background: #0f1113; color: #fff; font-family: Inter, sans-serif; }
+.pane::-webkit-scrollbar { display: none; }
+
+/* Minimal reset standing in for the reference's Tailwind preflight, scoped to this route. */
+.pane :is(*, ::before, ::after) { box-sizing: border-box; border: 0 solid; }
+.pane :is(h1, h2, h3, p, dl, dd, ol, ul, figure) { margin: 0; }
+.pane :is(h1, h2, h3) { font-size: inherit; font-weight: inherit; }
+.pane :is(ol, ul) { list-style: none; padding: 0; }
+.pane a { color: inherit; text-decoration: inherit; }
+.pane :is(img, svg, video) { display: block; max-width: 100%; }
+.pane :is(button, input) { font: inherit; color: inherit; letter-spacing: inherit; }
+.pane button { background: transparent; padding: 0; cursor: pointer; text-align: inherit; }
+.pane button:disabled { cursor: default; }
+.pane :is(a, button, input):focus-visible { outline: 2px solid var(--hf-color-brand-primary, #d1fe17); outline-offset: 2px; }
+
+/* The site's global Tailwind v3 utilities set `transform`; the reference's v4 ones set translate/rotate/scale, so both would apply. */
+.pane :is([class*="translate-"], [class*="rotate-"], [class*="scale-"]) { transform: none; }
+
+/* In the prepared reference CSS `.q-button` is emitted after the reward-card action and resets its position. */
+.pane[data-academy-detail] :global(._cardAction_s099v_120) {
+  border-radius: var(--hf-radius-full) !important; width: max-content !important; max-width: calc(100% - 2rem) !important; height: auto !important; min-height: 2rem !important;
+  font-family: var(--hf-type-family-secondary) !important; font-size: .75rem !important; font-weight: var(--hf-type-weight-semi-bold) !important; letter-spacing: 0 !important;
+  white-space: normal !important; text-align: center !important; padding: .5rem .625rem !important; line-height: 1rem !important;
+  position: absolute !important; bottom: 1.5rem !important; left: 50% !important; translate: -50% !important;
+}
+
+.poster { position: absolute; inset: 0; width: 100%; height: 100%; }
+.playerError { position: absolute; z-index: 10; left: 0; right: 0; top: 50%; text-align: center; font-size: 14px; color: #ffffffb3; }
+
+.player { container-type: inline-size; }
+.controls { position: absolute; z-index: 10; left: 0; right: 0; bottom: 0; padding: 24px 12px 8px; background: linear-gradient(to top, #000000b3, #0000004d, transparent); opacity: 0; transition: opacity .2s; }
+.player:hover .controls, .player:focus-within .controls, .player[data-paused="true"] .controls { opacity: 1; }
+.controls:has(button[aria-label="Play video"]) { opacity: 1; }
+.seek { position: relative; display: flex; align-items: center; height: 12px; border-radius: 8px; }
+.seekTrack { position: absolute; left: 0; right: 0; top: 50%; height: 6px; transform: translateY(-50%); border-radius: 8px; background: #ffffff40; overflow: hidden; }
+.seekTrack > span { display: block; height: 100%; background: var(--hf-color-brand-primary, #d1fe17); }
+.seekKnob { position: absolute; top: 50%; width: 4px; height: 12px; border-radius: 8px; background: #fff; transform: translate(-50%, -50%); pointer-events: none; }
+.seek input { position: absolute; inset: 0; width: 100%; height: 100%; margin: 0; opacity: 0; cursor: pointer; }
+.controlRow { display: flex; align-items: center; gap: 2px; margin-top: 4px; }
+.controlRow button { display: inline-flex; width: 32px; height: 32px; flex-shrink: 0; align-items: center; justify-content: center; border-radius: 8px; color: #ffffffe6; transition: background-color .15s; }
+.controlRow button:hover { background: #ffffff1a; color: #fff; }
+.controlRow button svg { width: 20px; height: 20px; }
+.controlRow time { margin-left: 6px; font-size: 12px; font-weight: 500; font-variant-numeric: tabular-nums; color: #ffffffe6; white-space: nowrap; }
+.volume { display: flex; align-items: center; height: 32px; max-width: 32px; overflow: hidden; border-radius: 10px; transition: max-width .2s, background-color .2s; }
+.volume:hover, .volume:focus-within { max-width: 112px; background: #ffffff1a; }
+.volume input { width: 56px; height: 4px; margin: 0 16px 0 4px; flex-shrink: 0; accent-color: var(--hf-color-brand-primary, #d1fe17); }
+@media (max-width: 380px) { .controlRow time { display: none; } }
+
+.lessonLocked { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 12px; text-align: center; padding: 24px; aspect-ratio: 16 / 9; border-radius: 24px; background: #ffffff0d; border: 1px solid #ffffff1a; }
+.lessonLocked svg { width: 28px; height: 28px; color: #ffffff80; }
+.lessonList a, .lessonList .row { display: flex; align-items: center; gap: 12px; padding: 12px; border-radius: 16px; }
+.lessonList a:hover { background: #ffffff0d; }
+.lessonList [aria-current="page"] { background: #ffffff14; }
+.lessonList [aria-disabled="true"] { opacity: .6; cursor: not-allowed; }
+.reviewNote { color: #ffffffb3; }

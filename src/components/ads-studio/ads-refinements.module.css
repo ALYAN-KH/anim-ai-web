@@ -1,0 +1,71 @@
+/* Local to these tools; shared navigation is untouched. */
+.multiplier { isolation: isolate; }
+/* Reference utilities use individual translate; the legacy transform doubled it. */
+.brand [class*="translate-"], .multiplier [class*="translate-"] { transform: none !important; }
+.brand [data-ads-brand-research] { display: flex !important; background-color: #101112; }
+.brand [data-ads-brand-scroll] { height: 0; min-height: 0 !important; flex: 1 1 0% !important; padding-bottom: 64px; }
+.brand [data-ads-brand-research-manual] > header h1 { font-size: 36px; line-height: 40px; letter-spacing: -1.44px; }
+.brand [data-ads-brand-research-manual] > header p { font-size: 14px; line-height: 20px; }
+.brand [data-ads-bento-block="hero"] { background-color: rgba(255,255,255,.10); }
+.brand [data-ads-brand-logo="empty"] { background-color: rgba(255,255,255,.16); }
+.brand [data-ads-brand-research] > header a { font-size: 14px; }
+.brand [data-ads-brand-research] > footer button { height: 44px; font-size: 18px; line-height: 24px; }
+.brand [data-ads-brand-research] > footer button:last-child { padding-inline: 16px; }
+.brand [data-ads-editor] { max-width: 480px; gap: 16px; padding: 16px; border-radius: 24px; background: #121314; }
+.brand > div:has(> [data-ads-editor]), .brand > div:has(> [data-ads-logo-picker]) { z-index: 80; }
+.brand [data-ads-editor] h2 { font-size: 18px; line-height: 24px; font-weight: 600; }
+.brand [data-ads-editor] button[aria-label="Close"] { width: 32px; height: 32px; background: rgba(255,255,255,.05); }
+.brand [data-ads-editor] > button:last-child { height: 48px; flex-shrink: 0; font-size: 18px; }
+.brand [data-ads-editor] > div:nth-child(2) { min-height: 62px; padding: 16px; border-radius: 8px; background: rgba(255,255,255,.05); }
+.brand [data-ads-editor] > div:nth-child(2) > button { height: 30px; font-size: 14px; }
+.brand [data-ads-editor][aria-label="Fonts"] > div:nth-child(2) { gap: 16px; }
+.brand [data-ads-editor][aria-label="Fonts"] label { gap: 4px; padding: 0; }
+.brand [data-ads-editor][aria-label="Fonts"] label span { font-size: 12px; line-height: 16px; }
+.brand [data-ads-editor][aria-label="Fonts"] input { font-size: 14px; line-height: 20px; }
+.brand [data-ads-logo-picker] { max-width: 960px; height: min(600px,calc(100dvh - 32px)); padding: 4px; gap: 4px; border-radius: 20px; }
+.brand [data-ads-logo-picker] button { font-size: 12px; }
+.brand [data-ads-logo-picker] > div:first-child button { height: 32px; padding-inline: 12px; }
+.brand [data-ads-logo-picker] button[aria-label="Close"] { width: 32px; height: 32px; padding: 0; }
+.brand [data-ads-logo-picker] > div:nth-child(2) { border-radius: 16px; }
+.brand [data-ads-logo-picker] > div:nth-child(2) > div:first-child { padding: 6px 8px; }
+.brand [data-ads-logo-picker] > div:nth-child(2) > div:first-child button { height: 32px; padding-inline: 12px; }
+.brand [data-ads-logo-picker] > div:nth-child(2) > div:last-child { padding: 14px; gap: 12px; }
+.brand [data-ads-logo-picker] > div:nth-child(2) > div:last-child > button { width: 144px; height: 144px; }
+.brand [data-ads-logo-picker] > div:nth-child(2) > div:last-child > button > span { width: 42px; height: 42px; border: 1px solid #ffffff26; box-shadow: inset 0 0 12px #ffffff30; }
+.brand [data-ads-color-picker] { width: 200px !important; max-width: 200px; padding: 8px; gap: 12px; }
+.brand [data-ads-color-picker] > div:first-child { height: 152px; }
+.brand [data-ads-color-picker] > div:nth-child(2) { height: 14px; margin-inline: 0; }
+.brand [data-ads-color-picker] input { height: 32px; padding-inline: 12px; font-size: 12px; }
+.brand [data-ads-color-picker] > div:last-child > button { width: 28px; height: 28px; }
+.multiplier { padding-inline: 16px; }
+.multiplier [data-ads-multiplier-main] { display: flex !important; }
+.multiplier [data-ads-multiplier-main] > header { z-index: 20; }
+.multiplier [data-ads-multiplier-main] > header [role="menu"] { width: 224px; background: #121314; }
+.multiplier [data-ads-multiplier-main] > header [role="menu"] > p { border-top: 1px solid #ffffff08; margin-top: 4px; }
+.multiplier > aside { background: #121415; }
+.multiplier > aside textarea, .multiplier > aside [class*="bg-white/5"] { background-color: #202223; }
+.multiplier [role="switch"] { width: 28px; height: 16px; }
+.multiplier [role="switch"] > span { width: 12px; height: 12px; }
+.multiplier [role="switch"][aria-checked="true"] > span { translate: 12px 0; }
+.multiplier [data-ads-multiplier-how] { padding-top: 24px; padding-bottom: 24px; }
+.multiplier [data-ads-multiplier-how] > div { max-width: 592px; gap: 48px; }
+.multiplier [data-ads-multiplier-how] > div > div:first-child { width: min(100%,498px); height: auto; aspect-ratio: 16/9; }
+.multiplier [data-ads-multiplier-how] [aria-live] { gap: 12px; }
+.multiplier [data-ads-multiplier-how] [aria-live] > p:first-child { font-size: 12px; line-height: 16px; }
+.multiplier [data-ads-multiplier-how] h2 { font-size: 32px; line-height: 32px; }
+.multiplier [data-ads-multiplier-how] [aria-live] > p:last-child { max-width: 560px; font-size: 16px; line-height: 24px; }
+.multiplier [data-ads-multiplier-how] button[aria-current="step"] { width: 88px; height: 48px; }
+.multiplier [data-ads-multiplier-how] > div > div:last-child > div { height: 64px; }
+@media (min-width: 768px) {
+  .brand [data-ads-brand-research-manual] { padding-top: 12px; }
+}
+@media (max-width: 767px) {
+  .brand [data-ads-brand-research-manual] > header { padding-inline: 12px; }
+  .brand [data-ads-brand-research-manual] > header h1 { font-size: 28px; line-height: 34px; }
+  .brand [data-ads-brand-research] > footer button:last-child { font-size: 14px; }
+  .brand [data-ads-logo-picker] > div:first-child { padding: 4px; }
+  .brand [data-ads-logo-picker] > div:first-child button { padding-inline: 8px; }
+  .multiplier { padding-inline: 8px; }
+  .multiplier [data-ads-multiplier-how] > div { gap: 24px; }
+  .multiplier [data-ads-multiplier-how] h2 { font-size: 24px; line-height: 28px; }
+}

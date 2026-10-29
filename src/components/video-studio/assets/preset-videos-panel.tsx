@@ -3,7 +3,7 @@
 import { useEffect, useRef, useState } from "react";
 import { CropIcon, ExpandIcon } from "../shared/icons";
 import { LOADING_MS, LoadingGrid } from "./generations-panel";
-import { communityVideoPresets, type VideoPreset, type VideoSelection } from "./preset-videos";
+import { communityVideoPresets, videoPresets, type VideoPreset, type VideoSelection } from "./preset-videos";
 
 import { VideoCropDialog } from "./video-crop-dialog";
 import { VideoPreviewDialog } from "./video-preview-dialog";
@@ -17,13 +17,14 @@ function PlayIcon() {
 function PresetCard({ preset, onSelect, onPreview, onCrop }: { preset: VideoPreset; onSelect: () => void; onPreview: () => void; onCrop: () => void }) {
   const videoRef = useRef<HTMLVideoElement>(null);
   const [hovering, setHovering] = useState(false);
+  const poster = preset.poster ?? videoPresets.find(video => video.url === preset.url)?.poster;
   return (
     <div
       className="group relative aspect-square overflow-hidden rounded-xl bg-white/[.06]"
       onPointerEnter={() => { setHovering(true); videoRef.current?.play().catch(() => undefined); }}
       onPointerLeave={() => { setHovering(false); videoRef.current?.pause(); }}
     >
-      <video ref={videoRef} src={preset.url} poster={preset.poster} muted loop playsInline preload="none" className="size-full object-contain" aria-hidden="true" />
+      <video ref={videoRef} src={preset.url} poster={poster} muted loop playsInline preload={poster ? "none" : "metadata"} className="size-full object-contain" aria-hidden="true" />
       <button type="button" onClick={onSelect} aria-label={`Select ${preset.name}`} className="absolute inset-0 grid place-items-center text-white drop-shadow-lg">
         {!hovering && <PlayIcon />}
       </button>

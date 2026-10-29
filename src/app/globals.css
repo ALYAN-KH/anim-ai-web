@@ -327,3 +327,13 @@
   .mcp-demo-sound { top: 12px; right: auto; left: 12px; }
   .mcp-demo-models { position: static; max-width: none; justify-content: flex-start; margin: 0 8px; }
 }
+
+@keyframes ads-home-strip { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+.ads-home-strip-track { animation: ads-home-strip 40s linear infinite; }
+@media (prefers-reduced-motion: reduce) { .ads-home-strip-track { animation: none; } }
+
+@keyframes ads-block-in { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: none; } }
+.ads-block-in { animation: ads-block-in 0.4s ease-out both; }
+@media (prefers-reduced-motion: reduce) { .ads-block-in { animation: none; } }
+.hide-scrollbar { scrollbar-width: none; }
+.hide-scrollbar::-webkit-scrollbar { display: none; }

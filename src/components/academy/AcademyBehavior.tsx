@@ -2,7 +2,7 @@
 import { useEffect } from "react";
 
 const fmt = (s: number) => `${Math.floor(s / 60)}:${String(Math.floor(s % 60)).padStart(2, "0")}`;
-const play = (v: HTMLVideoElement) => { v.muted = true; v.play().catch(() => {}); };
+const play = (v: HTMLVideoElement) => { v.muted = true; v.defaultMuted = true; v.setAttribute("playsinline", ""); v.play().catch(() => {}); };
 
 /** Wires the static Academy markup: hero player, before/after previews, tabs and FAQ accordion. */
 export function AcademyBehavior() {
@@ -16,6 +16,8 @@ export function AcademyBehavior() {
     const hero = player?.querySelector("video");
     if (player && hero) {
       play(hero);
+      hero.addEventListener("canplay", () => { if (hero.paused && !hero.ended && !userPaused) play(hero); });
+      let userPaused = false;
       const q = <T extends HTMLElement>(s: string) => player.querySelector<T>(s);
       const pauseBtn = q<HTMLButtonElement>("button[aria-label='Pause video'], button[aria-label='Play video']");
       const muteBtn = q<HTMLButtonElement>("button[aria-label='Unmute video'], button[aria-label='Mute video']");
@@ -35,7 +37,7 @@ export function AcademyBehavior() {
         if (rail[2]) rail[2].style.width = `max(0px, ${p}% - 0.375rem)`;
         if (knob) knob.style.left = `${p}%`;
       };
-      const toggle = () => (hero.paused ? hero.play().catch(() => {}) : hero.pause());
+      const toggle = () => { userPaused = !hero.paused; if (userPaused) hero.dataset.up = "1"; else delete hero.dataset.up; if (hero.paused) hero.play().catch(() => {}); else hero.pause(); };
       const onState = () => pauseBtn?.setAttribute("aria-label", hero.paused ? "Play video" : "Pause video");
       hero.addEventListener("play", onState);
       hero.addEventListener("pause", onState);
@@ -92,8 +94,16 @@ export function AcademyBehavior() {
       const vids = Array.from(pair.querySelectorAll("video"));
       let paused = false;
       let visible = false;
-      const apply = () => vids.forEach((v) => (visible && !paused ? play(v) : v.pause()));
-      const io = new IntersectionObserver(([e]) => { visible = e.isIntersecting; apply(); }, { threshold: 0.2 });
+      const apply = () => vids.forEach((v) => {
+        if (visible && !paused) { if (v.preload === "none") v.preload = "auto"; play(v); } else v.pause();
+      });
+      // The previews start unloaded, so a first play() can be dropped: retry once data arrives.
+      const onReady = () => apply();
+      vids.forEach((v) => v.addEventListener("canplay", onReady));
+      // Browsers may refuse autoplay until the page has had a gesture; retry on the first one.
+      const onGesture = () => { apply(); if (hero && hero.paused && !hero.ended && !hero.dataset.up) play(hero); };
+      ["pointerdown", "keydown", "wheel", "touchstart"].forEach((t) => window.addEventListener(t, onGesture, { once: true, passive: true }));
+      const io = new IntersectionObserver(([e]) => { visible = e.isIntersecting; apply(); }, { threshold: 0.05 });
       io.observe(pair);
       const btn = pair.querySelector<HTMLButtonElement>("button[aria-label$='previews']");
       const onClick = () => {
@@ -102,7 +112,7 @@ export function AcademyBehavior() {
         apply();
       };
       btn?.addEventListener("click", onClick);
-      cleanups.push(() => { io.disconnect(); btn?.removeEventListener("click", onClick); });
+      cleanups.push(() => { io.disconnect(); btn?.removeEventListener("click", onClick); vids.forEach((v) => v.removeEventListener("canplay", onReady)); ["pointerdown", "keydown", "wheel", "touchstart"].forEach((t) => window.removeEventListener(t, onGesture)); });
     }
 
     // Restore the reference panels and keep pointer and keyboard navigation in sync.
